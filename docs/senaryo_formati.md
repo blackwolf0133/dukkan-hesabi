@@ -42,3 +42,8 @@ TAM 5 etiket, sonuncusu #dükkanhesabı.
 - Hesap tutarlı olmalı: `fis` satırlarının toplamı `total` ile aynı; söylenen sayılar ekrandakiyle aynı. Küçük betikle kontrol et.
 - Yatırım/iş tavsiyesi verme; esnafı küçümseme; marka/işletme adı verme.
 - Rakip hesapların (satisciyiz, bay.finans, mahalleceosu) videolarını, başlıklarını, hesaplarını kopyalama; aynı dükkânı onlar yeni yaptıysa erteleme.
+
+## Fiş zamanlaması
+Satırların `f` değeri = o kalemin adının `say` içindeki kelime sırası / toplam kelime (biraz önce). Elle tahmin etme; bir satırın kalemi
+cümlede hangi kelimeyle geçiyorsa onun yerine göre hesapla (örnek: tools/bolum_uret.py ile üretip küçük bir betikle `f`'leri düzelt).
+`total.f` ≈ (kelime sayısı − 1) / kelime sayısı ("Kalan?" kelimesine denk gelsin).

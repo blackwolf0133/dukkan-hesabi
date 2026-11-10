@@ -1,0 +1,310 @@
+{
+ "id": "002",
+ "series": "DÜKKÂN HESABI",
+ "title": "Simitçi Açsak Ne Kazanırız?",
+ "country": {
+  "name": "Simitçi"
+ },
+ "kaynaklar": [
+  "İstanbul'da simit 30 TL (Eylül 2026; milligazete.com.tr, evrensel.net)",
+  "Simitlik un 25 kg yaklaşık 1.270 TL (idefix.com, Kasım 2026); simit başına malzeme ~8 TL örnek hesap",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL; en düşük indirimli Bağ-Kur 10.156,73 TL",
+  "Günlük adet, kira, enerji, vergi ve fire oranı örnek varsayımdır"
+ ],
+ "instagram_caption": "İstanbul'da simit 30 lira oldu. Peki küçük bir simit fırınının cebine ayda ne kalıyor? 🥯\n\nUn, susam, pekmez, usta, fırın faturası… Hepsini düştük. Sondaki fire hesabı bizi bile şaşırttı.\n\n(Rakamlar örnek hesaptır; semte ve fırına göre değişir.)\n\nSenin oralarda simit kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#simit #esnaf #fırın #ekonomi #dükkanhesabı",
+ "scenes": [
+  {
+   "say": "Mahallede küçük bir simit fırını açsak, ayda cebimize ne kalır? Hesaplayalım!",
+   "text": "Mahallede küçük bir simit fırını açsak, ayda cebimize ne kalır? Hesaplayalım!",
+   "voice_delay": 0.3,
+   "emotion": "şaşkın",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "wave",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.45,
+      "pose": "think",
+      "face": "think"
+     },
+     {
+      "f": 0.8,
+      "pose": "point",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "SIMITÇI!",
+     "x": 0.27,
+     "y": 0.14,
+     "size": 110,
+     "f": 0.0,
+     "rot": -10,
+     "until_f": 0.55
+    },
+    {
+     "type": "pop",
+     "text": "NE KALIR?",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 104,
+     "f": 0.6,
+     "rot": 5
+    }
+   ]
+  },
+  {
+   "say": "İstanbul'da simit artık 30 lira. Un, susam, pekmez derken bir simidin malzemesi yaklaşık 8 lira tutuyor.",
+   "text": "İstanbul'da simit artık 30 lira. Malzemesi (un, susam, pekmez) yaklaşık 8 lira.",
+   "bg": "dukkan",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Simit Fırını",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "SİMİT",
+     "value": 30,
+     "color": "gold",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Günde 600 simit, ayın her günü fırın açık. Kasaya giren: 540 bin lira!",
+   "text": "Günde 600 simit, ayın 30 günü. Kasaya giren: 540.000 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 540000,
+     "color": "green",
+     "x": 0.55,
+     "y": 0.28,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Giderler geliyor. Malzeme 144 bin. Usta ve çırak 82 bin. Fırının doğalgazı, elektriği 40 bin. Kira 45 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 25 bin. Kalan?",
+   "text": "Malzeme 144 bin. Usta + çırak 82 bin. Enerji 40 bin. Kira 45 bin. Bağ-Kur 10 bin. Vergi + muhasebe 25 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 540000,
+       "f": 0.0
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -144000,
+       "f": 0.056
+      },
+      {
+       "ad": "Personel",
+       "tutar": -82000,
+       "f": 0.167
+      },
+      {
+       "ad": "Enerji",
+       "tutar": -40000,
+       "f": 0.389
+      },
+      {
+       "ad": "Kira",
+       "tutar": -45000,
+       "f": 0.537
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.648
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -25000,
+       "f": 0.759
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 194000,
+      "f": 0.956
+     }
+    }
+   ]
+  },
+  {
+   "say": "194 bin! Yani 30 liralık simidin yaklaşık 11 lirası fırıncıya kalıyor. Ama gece üçte kalkmak da cabası.",
+   "text": "194 bin! 30 liralık simidin yaklaşık 11 lirası fırıncıya kalıyor. Ama gece 3'te kalkmak da cabası.",
+   "bg": "dukkan",
+   "emotion": "şaşkın",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "shock",
+     "face": "shock",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Simit Fırını",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "SİMİT BAŞINA KÂR",
+     "value": 11,
+     "color": "gold",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.9,
+     "f": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Asıl tuzak fire. Simit akşama bayatlar. Günde 600 değil 480 satarsan, malzeme yine gider ve cebe kalan 86 bine düşer.",
+   "text": "Asıl tuzak: fire! 600 değil 480 satarsan malzeme yine gider, kalan 86 bine düşer.",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "GÜNDE 600 SATIŞ",
+     "value": 194000,
+     "color": "green",
+     "x": 0.5,
+     "y": 0.22,
+     "scale": 0.85,
+     "f": 0.2
+    },
+    {
+     "type": "rakam",
+     "label": "GÜNDE 480 SATIŞ",
+     "value": 86000,
+     "color": "red",
+     "x": 0.5,
+     "y": 0.55,
+     "scale": 0.85,
+     "f": 0.62
+    }
+   ]
+  },
+  {
+   "say": "Yani simitçinin kazancı fırında değil, sabahın ilk üç saatinde.",
+   "text": "Simitçinin kazancı fırında değil, sabahın ilk üç saatinde.",
+   "bg": "dukkan",
+   "emotion": "sakin",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Simit Fırını",
+     "delay": 0.0
+    },
+    {
+     "type": "pop",
+     "text": "SABAH = KÂR",
+     "x": 0.55,
+     "y": 0.18,
+     "size": 78,
+     "f": 0.3,
+     "rot": -4
+    },
+    {
+     "type": "sfx",
+     "name": "rimshot",
+     "f": 0.95
+    }
+   ]
+  },
+  {
+   "say": "Rakamlar örnek, senin oralarda simit kaç lira? Yarın akşam: oto yıkama açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Senin oralarda simit kaç lira? Yarın: Oto yıkama açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.5,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: OTO YIKAMA",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.55,
+     "rot": -4
+    }
+   ]
+  }
+ ]
+}
