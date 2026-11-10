@@ -1,0 +1,310 @@
+{
+ "id": "001",
+ "series": "DÜKKÂN HESABI",
+ "title": "Berber Açsak Ne Kazanırız?",
+ "country": {
+  "name": "Berber"
+ },
+ "kaynaklar": [
+  "İstanbul Berberler Odası 2026 tarifesi: saç 500 TL, saç-sakal 800 TL (habergazetesi.com.tr)",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co)",
+  "2026 en düşük indirimli Bağ-Kur primi 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "Kira, malzeme, fatura ve vergi kalemleri örnek varsayımdır"
+ ],
+ "instagram_caption": "İstanbul'da saç tıraşı 500, saç-sakal 800 lira. Peki iki koltuklu bir mahalle berberinin cebine ayda ne kalıyor? 💈\n\nKira, kalfa maaşı, Bağ-Kur, malzeme… Hepsini düştük. Asıl şaşırtan kısım sonda: müşteri azalınca ne oluyor?\n\n(Rakamlar örnek hesaptır; semte ve dükkâna göre değişir.)\n\nSenin mahallende tıraş kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#berber #esnaf #kendiişini #ekonomi #dükkanhesabı",
+ "scenes": [
+  {
+   "say": "Mahallede bir berber açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
+   "text": "Mahallede bir berber açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
+   "voice_delay": 0.3,
+   "emotion": "şaşkın",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "wave",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.45,
+      "pose": "think",
+      "face": "think"
+     },
+     {
+      "f": 0.8,
+      "pose": "point",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "BERBER!",
+     "x": 0.27,
+     "y": 0.14,
+     "size": 110,
+     "f": 0.0,
+     "rot": -10,
+     "until_f": 0.55
+    },
+    {
+     "type": "pop",
+     "text": "NE KALIR?",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 104,
+     "f": 0.6,
+     "rot": 5
+    }
+   ]
+  },
+  {
+   "say": "İstanbul'da tarife belli: saç tıraşı 500, saç sakal 800 lira. Biz ortalama 600 diyelim.",
+   "text": "İstanbul'da tarife belli: saç tıraşı 500, saç-sakal 800 lira. Biz ortalama 600 diyelim.",
+   "bg": "dukkan",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Berber Salonu",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "ORTALAMA MÜŞTERİ",
+     "value": 600,
+     "color": "gold",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "İki koltuk, günde 20 müşteri, ayda 26 gün çalışalım. Kasaya giren: 312 bin lira!",
+   "text": "İki koltuk, günde 20 müşteri, ayda 26 gün. Kasaya giren: 312.000 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 312000,
+     "color": "green",
+     "x": 0.55,
+     "y": 0.28,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Şimdi giderler. Kira 45 bin. Asgari ücretli kalfanın patrona maliyeti 41 bin. Jilet, havlu, kolonya 18 bin. Elektrik, su, doğalgaz 9 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 35 bin. Kalan?",
+   "text": "Kira 45 bin. Kalfa (asgari ücret) 41 bin. Malzeme 18 bin. Fatura 9 bin. Bağ-Kur 10 bin. Vergi + muhasebe 35 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 312000,
+       "f": 0.0
+      },
+      {
+       "ad": "Kira",
+       "tutar": -45000,
+       "f": 0.07
+      },
+      {
+       "ad": "Kalfa",
+       "tutar": -41000,
+       "f": 0.16
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -18000,
+       "f": 0.36
+      },
+      {
+       "ad": "Fatura",
+       "tutar": -9000,
+       "f": 0.52
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.68
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -35000,
+       "f": 0.78
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 154000,
+      "f": 0.96
+     }
+    }
+   ]
+  },
+  {
+   "say": "154 bin! Fena değil, değil mi? Ama usta günde 12 saat ayakta. Saat başına düşen 490 lira. Yani bir saç tıraşından bile az.",
+   "text": "154 bin! Fena değil, değil mi? Ama usta günde 12 saat ayakta. Saati 490 lira: bir saç tıraşından bile az.",
+   "bg": "dukkan",
+   "emotion": "şaşkın",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "shock",
+     "face": "shock",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Berber Salonu",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "USTANIN SAATİ",
+     "value": 490,
+     "color": "red",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.9,
+     "f": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Asıl tehlike şu: Müşteri günde 20 değil de 12 olursa, cebe kalan 154 binden 50 bine düşer.",
+   "text": "Asıl tehlike: müşteri günde 20 değil 12 olursa, kalan 154 binden 50 bine düşer!",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "GÜNDE 20 MÜŞTERİ",
+     "value": 154000,
+     "color": "green",
+     "x": 0.5,
+     "y": 0.22,
+     "scale": 0.85,
+     "f": 0.2
+    },
+    {
+     "type": "rakam",
+     "label": "GÜNDE 12 MÜŞTERİ",
+     "value": 50000,
+     "color": "red",
+     "x": 0.5,
+     "y": 0.55,
+     "scale": 0.85,
+     "f": 0.62
+    }
+   ]
+  },
+  {
+   "say": "Yani berberin kazancı makasta değil, koltuğun dolu kalmasında.",
+   "text": "Berberin kazancı makasta değil, koltuğun dolu kalmasında.",
+   "bg": "dukkan",
+   "emotion": "sakin",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Berber Salonu",
+     "delay": 0.0
+    },
+    {
+     "type": "pop",
+     "text": "KOLTUK DOLU = KÂR",
+     "x": 0.55,
+     "y": 0.18,
+     "size": 78,
+     "f": 0.3,
+     "rot": -4
+    },
+    {
+     "type": "sfx",
+     "name": "rimshot",
+     "f": 0.95
+    }
+   ]
+  },
+  {
+   "say": "Rakamlar örnek, senin mahallende tıraş kaç lira? Yarın akşam: simitçi açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Senin mahallende tıraş kaç lira? Yarın: Simitçi açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.5,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: SİMİTÇİ",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.55,
+     "rot": -4
+    }
+   ]
+  }
+ ]
+}
