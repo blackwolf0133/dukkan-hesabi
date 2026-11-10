@@ -911,13 +911,13 @@ def draw_narrator(ctx, x, y, scale, pose, face, t, talking=False, anim="idle",
         ctx.arc(cx, cy, r, 0, 2 * math.pi)
         stroke_fill(ctx, (0.99, 0.88, 0.74), INK_DAY, lw * 0.6)
         # kasket
-        ctx.move_to(cx - r * 1.02, cy - r * 0.32)
-        ctx.curve_to(cx - r * 1.05, cy - r * 1.25, cx + r * 0.95, cy - r * 1.3, cx + r * 1.02, cy - r * 0.35)
+        ctx.move_to(cx - r * 0.97, cy - r * 0.62)
+        ctx.curve_to(cx - r * 1.0, cy - r * 1.45, cx + r * 0.95, cy - r * 1.5, cx + r * 0.98, cy - r * 0.64)
         ctx.close_path()
         stroke_fill(ctx, (0.30, 0.27, 0.25), INK_DAY, lw * 0.4)
-        ctx.move_to(cx + r * 0.2, cy - r * 0.38)
-        ctx.curve_to(cx + r * 0.8, cy - r * 0.5, cx + r * 1.35, cy - r * 0.42, cx + r * 1.45, cy - r * 0.3)
-        ctx.line_to(cx + r * 0.95, cy - r * 0.28)
+        ctx.move_to(cx + r * 0.2, cy - r * 0.66)
+        ctx.curve_to(cx + r * 0.8, cy - r * 0.78, cx + r * 1.35, cy - r * 0.7, cx + r * 1.45, cy - r * 0.58)
+        ctx.line_to(cx + r * 0.92, cy - r * 0.58)
         ctx.close_path()
         stroke_fill(ctx, (0.22, 0.20, 0.18), INK_DAY, lw * 0.35)
         # kulak arkasında kurşun kalem
