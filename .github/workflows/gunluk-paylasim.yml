@@ -161,7 +161,6 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_MODE: ${{ vars.IG_MODE }}
-          IG_USERNAME: ${{ vars.IG_USERNAME }}
         run: |
           mkdir -p output
           python -c "import json; t=json.load(open('site/today.json')); t['path']='site/videos/'+t['id']+'.mp4'; json.dump(t, open('output/today.json','w'), ensure_ascii=False)"

@@ -87,8 +87,8 @@ def _wait_container(host, container_id, token, timeout=900):
     raise PublishError(f"Video işleme zaman aşımı. Son durum: {last}")
 
 
-HESAP = os.environ.get("IG_USERNAME", "HESAP_ADI_BEKLENIYOR").strip().lstrip("@").lower()
-VARSAYILAN_KIMLIK = ""   # hesap açılınca doldurulacak
+HESAP = os.environ.get("IG_USERNAME", "nekazanir.tr").strip().lstrip("@").lower()
+VARSAYILAN_KIMLIK = "17841471206025263" if HESAP == "nekazanir.tr" else ""   # @nekazanir.tr Instagram kimliği
 
 
 def _kullanici_adi(uid, token, mode):
