@@ -47,3 +47,12 @@ TAM 5 etiket, sonuncusu #dükkanhesabı.
 Satırların `f` değeri = o kalemin adının `say` içindeki kelime sırası / toplam kelime (biraz önce). Elle tahmin etme; bir satırın kalemi
 cümlede hangi kelimeyle geçiyorsa onun yerine göre hesapla (örnek: tools/bolum_uret.py ile üretip küçük bir betikle `f`'leri düzelt).
 `total.f` ≈ (kelime sayısı − 1) / kelime sayısı ("Kalan?" kelimesine denk gelsin).
+
+## Haftalık trend raporu (last30days)
+Her pazartesi blackwolf0133/cop-adamla-tarih deposundaki "Trend araştırma" iş akışı `dukkan.md` raporunu üretir. Yazmadan önce oku:
+```bash
+TAG=$(gh api "repos/blackwolf0133/cop-adamla-tarih/releases?per_page=20" --jq '[.[]|select(.tag_name|startswith("trend-"))][0].tag_name')
+ID=$(gh api "repos/blackwolf0133/cop-adamla-tarih/releases/tags/$TAG" --jq '.assets[]|select(.name=="dukkan.md").id')
+gh api -H "Accept: application/octet-stream" "repos/blackwolf0133/cop-adamla-tarih/releases/assets/$ID" > /tmp/trend.md
+```
+(İlk rapor 16 Kasım'dan sonra çıkar; yoksa bu adımı atla.)
