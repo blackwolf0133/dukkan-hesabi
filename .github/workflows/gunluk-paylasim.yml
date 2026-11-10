@@ -65,7 +65,7 @@ jobs:
           # Gemini çalışmazsa motor otomatik olarak Chatterbox'a, o da olmazsa Piper'a düşer.
           if [ -n "$GEMINI_API_KEY" ] && { [ -f assets/voice/gemini ] || [ "${{ inputs.sadece_video }}" = "true" ]; }; then
             echo "TTS_ENGINE=gemini" >> "$GITHUB_ENV"
-            echo "Gemini ($(cat assets/voice/gemini_ses 2>/dev/null || echo Sadachbia)) sesiyle seslendirilecek."
+            echo "Gemini ($(cat assets/voice/gemini_ses 2>/dev/null || echo Achird)) sesiyle seslendirilecek."
           fi
 
       - name: Ses modeli (önbellek)
@@ -94,7 +94,7 @@ jobs:
           GEMINI_TEMPO: "1.05"
           VOICE_TEMPO: "1.3"   # kendi sesinin okuma hızı (1.0 = kayıttaki hız)
         run: |
-          export GEMINI_VOICE="$(cat assets/voice/gemini_ses 2>/dev/null || echo Sadachbia)"
+          export GEMINI_VOICE="$(cat assets/voice/gemini_ses 2>/dev/null || echo Achird)"
           python daily.py render
           if grep -q "skip=true" "$GITHUB_OUTPUT"; then exit 0; fi
           echo "bolum=$(python -c "import json;print(json.load(open('output/today.json'))['id'])")" >> "$GITHUB_OUTPUT"
