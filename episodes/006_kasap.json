@@ -1,0 +1,311 @@
+{
+ "id": "006",
+ "series": "DÜKKÂN HESABI",
+ "title": "Kasap Açsak Ne Kazanırız?",
+ "country": {
+  "name": "Kasap"
+ },
+ "kaynaklar": [
+  "Kasapta dana kıyma 1.000 TL/kg (sozcu.com.tr 24.01.2026); online 730-1.100 TL/kg (karekod.org 06.09.2026); karışık satış ortalaması 950 TL örnek",
+  "Dana karkas UKON Türkiye ortalaması 588,44 TL/kg (karekod.org, 3 Eylül 2026 verisi); üretici kesim fiyatı 550-660 TL (habergazetesi.com.tr 28.07.2026); 600 TL ve %78 satılabilir et örnek varsayım",
+  "Kredi kartı peşin işlem komisyon tavanı %3,56 + BSMV ≈ %3,74 (turkiyegazetesi.com.tr 10.09.2026, paketmaster.com Kasım 2026)",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "Satış miktarı, kira, elektrik, vergi ve kartla satış oranı (%70) örnek varsayımdır; ters köşe: 1.482.000 × %70 × %3,74 = 38.798 → kalan 77.202 ≈ 77 bin"
+ ],
+ "instagram_caption": "Kasap ayda ne kazanır? 🥩\n\nCiro milyonu geçiyor ama et alımı düşünce iş değişiyor. Kalfa, kira, soğuk oda… Hepsini düştük. Sondaki kart hesabı kimsenin aklına gelmiyor.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSen kasapta kartla mı ödüyorsun, nakit mi? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kasap #et #esnaf #ekonomi #dükkanhesabı",
+ "scenes": [
+  {
+   "say": "Kasabın cirosu milyonu geçer ama cebi? Mahallede bir kasap açsak, ayda bize kaç lira kalır? Hesaplayalım!",
+   "text": "Kasabın cirosu milyonu geçer ama cebi? Mahallede bir kasap açsak, ayda bize kaç lira kalır? Hesaplayalım!",
+   "voice_delay": 0.3,
+   "emotion": "şaşkın",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "wave",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.45,
+      "pose": "think",
+      "face": "think"
+     },
+     {
+      "f": 0.8,
+      "pose": "point",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "KASAP!",
+     "x": 0.27,
+     "y": 0.14,
+     "size": 110,
+     "f": 0.0,
+     "rot": -10,
+     "until_f": 0.55
+    },
+    {
+     "type": "pop",
+     "text": "NE KALIR?",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 104,
+     "f": 0.6,
+     "rot": 5
+    }
+   ]
+  },
+  {
+   "say": "Kasapta dana kıymanın kilosu 1000 lirayı buldu. Karışık satışta kilo başı 950 diyelim.",
+   "text": "Kasapta dana kıyma kilosu 1.000 ₺'yi buldu. Karışık satış: kilo başı 950 ₺ diyelim.",
+   "bg": "dukkan",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Kasap",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "KİLO BAŞI",
+     "value": 950,
+     "color": "gold",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Günde 60 kilo et, ayda 26 gün. Kasaya giren: 1 milyon 482 bin lira!",
+   "text": "Günde 60 kilo, 26 gün. Kasaya giren: 1.482.000 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 1482000,
+     "color": "green",
+     "x": 0.55,
+     "y": 0.28,
+     "f": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Giderler. Kemiği, yağıyla 2 ton karkas et 1 milyon 200 bin. Kalfa 41 bin. Kira 50 bin. Soğuk odanın elektriği 20 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 45 bin. Kalan?",
+   "text": "2 ton karkas 1.200.000. Kalfa 41 bin. Kira 50 bin. Elektrik 20 bin. Bağ-Kur 10 bin. Vergi + muhasebe 45 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 1482000,
+       "f": 0.0
+      },
+      {
+       "ad": "Karkas et",
+       "tutar": -1200000,
+       "f": 0.023
+      },
+      {
+       "ad": "Kalfa",
+       "tutar": -41000,
+       "f": 0.345
+      },
+      {
+       "ad": "Kira",
+       "tutar": -50000,
+       "f": 0.442
+      },
+      {
+       "ad": "Elektrik",
+       "tutar": -20000,
+       "f": 0.539
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.7
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -45000,
+       "f": 0.797
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 116000,
+      "f": 0.968
+     }
+    }
+   ]
+  },
+  {
+   "say": "116 bin. Kasaya giren her 100 liranın yaklaşık 8 lirası kasaba kalıyor.",
+   "text": "116 bin. Kasaya giren her 100 liranın ~8 lirası kasaba kalıyor.",
+   "bg": "dukkan",
+   "emotion": "şaşkın",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "shock",
+     "face": "shock",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Kasap",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "100 LİRADAN",
+     "value": 8,
+     "color": "red",
+     "x": 0.62,
+     "y": 0.2,
+     "scale": 0.9,
+     "f": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Bir de kart var. Komisyon vergisiyle yüzde 3 buçuğu geçiyor. Satışın yüzde 70'i kartla olursa, kalan 116 binden 77 bine iner.",
+   "text": "Kart komisyonu %3,5'i geçiyor! Satışın %70'i kartla olursa kalan 116 binden 77 bine iner.",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "HEP NAKİT",
+     "value": 116000,
+     "color": "green",
+     "x": 0.5,
+     "y": 0.22,
+     "scale": 0.85,
+     "f": 0.2
+    },
+    {
+     "type": "rakam",
+     "label": "%70 KARTLA",
+     "value": 77000,
+     "color": "red",
+     "x": 0.5,
+     "y": 0.55,
+     "scale": 0.85,
+     "f": 0.62
+    }
+   ]
+  },
+  {
+   "say": "Yani kasapta ciro şişman, kâr yağsız.",
+   "text": "Kasapta ciro şişman, kâr yağsız.",
+   "bg": "dukkan",
+   "emotion": "sakin",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.2,
+     "pose": "hips",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Kasap",
+     "delay": 0.0
+    },
+    {
+     "type": "pop",
+     "text": "KÂR YAĞSIZ",
+     "x": 0.55,
+     "y": 0.18,
+     "size": 78,
+     "f": 0.3,
+     "rot": -4
+    },
+    {
+     "type": "sfx",
+     "name": "rimshot",
+     "f": 0.95
+    }
+   ]
+  },
+  {
+   "say": "Rakamlar örnek, sen kasapta kartla mı ödüyorsun, nakit mi? Yarın akşam: pideci açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Sen kasapta kartla mı ödüyorsun? Yarın: Pideci açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.5,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: PİDECİ",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.55,
+     "rot": -4
+    }
+   ]
+  }
+ ]
+}
