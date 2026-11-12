@@ -56,3 +56,12 @@ ID=$(gh api "repos/blackwolf0133/cop-adamla-tarih/releases/tags/$TAG" --jq '.ass
 gh api -H "Accept: application/octet-stream" "repos/blackwolf0133/cop-adamla-tarih/releases/assets/$ID" > /tmp/trend.md
 ```
 (İlk rapor 16 Kasım'dan sonra çıkar; yoksa bu adımı atla.)
+
+
+## 12 Kasım güncellemesi: KAZANÇ + AMA kancası (ZORUNLU)
+İlk 2 bölümde izleyici ortalama 7-12 sn'de kaydırdı (rakam 50. saniyedeydi). Yeni yapı (6 sahne, ~45 sn):
+1. **Kanca (0. sn):** `say` = "<Dükkân> ayda <KALAN> bin lira bırakıyor. Ama <ters köşeyi ele vermeden ima eden yarım cümle>."
+   Görsel: bg "dukkan" + tabela + `rakam` (label "AYDA KALAN", value=KALAN, color green, x 0.58, y 0.12, scale 0.9, f 0.0) +
+   `pop` "AMA…" (x 0.72, y 0.45, size 120, f ≈ "Ama" kelimesinin konumu) + narrator (x 0.32, scale 1.05, pose point → think).
+2. Fiyat (eski sahne 1) · 3. Ciro (eski 2) · 4. Fiş (eski 3) · 5. Ters köşe (eski 5) · 6. Kapanış + "Yarın akşam: X" (eski 7).
+Eski "KALAN açıklama" ve "ders" sahneleri yok. Bölüm JSON'una `"kanca_v2": true` yaz.

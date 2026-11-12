@@ -1,310 +1,244 @@
 {
- "id": "004",
- "series": "DÜKKÂN HESABI",
- "title": "Çay Ocağı Açsak Ne Kazanırız?",
- "country": {
-  "name": "Çay Ocağı"
- },
- "kaynaklar": [
-  "Bursa Kahveciler ve Benzerleri Odası 2026-2027 azami tarifesi: çay ocağında çay 22,50 TL (milligazete.com.tr 03.07.2026, bursahakimiyet.com.tr 02.07.2026)",
-  "Kuru çay kg 295-310 TL (iscihaber.net, Haziran 2026); bardak başı çay+şeker+su+bardak kırığı ~3 TL örnek hesap",
-  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
-  "Bardak sayısı, kira, tüp-elektrik, vergi ve veresiye oranı (%20) örnek varsayımdır; ters köşe: 286.000 × %20 = 57.200 TL, 135.000 − 57.200 = 77.800 ≈ 78 bin"
- ],
- "instagram_caption": "Çaycı ayda ne kazanır? ☕\n\nBardağı 20 lira, günde 550 bardak… Çırak, kira, çay, şeker hepsini düştük. Asıl sürpriz o küçük defterde.\n\n(Rakamlar örnek hesaptır; semte ve dükkâna göre değişir.)\n\nSenin oralarda bir bardak çay kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#çay #çayocağı #esnaf #ekonomi #dükkanhesabı",
- "scenes": [
-  {
-   "say": "Bir bardak çay 20 lira. Peki iş hanında bir çay ocağı açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
-   "text": "Bir bardak çay 20 lira. Peki iş hanında bir çay ocağı açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
-   "voice_delay": 0.3,
-   "emotion": "şaşkın",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "wave",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.45,
-      "pose": "think",
-      "face": "think"
-     },
-     {
-      "f": 0.8,
-      "pose": "point",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
+  "id": "004",
+  "series": "DÜKKÂN HESABI",
+  "title": "Çay Ocağı Açsak Ne Kazanırız?",
+  "country": {
+    "name": "Çay Ocağı"
+  },
+  "kaynaklar": [
+    "Bursa Kahveciler ve Benzerleri Odası 2026-2027 azami tarifesi: çay ocağında çay 22,50 TL (milligazete.com.tr 03.07.2026, bursahakimiyet.com.tr 02.07.2026)",
+    "Kuru çay kg 295-310 TL (iscihaber.net, Haziran 2026); bardak başı çay+şeker+su+bardak kırığı ~3 TL örnek hesap",
+    "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+    "Bardak sayısı, kira, tüp-elektrik, vergi ve veresiye oranı (%20) örnek varsayımdır; ters köşe: 286.000 × %20 = 57.200 TL, 135.000 − 57.200 = 77.800 ≈ 78 bin"
+  ],
+  "instagram_caption": "Çaycı ayda ne kazanır? ☕\n\nBardağı 20 lira, günde 550 bardak… Çırak, kira, çay, şeker hepsini düştük. Asıl sürpriz o küçük defterde.\n\n(Rakamlar örnek hesaptır; semte ve dükkâna göre değişir.)\n\nSenin oralarda bir bardak çay kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#çay #çayocağı #esnaf #ekonomi #dükkanhesabı",
+  "scenes": [
     {
-     "type": "pop",
-     "text": "ÇAY OCAĞI!",
-     "x": 0.27,
-     "y": 0.14,
-     "size": 110,
-     "f": 0.0,
-     "rot": -10,
-     "until_f": 0.55
+      "say": "Çay ocağı ayda 135 bin lira bırakıyor. Ama bir veresiye defteri bunun neredeyse yarısını yiyor.",
+      "text": "Çay ocağı ayda 135 bin lira bırakıyor. Ama bir veresiye defteri bunun neredeyse yarısını yiyor.",
+      "voice_delay": 0.0,
+      "emotion": "şaşkın",
+      "bg": "dukkan",
+      "narrator": {
+        "x": 0.32,
+        "y": 0.97,
+        "scale": 1.05,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.55,
+            "pose": "think",
+            "face": "think"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Çay Ocağı",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "AYDA KALAN",
+          "value": 135000,
+          "color": "green",
+          "x": 0.58,
+          "y": 0.12,
+          "scale": 0.9,
+          "f": 0.0
+        },
+        {
+          "type": "pop",
+          "text": "AMA…",
+          "x": 0.72,
+          "y": 0.45,
+          "size": 120,
+          "f": 0.52,
+          "rot": -6
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "NE KALIR?",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 104,
-     "f": 0.6,
-     "rot": 5
-    }
-   ]
-  },
-  {
-   "say": "Bursa'da oda tarifesi, çay ocağında bir bardak çaya 22 buçuk lira tavan koyuyor. Biz 20 lira diyelim.",
-   "text": "Bursa oda tarifesi: çay ocağında bardak 22,50 ₺ tavan. Biz 20 lira diyelim.",
-   "bg": "dukkan",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Çay Ocağı",
-     "delay": 0.0
+      "say": "Bursa'da oda tarifesi, çay ocağında bir bardak çaya 22 buçuk lira tavan koyuyor. Biz 20 lira diyelim.",
+      "text": "Bursa oda tarifesi: çay ocağında bardak 22,50 ₺ tavan. Biz 20 lira diyelim.",
+      "bg": "dukkan",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.2,
+          "pose": "hips",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Çay Ocağı",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "BİR BARDAK ÇAY",
+          "value": 20,
+          "color": "gold",
+          "x": 0.62,
+          "y": 0.2,
+          "scale": 0.85,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "BİR BARDAK ÇAY",
-     "value": 20,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.85,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Dükkânlara günde 550 bardak, ayda 26 gün. Kasaya girecek olan: 286 bin lira!",
-   "text": "Günde 550 bardak, ayda 26 gün. Kasaya girecek: 286.000 ₺!",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.18,
-     "pose": "open",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "AYLIK CİRO",
-     "value": 286000,
-     "color": "green",
-     "x": 0.55,
-     "y": 0.28,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Giderler. Tepsiyi taşıyan çırağın maliyeti 41 bin. Küçük bir köşe, kira 25 bin. Çay, şeker, su 43 bin. Tüp ve elektrik 12 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 20 bin. Kalan?",
-   "text": "Çırak 41 bin. Kira 25 bin. Çay + şeker + su 43 bin. Tüp + elektrik 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 20 bin. Kalan?",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.14,
-     "pose": "think",
-     "face": "think",
-     "scale": 0.9
-    }
-   ],
-   "props": [
-    {
-     "type": "fis",
-     "title": "AYLIK HESAP",
-     "x": 0.6,
-     "y": 0.47,
-     "scale": 0.9,
-     "rows": [
-      {
-       "ad": "Ciro",
-       "tutar": 286000,
-       "f": 0.0
-      },
-      {
-       "ad": "Çırak",
-       "tutar": -41000,
-       "f": 0.022
-      },
-      {
-       "ad": "Kira",
-       "tutar": -25000,
-       "f": 0.209
-      },
-      {
-       "ad": "Çay+şeker",
-       "tutar": -43000,
-       "f": 0.397
-      },
-      {
-       "ad": "Tüp+elek.",
-       "tutar": -12000,
-       "f": 0.553
-      },
-      {
-       "ad": "Bağ-Kur",
-       "tutar": -10000,
-       "f": 0.709
-      },
-      {
-       "ad": "Vergi+muh.",
-       "tutar": -20000,
-       "f": 0.803
-      }
-     ],
-     "total": {
-      "ad": "KALAN",
-      "tutar": 135000,
-      "f": 0.969
-     }
-    }
-   ]
-  },
-  {
-   "say": "135 bin! Bardak başına yaklaşık 9 lira kâr. Ama sabah 7'den akşam 7'ye merdivende.",
-   "text": "135 bin! Bardak başına ~9 lira kâr. Ama sabah 7'den akşam 7'ye merdivende.",
-   "bg": "dukkan",
-   "emotion": "şaşkın",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "shock",
-     "face": "shock",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Çay Ocağı",
-     "delay": 0.0
+      "say": "Dükkânlara günde 550 bardak, ayda 26 gün. Kasaya girecek olan: 286 bin lira!",
+      "text": "Günde 550 bardak, ayda 26 gün. Kasaya girecek: 286.000 ₺!",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.18,
+          "pose": "open",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "AYLIK CİRO",
+          "value": 286000,
+          "color": "green",
+          "x": 0.55,
+          "y": 0.28,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "BARDAK BAŞI KÂR",
-     "value": 9,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.9,
-     "f": 0.6
-    }
-   ]
-  },
-  {
-   "say": "Asıl mesele defter. Hesapların çoğu ay sonu ödeniyor. Bardakların beşte biri hiç ödenmezse, kalan 135 binden yaklaşık 78 bine iner.",
-   "text": "Asıl mesele defter! Bardakların 5'te 1'i ödenmezse kalan 135 binden ~78 bine iner.",
-   "bg": "kasa",
-   "actors": [],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "HEPSİ ÖDENİRSE",
-     "value": 135000,
-     "color": "green",
-     "x": 0.5,
-     "y": 0.22,
-     "scale": 0.85,
-     "f": 0.2
+      "say": "Giderler. Tepsiyi taşıyan çırağın maliyeti 41 bin. Küçük bir köşe, kira 25 bin. Çay, şeker, su 43 bin. Tüp ve elektrik 12 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 20 bin. Kalan?",
+      "text": "Çırak 41 bin. Kira 25 bin. Çay + şeker + su 43 bin. Tüp + elektrik 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 20 bin. Kalan?",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.14,
+          "pose": "think",
+          "face": "think",
+          "scale": 0.9
+        }
+      ],
+      "props": [
+        {
+          "type": "fis",
+          "title": "AYLIK HESAP",
+          "x": 0.6,
+          "y": 0.47,
+          "scale": 0.9,
+          "rows": [
+            {
+              "ad": "Ciro",
+              "tutar": 286000,
+              "f": 0.0
+            },
+            {
+              "ad": "Çırak",
+              "tutar": -41000,
+              "f": 0.022
+            },
+            {
+              "ad": "Kira",
+              "tutar": -25000,
+              "f": 0.209
+            },
+            {
+              "ad": "Çay+şeker",
+              "tutar": -43000,
+              "f": 0.397
+            },
+            {
+              "ad": "Tüp+elek.",
+              "tutar": -12000,
+              "f": 0.553
+            },
+            {
+              "ad": "Bağ-Kur",
+              "tutar": -10000,
+              "f": 0.709
+            },
+            {
+              "ad": "Vergi+muh.",
+              "tutar": -20000,
+              "f": 0.803
+            }
+          ],
+          "total": {
+            "ad": "KALAN",
+            "tutar": 135000,
+            "f": 0.969
+          }
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "VERESİYE BATARSA",
-     "value": 78000,
-     "color": "red",
-     "x": 0.5,
-     "y": 0.55,
-     "scale": 0.85,
-     "f": 0.62
-    }
-   ]
-  },
-  {
-   "say": "Yani çaycının kazancı demlikte değil, defterin kapanmasında.",
-   "text": "Çaycının kazancı demlikte değil, defterin kapanmasında.",
-   "bg": "dukkan",
-   "emotion": "sakin",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Çay Ocağı",
-     "delay": 0.0
+      "say": "Asıl mesele defter. Hesapların çoğu ay sonu ödeniyor. Bardakların beşte biri hiç ödenmezse, kalan 135 binden yaklaşık 78 bine iner.",
+      "text": "Asıl mesele defter! Bardakların 5'te 1'i ödenmezse kalan 135 binden ~78 bine iner.",
+      "bg": "kasa",
+      "actors": [],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "HEPSİ ÖDENİRSE",
+          "value": 135000,
+          "color": "green",
+          "x": 0.5,
+          "y": 0.22,
+          "scale": 0.85,
+          "f": 0.2
+        },
+        {
+          "type": "rakam",
+          "label": "VERESİYE BATARSA",
+          "value": 78000,
+          "color": "red",
+          "x": 0.5,
+          "y": 0.55,
+          "scale": 0.85,
+          "f": 0.62
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "DEFTERİ KAPAT",
-     "x": 0.55,
-     "y": 0.18,
-     "size": 78,
-     "f": 0.3,
-     "rot": -4
-    },
-    {
-     "type": "sfx",
-     "name": "rimshot",
-     "f": 0.95
+      "say": "Rakamlar örnek, sen olsan veresiyeyi keser miydin? Yarın akşam: lastikçi açsak ne kazanırız?",
+      "text": "Rakamlar örnek. Sen olsan veresiyeyi keser miydin? Yarın: Lastikçi açsak ne kazanırız?",
+      "emotion": "mutlu",
+      "narrator": {
+        "x": 0.5,
+        "y": 0.97,
+        "scale": 1.6,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.5,
+            "pose": "wave",
+            "face": "wink"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "pop",
+          "text": "YARIN: LASTİKÇİ",
+          "x": 0.5,
+          "y": 0.13,
+          "size": 92,
+          "f": 0.55,
+          "rot": -4
+        }
+      ]
     }
-   ]
-  },
-  {
-   "say": "Rakamlar örnek, sen olsan veresiyeyi keser miydin? Yarın akşam: lastikçi açsak ne kazanırız?",
-   "text": "Rakamlar örnek. Sen olsan veresiyeyi keser miydin? Yarın: Lastikçi açsak ne kazanırız?",
-   "emotion": "mutlu",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "point",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.5,
-      "pose": "wave",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
-    {
-     "type": "pop",
-     "text": "YARIN: LASTİKÇİ",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 92,
-     "f": 0.55,
-     "rot": -4
-    }
-   ]
-  }
- ]
+  ],
+  "kanca_v2": true
 }

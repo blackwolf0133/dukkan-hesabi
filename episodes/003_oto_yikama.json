@@ -1,310 +1,244 @@
 {
- "id": "003",
- "series": "DÜKKÂN HESABI",
- "title": "Oto Yıkama Açsak Ne Kazanırız?",
- "country": {
-  "name": "Oto Yıkama"
- },
- "kaynaklar": [
-  "Oto yıkamada iç-dış yıkama 500-1.200 TL (ntv.com.tr, habergazetesi.com.tr)",
-  "1 L konsantre oto şampuanı 280-700 TL, ~20 yıkama (araclo.com, Eylül 2026); araç başı malzeme ~60 TL örnek",
-  "2026 asgari ücretin işverene maliyeti 40.874,63 TL; en düşük indirimli Bağ-Kur 10.156,73 TL",
-  "Araç sayısı, kira, su-elektrik, vergi ve kış düşüşü örnek varsayımdır"
- ],
- "instagram_caption": "İç-dış yıkama 500 ile 1.200 lira arası. Peki bir oto yıkamacının cebine ayda ne kalıyor? 🚗💦\n\nÜç çalışan, kira, su, şampuan… Hepsini düştük. Asıl sürpriz havada: yağmur yağınca ne oluyor?\n\n(Rakamlar örnek hesaptır; semte ve işletmeye göre değişir.)\n\nSen arabanı en son kaça yıkattın? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#otoyıkama #esnaf #araba #ekonomi #dükkanhesabı",
- "scenes": [
-  {
-   "say": "Bir oto yıkama açsak, ayda cebimize ne kalır? Köpüğü bol, hesabı net. Hesaplayalım!",
-   "text": "Bir oto yıkama açsak, ayda cebimize ne kalır? Köpüğü bol, hesabı net. Hesaplayalım!",
-   "voice_delay": 0.3,
-   "emotion": "şaşkın",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "wave",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.45,
-      "pose": "think",
-      "face": "think"
-     },
-     {
-      "f": 0.8,
-      "pose": "point",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
+  "id": "003",
+  "series": "DÜKKÂN HESABI",
+  "title": "Oto Yıkama Açsak Ne Kazanırız?",
+  "country": {
+    "name": "Oto Yıkama"
+  },
+  "kaynaklar": [
+    "Oto yıkamada iç-dış yıkama 500-1.200 TL (ntv.com.tr, habergazetesi.com.tr)",
+    "1 L konsantre oto şampuanı 280-700 TL, ~20 yıkama (araclo.com, Eylül 2026); araç başı malzeme ~60 TL örnek",
+    "2026 asgari ücretin işverene maliyeti 40.874,63 TL; en düşük indirimli Bağ-Kur 10.156,73 TL",
+    "Araç sayısı, kira, su-elektrik, vergi ve kış düşüşü örnek varsayımdır"
+  ],
+  "instagram_caption": "İç-dış yıkama 500 ile 1.200 lira arası. Peki bir oto yıkamacının cebine ayda ne kalıyor? 🚗💦\n\nÜç çalışan, kira, su, şampuan… Hepsini düştük. Asıl sürpriz havada: yağmur yağınca ne oluyor?\n\n(Rakamlar örnek hesaptır; semte ve işletmeye göre değişir.)\n\nSen arabanı en son kaça yıkattın? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#otoyıkama #esnaf #araba #ekonomi #dükkanhesabı",
+  "scenes": [
     {
-     "type": "pop",
-     "text": "OTO YIKAMA!",
-     "x": 0.27,
-     "y": 0.14,
-     "size": 110,
-     "f": 0.0,
-     "rot": -10,
-     "until_f": 0.55
+      "say": "Oto yıkama ayda 193 bin lira bırakıyor. Ama tek bir yağmurlu ay neredeyse hepsini siliyor.",
+      "text": "Oto yıkama ayda 193 bin lira bırakıyor. Ama tek bir yağmurlu ay neredeyse hepsini siliyor.",
+      "voice_delay": 0.0,
+      "emotion": "şaşkın",
+      "bg": "dukkan",
+      "narrator": {
+        "x": 0.32,
+        "y": 0.97,
+        "scale": 1.05,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.55,
+            "pose": "think",
+            "face": "think"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Oto Yıkama",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "AYDA KALAN",
+          "value": 193000,
+          "color": "green",
+          "x": 0.58,
+          "y": 0.12,
+          "scale": 0.9,
+          "f": 0.0
+        },
+        {
+          "type": "pop",
+          "text": "AMA…",
+          "x": 0.72,
+          "y": 0.45,
+          "size": 120,
+          "f": 0.52,
+          "rot": -6
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "NE KALIR?",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 104,
-     "f": 0.6,
-     "rot": 5
-    }
-   ]
-  },
-  {
-   "say": "İç dış yıkama 500 ile 1200 lira arası. Biz ortalama 800 diyelim.",
-   "text": "İç-dış yıkama 500 ile 1.200 lira arası. Biz ortalama 800 diyelim.",
-   "bg": "dukkan",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Oto Yıkama",
-     "delay": 0.0
+      "say": "İç dış yıkama 500 ile 1200 lira arası. Biz ortalama 800 diyelim.",
+      "text": "İç-dış yıkama 500 ile 1.200 lira arası. Biz ortalama 800 diyelim.",
+      "bg": "dukkan",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.2,
+          "pose": "hips",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Oto Yıkama",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "ORTALAMA YIKAMA",
+          "value": 800,
+          "color": "gold",
+          "x": 0.62,
+          "y": 0.2,
+          "scale": 0.85,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "ORTALAMA YIKAMA",
-     "value": 800,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.85,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Günde 25 araba, ayda 26 gün. Kasaya giren: 520 bin lira!",
-   "text": "Günde 25 araba, ayda 26 gün. Kasaya giren: 520.000 ₺!",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.18,
-     "pose": "open",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "AYLIK CİRO",
-     "value": 520000,
-     "color": "green",
-     "x": 0.55,
-     "y": 0.28,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Giderler: Üç yıkamacının maliyeti 123 bin. Geniş bir alan lazım, kira 70 bin. Şampuan, cila, bez 39 bin. Su ve elektrik 25 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 60 bin. Kalan?",
-   "text": "3 yıkamacı 123 bin. Kira 70 bin. Malzeme 39 bin. Su + elektrik 25 bin. Bağ-Kur 10 bin. Vergi + muhasebe 60 bin. Kalan?",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.14,
-     "pose": "think",
-     "face": "think",
-     "scale": 0.9
-    }
-   ],
-   "props": [
-    {
-     "type": "fis",
-     "title": "AYLIK HESAP",
-     "x": 0.6,
-     "y": 0.47,
-     "scale": 0.9,
-     "rows": [
-      {
-       "ad": "Ciro",
-       "tutar": 520000,
-       "f": 0.0
-      },
-      {
-       "ad": "Personel",
-       "tutar": -123000,
-       "f": 0.047
-      },
-      {
-       "ad": "Kira",
-       "tutar": -70000,
-       "f": 0.297
-      },
-      {
-       "ad": "Malzeme",
-       "tutar": -39000,
-       "f": 0.391
-      },
-      {
-       "ad": "Su+elek.",
-       "tutar": -25000,
-       "f": 0.547
-      },
-      {
-       "ad": "Bağ-Kur",
-       "tutar": -10000,
-       "f": 0.703
-      },
-      {
-       "ad": "Vergi+muh.",
-       "tutar": -60000,
-       "f": 0.797
-      }
-     ],
-     "total": {
-      "ad": "KALAN",
-      "tutar": 193000,
-      "f": 0.963
-     }
-    }
-   ]
-  },
-  {
-   "say": "193 bin! Araba başına yaklaşık 300 lira kâr. Yazın kuyruk varsa iş tıkırında.",
-   "text": "193 bin! Araba başına yaklaşık 300 lira kâr. Yazın kuyruk varsa iş tıkırında.",
-   "bg": "dukkan",
-   "emotion": "şaşkın",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "shock",
-     "face": "shock",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Oto Yıkama",
-     "delay": 0.0
+      "say": "Günde 25 araba, ayda 26 gün. Kasaya giren: 520 bin lira!",
+      "text": "Günde 25 araba, ayda 26 gün. Kasaya giren: 520.000 ₺!",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.18,
+          "pose": "open",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "AYLIK CİRO",
+          "value": 520000,
+          "color": "green",
+          "x": 0.55,
+          "y": 0.28,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "ARABA BAŞI KÂR",
-     "value": 300,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.9,
-     "f": 0.6
-    }
-   ]
-  },
-  {
-   "say": "Ama asıl patron gökyüzü. Yağmurlu bir ayda günde 25 değil 15 araba gelirse, kalan 193 binden 30 bine iner.",
-   "text": "Asıl patron gökyüzü! Yağmurda günde 15 araba gelirse kalan 193 binden 30 bine iner.",
-   "bg": "kasa",
-   "actors": [],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "GÜNDE 25 ARABA",
-     "value": 193000,
-     "color": "green",
-     "x": 0.5,
-     "y": 0.22,
-     "scale": 0.85,
-     "f": 0.2
+      "say": "Giderler: Üç yıkamacının maliyeti 123 bin. Geniş bir alan lazım, kira 70 bin. Şampuan, cila, bez 39 bin. Su ve elektrik 25 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 60 bin. Kalan?",
+      "text": "3 yıkamacı 123 bin. Kira 70 bin. Malzeme 39 bin. Su + elektrik 25 bin. Bağ-Kur 10 bin. Vergi + muhasebe 60 bin. Kalan?",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.14,
+          "pose": "think",
+          "face": "think",
+          "scale": 0.9
+        }
+      ],
+      "props": [
+        {
+          "type": "fis",
+          "title": "AYLIK HESAP",
+          "x": 0.6,
+          "y": 0.47,
+          "scale": 0.9,
+          "rows": [
+            {
+              "ad": "Ciro",
+              "tutar": 520000,
+              "f": 0.0
+            },
+            {
+              "ad": "Personel",
+              "tutar": -123000,
+              "f": 0.047
+            },
+            {
+              "ad": "Kira",
+              "tutar": -70000,
+              "f": 0.297
+            },
+            {
+              "ad": "Malzeme",
+              "tutar": -39000,
+              "f": 0.391
+            },
+            {
+              "ad": "Su+elek.",
+              "tutar": -25000,
+              "f": 0.547
+            },
+            {
+              "ad": "Bağ-Kur",
+              "tutar": -10000,
+              "f": 0.703
+            },
+            {
+              "ad": "Vergi+muh.",
+              "tutar": -60000,
+              "f": 0.797
+            }
+          ],
+          "total": {
+            "ad": "KALAN",
+            "tutar": 193000,
+            "f": 0.963
+          }
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "GÜNDE 15 ARABA",
-     "value": 30000,
-     "color": "red",
-     "x": 0.5,
-     "y": 0.55,
-     "scale": 0.85,
-     "f": 0.62
-    }
-   ]
-  },
-  {
-   "say": "Yani oto yıkamanın kârı yazın birikir, kışın harcanır.",
-   "text": "Oto yıkamanın kârı yazın birikir, kışın harcanır.",
-   "bg": "dukkan",
-   "emotion": "sakin",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Oto Yıkama",
-     "delay": 0.0
+      "say": "Ama asıl patron gökyüzü. Yağmurlu bir ayda günde 25 değil 15 araba gelirse, kalan 193 binden 30 bine iner.",
+      "text": "Asıl patron gökyüzü! Yağmurda günde 15 araba gelirse kalan 193 binden 30 bine iner.",
+      "bg": "kasa",
+      "actors": [],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "GÜNDE 25 ARABA",
+          "value": 193000,
+          "color": "green",
+          "x": 0.5,
+          "y": 0.22,
+          "scale": 0.85,
+          "f": 0.2
+        },
+        {
+          "type": "rakam",
+          "label": "GÜNDE 15 ARABA",
+          "value": 30000,
+          "color": "red",
+          "x": 0.5,
+          "y": 0.55,
+          "scale": 0.85,
+          "f": 0.62
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "YAZ BİRİKTİR",
-     "x": 0.55,
-     "y": 0.18,
-     "size": 78,
-     "f": 0.3,
-     "rot": -4
-    },
-    {
-     "type": "sfx",
-     "name": "rimshot",
-     "f": 0.95
+      "say": "Rakamlar örnek, sen arabanı en son kaça yıkattın? Yarın akşam: çay ocağı açsak ne kazanırız?",
+      "text": "Rakamlar örnek. Sen arabanı en son kaça yıkattın? Yarın: Çay ocağı açsak ne kazanırız?",
+      "emotion": "mutlu",
+      "narrator": {
+        "x": 0.5,
+        "y": 0.97,
+        "scale": 1.6,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.5,
+            "pose": "wave",
+            "face": "wink"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "pop",
+          "text": "YARIN: ÇAY OCAĞI",
+          "x": 0.5,
+          "y": 0.13,
+          "size": 92,
+          "f": 0.55,
+          "rot": -4
+        }
+      ]
     }
-   ]
-  },
-  {
-   "say": "Rakamlar örnek, sen arabanı en son kaça yıkattın? Yarın akşam: çay ocağı açsak ne kazanırız?",
-   "text": "Rakamlar örnek. Sen arabanı en son kaça yıkattın? Yarın: Çay ocağı açsak ne kazanırız?",
-   "emotion": "mutlu",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "point",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.5,
-      "pose": "wave",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
-    {
-     "type": "pop",
-     "text": "YARIN: ÇAY OCAĞI",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 92,
-     "f": 0.55,
-     "rot": -4
-    }
-   ]
-  }
- ]
+  ],
+  "kanca_v2": true
 }

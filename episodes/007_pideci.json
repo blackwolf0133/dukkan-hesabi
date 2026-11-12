@@ -1,310 +1,244 @@
 {
- "id": "007",
- "series": "DÜKKÂN HESABI",
- "title": "Pideci Açsak Ne Kazanırız?",
- "country": {
-  "name": "Pideci"
- },
- "kaynaklar": [
-  "Kıymalı pide: zincir pidecide ortalama 240 TL (menufiyati.tr 13.06.2026); Samsun'da esnaf pidecisinde 280 TL'den, lüks salonlarda ~400 TL (habergazetesi.com.tr 16.01.2026); ayranla masa başı 300 TL örnek",
-  "Dana kıyma 730-1.100 TL/kg (karekod.org 06.09.2026); malzeme cironun %40'ı örnek varsayım",
-  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
-  "Sipariş sayısı, kira, enerji, vergi ve %20 malzeme zammı örnek varsayımdır; ters köşe: 312.000 × %20 = 62.400 → kalan 117.600 ≈ 118 bin"
- ],
- "instagram_caption": "Pideci ayda ne kazanır? 🫓\n\nGünde 100 masa, fırın hiç sönmüyor. Kıyma, kaşar, usta, doğalgaz… Hepsini düştük. Asıl tuzak menü tahtasında.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin oralarda kıymalı pide kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#pide #pideci #esnaf #ekonomi #dükkanhesabı",
- "scenes": [
-  {
-   "say": "Bir kıymalı pide, fırıncıya kaç lira bırakır? Mahallede bir pideci açsak, ayda bize ne kalır? Hesaplayalım!",
-   "text": "Bir kıymalı pide, fırıncıya kaç lira bırakır? Mahallede bir pideci açsak, ayda bize ne kalır? Hesaplayalım!",
-   "voice_delay": 0.3,
-   "emotion": "şaşkın",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "wave",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.45,
-      "pose": "think",
-      "face": "think"
-     },
-     {
-      "f": 0.8,
-      "pose": "point",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
+  "id": "007",
+  "series": "DÜKKÂN HESABI",
+  "title": "Pideci Açsak Ne Kazanırız?",
+  "country": {
+    "name": "Pideci"
+  },
+  "kaynaklar": [
+    "Kıymalı pide: zincir pidecide ortalama 240 TL (menufiyati.tr 13.06.2026); Samsun'da esnaf pidecisinde 280 TL'den, lüks salonlarda ~400 TL (habergazetesi.com.tr 16.01.2026); ayranla masa başı 300 TL örnek",
+    "Dana kıyma 730-1.100 TL/kg (karekod.org 06.09.2026); malzeme cironun %40'ı örnek varsayım",
+    "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+    "Sipariş sayısı, kira, enerji, vergi ve %20 malzeme zammı örnek varsayımdır; ters köşe: 312.000 × %20 = 62.400 → kalan 117.600 ≈ 118 bin"
+  ],
+  "instagram_caption": "Pideci ayda ne kazanır? 🫓\n\nGünde 100 masa, fırın hiç sönmüyor. Kıyma, kaşar, usta, doğalgaz… Hepsini düştük. Asıl tuzak menü tahtasında.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin oralarda kıymalı pide kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#pide #pideci #esnaf #ekonomi #dükkanhesabı",
+  "scenes": [
     {
-     "type": "pop",
-     "text": "PIDECI!",
-     "x": 0.27,
-     "y": 0.14,
-     "size": 110,
-     "f": 0.0,
-     "rot": -10,
-     "until_f": 0.55
+      "say": "Pideci ayda 180 bin lira bırakıyor. Ama tek bir kıyma zammı bunun 62 binini götürüyor.",
+      "text": "Pideci ayda 180 bin lira bırakıyor. Ama tek bir kıyma zammı bunun 62 binini götürüyor.",
+      "voice_delay": 0.0,
+      "emotion": "şaşkın",
+      "bg": "dukkan",
+      "narrator": {
+        "x": 0.32,
+        "y": 0.97,
+        "scale": 1.05,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.55,
+            "pose": "think",
+            "face": "think"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Pide Salonu",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "AYDA KALAN",
+          "value": 180000,
+          "color": "green",
+          "x": 0.58,
+          "y": 0.12,
+          "scale": 0.9,
+          "f": 0.0
+        },
+        {
+          "type": "pop",
+          "text": "AMA…",
+          "x": 0.72,
+          "y": 0.45,
+          "size": 120,
+          "f": 0.52,
+          "rot": -6
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "NE KALIR?",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 104,
-     "f": 0.6,
-     "rot": 5
-    }
-   ]
-  },
-  {
-   "say": "Kıymalı pide 240 ile 400 lira arası. Ayranıyla masa başı ortalama 300 diyelim.",
-   "text": "Kıymalı pide 240-400 ₺. Ayranıyla masa başı ortalama 300 ₺ diyelim.",
-   "bg": "dukkan",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Pide Salonu",
-     "delay": 0.0
+      "say": "Kıymalı pide 240 ile 400 lira arası. Ayranıyla masa başı ortalama 300 diyelim.",
+      "text": "Kıymalı pide 240-400 ₺. Ayranıyla masa başı ortalama 300 ₺ diyelim.",
+      "bg": "dukkan",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.2,
+          "pose": "hips",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Pide Salonu",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "MASA BAŞI",
+          "value": 300,
+          "color": "gold",
+          "x": 0.62,
+          "y": 0.2,
+          "scale": 0.85,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "MASA BAŞI",
-     "value": 300,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.85,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Günde 100 sipariş, ayda 26 gün. Kasaya giren: 780 bin lira!",
-   "text": "Günde 100 sipariş, 26 gün. Kasaya giren: 780.000 ₺!",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.18,
-     "pose": "open",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "AYLIK CİRO",
-     "value": 780000,
-     "color": "green",
-     "x": 0.55,
-     "y": 0.28,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Giderler. Kıyma, un, kaşar, ayran 312 bin. Usta ve iki garson 123 bin. Kira 60 bin. Fırının doğalgazı, elektriği 40 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 55 bin. Kalan?",
-   "text": "Malzeme 312 bin. Usta + 2 garson 123 bin. Kira 60 bin. Doğalgaz + elektrik 40 bin. Bağ-Kur 10 bin. Vergi + muhasebe 55 bin. Kalan?",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.14,
-     "pose": "think",
-     "face": "think",
-     "scale": 0.9
-    }
-   ],
-   "props": [
-    {
-     "type": "fis",
-     "title": "AYLIK HESAP",
-     "x": 0.6,
-     "y": 0.47,
-     "scale": 0.9,
-     "rows": [
-      {
-       "ad": "Ciro",
-       "tutar": 780000,
-       "f": 0.0
-      },
-      {
-       "ad": "Malzeme",
-       "tutar": -312000,
-       "f": 0.023
-      },
-      {
-       "ad": "Personel",
-       "tutar": -123000,
-       "f": 0.223
-      },
-      {
-       "ad": "Kira",
-       "tutar": -60000,
-       "f": 0.423
-      },
-      {
-       "ad": "Enerji",
-       "tutar": -40000,
-       "f": 0.523
-      },
-      {
-       "ad": "Bağ-Kur",
-       "tutar": -10000,
-       "f": 0.69
-      },
-      {
-       "ad": "Vergi+muh.",
-       "tutar": -55000,
-       "f": 0.79
-      }
-     ],
-     "total": {
-      "ad": "KALAN",
-      "tutar": 180000,
-      "f": 0.967
-     }
-    }
-   ]
-  },
-  {
-   "say": "180 bin! 300 liralık pidenin yaklaşık 69 lirası pideciye kalıyor.",
-   "text": "180 bin! 300 liralık pidenin ~69 lirası pideciye kalıyor.",
-   "bg": "dukkan",
-   "emotion": "şaşkın",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "shock",
-     "face": "shock",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Pide Salonu",
-     "delay": 0.0
+      "say": "Günde 100 sipariş, ayda 26 gün. Kasaya giren: 780 bin lira!",
+      "text": "Günde 100 sipariş, 26 gün. Kasaya giren: 780.000 ₺!",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.18,
+          "pose": "open",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "AYLIK CİRO",
+          "value": 780000,
+          "color": "green",
+          "x": 0.55,
+          "y": 0.28,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "PİDE BAŞI KÂR",
-     "value": 69,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.9,
-     "f": 0.6
-    }
-   ]
-  },
-  {
-   "say": "Ama kıymaya zam gelir, sen menüyü değiştirmezsen? Malzeme yüzde 20 artarsa, kalan 180 binden yaklaşık 118 bine iner.",
-   "text": "Malzemeye %20 zam gelir, menü aynı kalırsa: kalan 180 binden ~118 bine iner!",
-   "bg": "kasa",
-   "actors": [],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "BUGÜN",
-     "value": 180000,
-     "color": "green",
-     "x": 0.5,
-     "y": 0.22,
-     "scale": 0.85,
-     "f": 0.2
+      "say": "Giderler. Kıyma, un, kaşar, ayran 312 bin. Usta ve iki garson 123 bin. Kira 60 bin. Fırının doğalgazı, elektriği 40 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 55 bin. Kalan?",
+      "text": "Malzeme 312 bin. Usta + 2 garson 123 bin. Kira 60 bin. Doğalgaz + elektrik 40 bin. Bağ-Kur 10 bin. Vergi + muhasebe 55 bin. Kalan?",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.14,
+          "pose": "think",
+          "face": "think",
+          "scale": 0.9
+        }
+      ],
+      "props": [
+        {
+          "type": "fis",
+          "title": "AYLIK HESAP",
+          "x": 0.6,
+          "y": 0.47,
+          "scale": 0.9,
+          "rows": [
+            {
+              "ad": "Ciro",
+              "tutar": 780000,
+              "f": 0.0
+            },
+            {
+              "ad": "Malzeme",
+              "tutar": -312000,
+              "f": 0.023
+            },
+            {
+              "ad": "Personel",
+              "tutar": -123000,
+              "f": 0.223
+            },
+            {
+              "ad": "Kira",
+              "tutar": -60000,
+              "f": 0.423
+            },
+            {
+              "ad": "Enerji",
+              "tutar": -40000,
+              "f": 0.523
+            },
+            {
+              "ad": "Bağ-Kur",
+              "tutar": -10000,
+              "f": 0.69
+            },
+            {
+              "ad": "Vergi+muh.",
+              "tutar": -55000,
+              "f": 0.79
+            }
+          ],
+          "total": {
+            "ad": "KALAN",
+            "tutar": 180000,
+            "f": 0.967
+          }
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "%20 ZAMDAN SONRA",
-     "value": 118000,
-     "color": "red",
-     "x": 0.5,
-     "y": 0.55,
-     "scale": 0.85,
-     "f": 0.62
-    }
-   ]
-  },
-  {
-   "say": "Yani pidecinin kârı fırında pişer, menü tahtasında yanar.",
-   "text": "Pidecinin kârı fırında pişer, menü tahtasında yanar.",
-   "bg": "dukkan",
-   "emotion": "sakin",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Pide Salonu",
-     "delay": 0.0
+      "say": "Ama kıymaya zam gelir, sen menüyü değiştirmezsen? Malzeme yüzde 20 artarsa, kalan 180 binden yaklaşık 118 bine iner.",
+      "text": "Malzemeye %20 zam gelir, menü aynı kalırsa: kalan 180 binden ~118 bine iner!",
+      "bg": "kasa",
+      "actors": [],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "BUGÜN",
+          "value": 180000,
+          "color": "green",
+          "x": 0.5,
+          "y": 0.22,
+          "scale": 0.85,
+          "f": 0.2
+        },
+        {
+          "type": "rakam",
+          "label": "%20 ZAMDAN SONRA",
+          "value": 118000,
+          "color": "red",
+          "x": 0.5,
+          "y": 0.55,
+          "scale": 0.85,
+          "f": 0.62
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "MENÜ TAHTASI",
-     "x": 0.55,
-     "y": 0.18,
-     "size": 78,
-     "f": 0.3,
-     "rot": -4
-    },
-    {
-     "type": "sfx",
-     "name": "rimshot",
-     "f": 0.95
+      "say": "Rakamlar örnek, sen olsan fiyatı hemen artırır mıydın? Yarın akşam: terzi açsak ne kazanırız?",
+      "text": "Rakamlar örnek. Sen olsan fiyatı hemen artırır mıydın? Yarın: Terzi açsak ne kazanırız?",
+      "emotion": "mutlu",
+      "narrator": {
+        "x": 0.5,
+        "y": 0.97,
+        "scale": 1.6,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.5,
+            "pose": "wave",
+            "face": "wink"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "pop",
+          "text": "YARIN: TERZİ",
+          "x": 0.5,
+          "y": 0.13,
+          "size": 92,
+          "f": 0.55,
+          "rot": -4
+        }
+      ]
     }
-   ]
-  },
-  {
-   "say": "Rakamlar örnek, sen olsan fiyatı hemen artırır mıydın? Yarın akşam: terzi açsak ne kazanırız?",
-   "text": "Rakamlar örnek. Sen olsan fiyatı hemen artırır mıydın? Yarın: Terzi açsak ne kazanırız?",
-   "emotion": "mutlu",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "point",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.5,
-      "pose": "wave",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
-    {
-     "type": "pop",
-     "text": "YARIN: TERZİ",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 92,
-     "f": 0.55,
-     "rot": -4
-    }
-   ]
-  }
- ]
+  ],
+  "kanca_v2": true
 }

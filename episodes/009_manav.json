@@ -1,310 +1,244 @@
 {
- "id": "009",
- "series": "DÜKKÂN HESABI",
- "title": "Manav Açsak Ne Kazanırız?",
- "country": {
-  "name": "Manav"
- },
- "kaynaklar": [
-  "Kayseri hal ve tezgah fiyatları: domates halde 40-70 TL, tezgahta 75 TL; patates 30, elma 60 TL (kayserihaber.com 16.10.2026)",
-  "Malatya'da halden tezgaha fark kilo başı 5-15 TL (malatyasoz.com 20.08.2026); kilo başı ortalama satış 50 TL, alış 32 TL örnek",
-  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
-  "Satılan kilo, fire (günde 40 kg), kira, nakliye ve vergi örnek varsayımdır; ters köşe: fire 100 kg → ek 60 kg × 32 × 30 = 57.600 → kalan 7.000"
- ],
- "instagram_caption": "Manav ayda ne kazanır? 🍅\n\nDomates halde 40, tezgahta 75 lira. Aradaki fark manavın cebine mi gidiyor? Hal, eleman, kira hepsini düştük. Asıl hesap çürüyen kasada.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin manavında domates kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#manav #sebze #esnaf #ekonomi #dükkanhesabı",
- "scenes": [
-  {
-   "say": "Domates halde 40, tezgahta 75 lira. Peki mahallede bir manav açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
-   "text": "Domates halde 40, tezgahta 75 lira. Peki mahallede bir manav açsak, ayda cebimize kaç lira kalır? Hesaplayalım!",
-   "voice_delay": 0.3,
-   "emotion": "şaşkın",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "wave",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.45,
-      "pose": "think",
-      "face": "think"
-     },
-     {
-      "f": 0.8,
-      "pose": "point",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
+  "id": "009",
+  "series": "DÜKKÂN HESABI",
+  "title": "Manav Açsak Ne Kazanırız?",
+  "country": {
+    "name": "Manav"
+  },
+  "kaynaklar": [
+    "Kayseri hal ve tezgah fiyatları: domates halde 40-70 TL, tezgahta 75 TL; patates 30, elma 60 TL (kayserihaber.com 16.10.2026)",
+    "Malatya'da halden tezgaha fark kilo başı 5-15 TL (malatyasoz.com 20.08.2026); kilo başı ortalama satış 50 TL, alış 32 TL örnek",
+    "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+    "Satılan kilo, fire (günde 40 kg), kira, nakliye ve vergi örnek varsayımdır; ters köşe: fire 100 kg → ek 60 kg × 32 × 30 = 57.600 → kalan 7.000"
+  ],
+  "instagram_caption": "Manav ayda ne kazanır? 🍅\n\nDomates halde 40, tezgahta 75 lira. Aradaki fark manavın cebine mi gidiyor? Hal, eleman, kira hepsini düştük. Asıl hesap çürüyen kasada.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin manavında domates kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#manav #sebze #esnaf #ekonomi #dükkanhesabı",
+  "scenes": [
     {
-     "type": "pop",
-     "text": "MANAV!",
-     "x": 0.27,
-     "y": 0.14,
-     "size": 110,
-     "f": 0.0,
-     "rot": -10,
-     "until_f": 0.55
+      "say": "Manav ayda 64 bin lira bırakıyor. Ama sıcak bir ay bunu 7 bine kadar indirebiliyor.",
+      "text": "Manav ayda 64 bin lira bırakıyor. Ama sıcak bir ay bunu 7 bine kadar indirebiliyor.",
+      "voice_delay": 0.0,
+      "emotion": "şaşkın",
+      "bg": "dukkan",
+      "narrator": {
+        "x": 0.32,
+        "y": 0.97,
+        "scale": 1.05,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.55,
+            "pose": "think",
+            "face": "think"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Manav",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "AYDA KALAN",
+          "value": 64600,
+          "color": "green",
+          "x": 0.58,
+          "y": 0.12,
+          "scale": 0.9,
+          "f": 0.0
+        },
+        {
+          "type": "pop",
+          "text": "AMA…",
+          "x": 0.72,
+          "y": 0.45,
+          "size": 120,
+          "f": 0.52,
+          "rot": -6
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "NE KALIR?",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 104,
-     "f": 0.6,
-     "rot": 5
-    }
-   ]
-  },
-  {
-   "say": "Patates, soğan, elma, domates karışık düşün. Biz kilo başı ortalama 50 liradan satalım.",
-   "text": "Patates, soğan, elma, domates karışık. Kilo başı ortalama 50 ₺'den satalım.",
-   "bg": "dukkan",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Manav",
-     "delay": 0.0
+      "say": "Patates, soğan, elma, domates karışık düşün. Biz kilo başı ortalama 50 liradan satalım.",
+      "text": "Patates, soğan, elma, domates karışık. Kilo başı ortalama 50 ₺'den satalım.",
+      "bg": "dukkan",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.2,
+          "pose": "hips",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "tabela",
+          "text": "Manav",
+          "delay": 0.0
+        },
+        {
+          "type": "rakam",
+          "label": "KİLO BAŞI SATIŞ",
+          "value": 50,
+          "color": "gold",
+          "x": 0.62,
+          "y": 0.2,
+          "scale": 0.85,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "KİLO BAŞI SATIŞ",
-     "value": 50,
-     "color": "gold",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.85,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Günde 400 kilo, manav her gün açık, ayda 30 gün. Kasaya giren: 600 bin lira!",
-   "text": "Günde 400 kilo, ayda 30 gün. Kasaya giren: 600.000 ₺!",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.18,
-     "pose": "open",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "AYLIK CİRO",
-     "value": 600000,
-     "color": "green",
-     "x": 0.55,
-     "y": 0.28,
-     "f": 0.4
-    }
-   ]
-  },
-  {
-   "say": "Giderler. Çürüyenler dahil günde 440 kilo, kilosu 32'den hal alımı 422 bin 400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 15 bin. Kalan?",
-   "text": "Hal alımı (günde 440 kg) 422.400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 15 bin. Kalan?",
-   "bg": "kasa",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.14,
-     "pose": "think",
-     "face": "think",
-     "scale": 0.9
-    }
-   ],
-   "props": [
-    {
-     "type": "fis",
-     "title": "AYLIK HESAP",
-     "x": 0.6,
-     "y": 0.47,
-     "scale": 0.9,
-     "rows": [
-      {
-       "ad": "Ciro",
-       "tutar": 600000,
-       "f": 0.0
-      },
-      {
-       "ad": "Hal alımı",
-       "tutar": -422400,
-       "f": 0.023
-      },
-      {
-       "ad": "Eleman",
-       "tutar": -41000,
-       "f": 0.41
-      },
-      {
-       "ad": "Kira",
-       "tutar": -35000,
-       "f": 0.506
-      },
-      {
-       "ad": "Nakliye",
-       "tutar": -12000,
-       "f": 0.603
-      },
-      {
-       "ad": "Bağ-Kur",
-       "tutar": -10000,
-       "f": 0.7
-      },
-      {
-       "ad": "Vergi+muh.",
-       "tutar": -15000,
-       "f": 0.797
-      }
-     ],
-     "total": {
-      "ad": "KALAN",
-      "tutar": 64600,
-      "f": 0.968
-     }
-    }
-   ]
-  },
-  {
-   "say": "64 bin 600. Satılan kilo başına yaklaşık 5 lira kalıyor. Sabah 5'te halde olmak da cabası.",
-   "text": "64.600 ₺. Satılan kilo başına ~5 lira. Sabah 5'te halde olmak da cabası.",
-   "bg": "dukkan",
-   "emotion": "şaşkın",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "shock",
-     "face": "shock",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Manav",
-     "delay": 0.0
+      "say": "Günde 400 kilo, manav her gün açık, ayda 30 gün. Kasaya giren: 600 bin lira!",
+      "text": "Günde 400 kilo, ayda 30 gün. Kasaya giren: 600.000 ₺!",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.18,
+          "pose": "open",
+          "face": "happy",
+          "scale": 1.0
+        }
+      ],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "AYLIK CİRO",
+          "value": 600000,
+          "color": "green",
+          "x": 0.55,
+          "y": 0.28,
+          "f": 0.4
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "KİLO BAŞI KÂR",
-     "value": 5,
-     "color": "red",
-     "x": 0.62,
-     "y": 0.2,
-     "scale": 0.9,
-     "f": 0.6
-    }
-   ]
-  },
-  {
-   "say": "Asıl patron fire. Sıcakta ya da yağmurda günde 40 değil 100 kilo çürürse, kalan 64 bin 600'den 7 bine iner.",
-   "text": "Asıl patron fire! Günde 40 değil 100 kilo çürürse kalan 64.600'den 7.000'e iner.",
-   "bg": "kasa",
-   "actors": [],
-   "props": [
-    {
-     "type": "rakam",
-     "label": "FİRE 40 KİLO",
-     "value": 64600,
-     "color": "green",
-     "x": 0.5,
-     "y": 0.22,
-     "scale": 0.85,
-     "f": 0.2
+      "say": "Giderler. Çürüyenler dahil günde 440 kilo, kilosu 32'den hal alımı 422 bin 400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 15 bin. Kalan?",
+      "text": "Hal alımı (günde 440 kg) 422.400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 15 bin. Kalan?",
+      "bg": "kasa",
+      "actors": [
+        {
+          "id": "k",
+          "x": 0.14,
+          "pose": "think",
+          "face": "think",
+          "scale": 0.9
+        }
+      ],
+      "props": [
+        {
+          "type": "fis",
+          "title": "AYLIK HESAP",
+          "x": 0.6,
+          "y": 0.47,
+          "scale": 0.9,
+          "rows": [
+            {
+              "ad": "Ciro",
+              "tutar": 600000,
+              "f": 0.0
+            },
+            {
+              "ad": "Hal alımı",
+              "tutar": -422400,
+              "f": 0.023
+            },
+            {
+              "ad": "Eleman",
+              "tutar": -41000,
+              "f": 0.41
+            },
+            {
+              "ad": "Kira",
+              "tutar": -35000,
+              "f": 0.506
+            },
+            {
+              "ad": "Nakliye",
+              "tutar": -12000,
+              "f": 0.603
+            },
+            {
+              "ad": "Bağ-Kur",
+              "tutar": -10000,
+              "f": 0.7
+            },
+            {
+              "ad": "Vergi+muh.",
+              "tutar": -15000,
+              "f": 0.797
+            }
+          ],
+          "total": {
+            "ad": "KALAN",
+            "tutar": 64600,
+            "f": 0.968
+          }
+        }
+      ]
     },
     {
-     "type": "rakam",
-     "label": "FİRE 100 KİLO",
-     "value": 7000,
-     "color": "red",
-     "x": 0.5,
-     "y": 0.55,
-     "scale": 0.85,
-     "f": 0.62
-    }
-   ]
-  },
-  {
-   "say": "Yani manavın kârı kasada değil, çürüyen kasada.",
-   "text": "Manavın kârı kasada değil, çürüyen kasada.",
-   "bg": "dukkan",
-   "emotion": "sakin",
-   "actors": [
-    {
-     "id": "k",
-     "x": 0.2,
-     "pose": "hips",
-     "face": "happy",
-     "scale": 1.0
-    }
-   ],
-   "props": [
-    {
-     "type": "tabela",
-     "text": "Manav",
-     "delay": 0.0
+      "say": "Asıl patron fire. Sıcakta ya da yağmurda günde 40 değil 100 kilo çürürse, kalan 64 bin 600'den 7 bine iner.",
+      "text": "Asıl patron fire! Günde 40 değil 100 kilo çürürse kalan 64.600'den 7.000'e iner.",
+      "bg": "kasa",
+      "actors": [],
+      "props": [
+        {
+          "type": "rakam",
+          "label": "FİRE 40 KİLO",
+          "value": 64600,
+          "color": "green",
+          "x": 0.5,
+          "y": 0.22,
+          "scale": 0.85,
+          "f": 0.2
+        },
+        {
+          "type": "rakam",
+          "label": "FİRE 100 KİLO",
+          "value": 7000,
+          "color": "red",
+          "x": 0.5,
+          "y": 0.55,
+          "scale": 0.85,
+          "f": 0.62
+        }
+      ]
     },
     {
-     "type": "pop",
-     "text": "FİREYE DİKKAT",
-     "x": 0.55,
-     "y": 0.18,
-     "size": 78,
-     "f": 0.3,
-     "rot": -4
-    },
-    {
-     "type": "sfx",
-     "name": "rimshot",
-     "f": 0.95
+      "say": "Rakamlar örnek, senin manavında domates kaç lira? Yarın akşam: kuru temizleme açsak ne kazanırız?",
+      "text": "Rakamlar örnek. Senin manavında domates kaç lira? Yarın: Kuru temizleme açsak ne kazanırız?",
+      "emotion": "mutlu",
+      "narrator": {
+        "x": 0.5,
+        "y": 0.97,
+        "scale": 1.6,
+        "pose": "point",
+        "face": "happy",
+        "beats": [
+          {
+            "f": 0.5,
+            "pose": "wave",
+            "face": "wink"
+          }
+        ]
+      },
+      "props": [
+        {
+          "type": "pop",
+          "text": "YARIN: KURU TEMİZLEME",
+          "x": 0.5,
+          "y": 0.13,
+          "size": 68,
+          "f": 0.55,
+          "rot": -4
+        }
+      ]
     }
-   ]
-  },
-  {
-   "say": "Rakamlar örnek, senin manavında domates kaç lira? Yarın akşam: kuru temizleme açsak ne kazanırız?",
-   "text": "Rakamlar örnek. Senin manavında domates kaç lira? Yarın: Kuru temizleme açsak ne kazanırız?",
-   "emotion": "mutlu",
-   "narrator": {
-    "x": 0.5,
-    "y": 0.97,
-    "scale": 1.6,
-    "pose": "point",
-    "face": "happy",
-    "beats": [
-     {
-      "f": 0.5,
-      "pose": "wave",
-      "face": "wink"
-     }
-    ]
-   },
-   "props": [
-    {
-     "type": "pop",
-     "text": "YARIN: KURU TEMİZLEME",
-     "x": 0.5,
-     "y": 0.13,
-     "size": 68,
-     "f": 0.55,
-     "rot": -4
-    }
-   ]
-  }
- ]
+  ],
+  "kanca_v2": true
 }
