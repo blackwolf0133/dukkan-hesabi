@@ -1,244 +1,225 @@
 {
-  "id": "010",
-  "series": "DÜKKÂN HESABI",
-  "title": "Kuru Temizleme Açsak Ne Kazanır?",
-  "country": {
-    "name": "Kuru Temizleme"
-  },
-  "kaynaklar": [
-    "Kuru temizleme 2026 liste fiyatı: takım elbise 784,90 TL, gömlek 279,90 TL (drycenter.com); Samsun'da takım elbise 574,90 TL, gömlek 194,90 TL (habergazetesi.com.tr 12.12.2025); takım elbise 600-800 TL aralığı ve parça başı 350 TL örnek",
-    "Armut 2026: ceket temizleme 700-1.500 TL, mont/kaban 800-1.000 TL (armut.com)",
-    "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
-    "Parça sayısı, kira, malzeme, elektrik, vergi ve kiranın 40'tan 80 bine çıkması örnek varsayımdır; ters köşe: 167.500 − 40.000 = 127.500"
-  ],
-  "instagram_caption": "Kuru temizlemeci ayda ne kazanır? 👔\n\nTakım elbise 600-800 lira. Ütücü, solvent, buhar, kira… Hepsini düştük. Sondaki kira hesabı çok tanıdık gelecek.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin kiran bu yıl ne kadar arttı? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kurutemizleme #esnaf #kira #ekonomi #dükkanhesabı",
-  "scenes": [
+ "id": "010",
+ "series": "DÜKKÂN HESABI",
+ "title": "Kuru Temizleme Açsak Ne Kazanır?",
+ "country": {
+  "name": "Kuru Temizleme"
+ },
+ "kaynaklar": [
+  "Kuru temizleme 2026 liste fiyatı: takım elbise 784,90 TL, gömlek 279,90 TL (drycenter.com); Samsun'da takım elbise 574,90 TL, gömlek 194,90 TL (habergazetesi.com.tr 12.12.2025); takım elbise 600-800 TL aralığı ve parça başı 350 TL örnek",
+  "Armut 2026: ceket temizleme 700-1.500 TL, mont/kaban 800-1.000 TL (armut.com)",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "Parça sayısı, kira, malzeme, elektrik, vergi ve kiranın 40'tan 80 bine çıkması örnek varsayımdır; ters köşe: 167.500 − 40.000 = 127.500"
+ ],
+ "instagram_caption": "Kuru temizlemeci ayda ne kazanır? 👔\n\nTakım elbise 600-800 lira. Ütücü, solvent, buhar, kira… Hepsini düştük. Sondaki kira hesabı çok tanıdık gelecek.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin kiran bu yıl ne kadar arttı? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kurutemizleme #esnaf #kira #ekonomi #dükkanhesabı",
+ "scenes": [
+  {
+   "say": "Kuru temizleme ayda 167 bin 500 lira bırakıyor. Ama ev sahibinin tek telefonu 40 binini götürüyor.",
+   "text": "Kuru temizleme ayda 167.500 ₺ bırakıyor. Ama ev sahibinin tek telefonu 40 binini götürüyor.",
+   "voice_delay": 0.0,
+   "emotion": "şaşkın",
+   "bg": "dukkan",
+   "narrator": {
+    "x": 0.32,
+    "y": 0.97,
+    "scale": 1.05,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.47,
+      "pose": "think",
+      "face": "think"
+     }
+    ]
+   },
+   "props": [
     {
-      "say": "Kuru temizleme ayda 167 bin lira bırakıyor. Ama ev sahibinin tek bir telefonu bunun 40 binini götürüyor.",
-      "text": "Kuru temizleme ayda 167 bin lira bırakıyor. Ama ev sahibinin tek bir telefonu bunun 40 binini götürüyor.",
-      "voice_delay": 0.0,
-      "emotion": "şaşkın",
-      "bg": "dukkan",
-      "narrator": {
-        "x": 0.32,
-        "y": 0.97,
-        "scale": 1.05,
-        "pose": "point",
-        "face": "happy",
-        "beats": [
-          {
-            "f": 0.55,
-            "pose": "think",
-            "face": "think"
-          }
-        ]
-      },
-      "props": [
-        {
-          "type": "tabela",
-          "text": "Kuru Temizleme",
-          "delay": 0.0
-        },
-        {
-          "type": "rakam",
-          "label": "AYDA KALAN",
-          "value": 167500,
-          "color": "green",
-          "x": 0.58,
-          "y": 0.12,
-          "scale": 0.9,
-          "f": 0.0
-        },
-        {
-          "type": "pop",
-          "text": "AMA…",
-          "x": 0.72,
-          "y": 0.45,
-          "size": 120,
-          "f": 0.52,
-          "rot": -6
-        }
-      ]
+     "type": "tabela",
+     "text": "Kuru Temizleme",
+     "delay": 0.0
     },
     {
-      "say": "Takım elbise 600 ile 800 lira, gömlek 200 ile 300 arası. Karışık parça başı ortalama 350 diyelim.",
-      "text": "Takım elbise 600-800 ₺, gömlek 200-300 ₺. Parça başı ortalama 350 ₺ diyelim.",
-      "bg": "dukkan",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.2,
-          "pose": "hips",
-          "face": "happy",
-          "scale": 1.0
-        }
-      ],
-      "props": [
-        {
-          "type": "tabela",
-          "text": "Kuru Temizleme",
-          "delay": 0.0
-        },
-        {
-          "type": "rakam",
-          "label": "PARÇA BAŞI",
-          "value": 350,
-          "color": "gold",
-          "x": 0.62,
-          "y": 0.2,
-          "scale": 0.85,
-          "f": 0.4
-        }
-      ]
+     "type": "rakam",
+     "label": "AYDA KALAN",
+     "value": 167500,
+     "color": "green",
+     "x": 0.58,
+     "y": 0.12,
+     "scale": 0.9,
+     "f": 0.0
     },
     {
-      "say": "Günde 45 parça, ayda 26 gün. Kasaya giren: 409 bin 500 lira!",
-      "text": "Günde 45 parça, 26 gün. Kasaya giren: 409.500 ₺!",
-      "bg": "kasa",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.18,
-          "pose": "open",
-          "face": "happy",
-          "scale": 1.0
-        }
-      ],
-      "props": [
-        {
-          "type": "rakam",
-          "label": "AYLIK CİRO",
-          "value": 409500,
-          "color": "green",
-          "x": 0.55,
-          "y": 0.28,
-          "f": 0.4
-        }
-      ]
-    },
-    {
-      "say": "Giderler. Ütücü ve tezgahtar 82 bin. Kira 40 bin. Solvent, askı, poşet 35 bin. Makine ve buhar elektriği 30 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 45 bin. Kalan?",
-      "text": "Ütücü + tezgahtar 82 bin. Kira 40 bin. Solvent + askı + poşet 35 bin. Elektrik 30 bin. Bağ-Kur 10 bin. Vergi + muhasebe 45 bin. Kalan?",
-      "bg": "kasa",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.14,
-          "pose": "think",
-          "face": "think",
-          "scale": 0.9
-        }
-      ],
-      "props": [
-        {
-          "type": "fis",
-          "title": "AYLIK HESAP",
-          "x": 0.6,
-          "y": 0.47,
-          "scale": 0.9,
-          "rows": [
-            {
-              "ad": "Ciro",
-              "tutar": 409500,
-              "f": 0.0
-            },
-            {
-              "ad": "Personel",
-              "tutar": -82000,
-              "f": 0.024
-            },
-            {
-              "ad": "Kira",
-              "tutar": -40000,
-              "f": 0.197
-            },
-            {
-              "ad": "Malzeme",
-              "tutar": -35000,
-              "f": 0.3
-            },
-            {
-              "ad": "Elektrik",
-              "tutar": -30000,
-              "f": 0.472
-            },
-            {
-              "ad": "Bağ-Kur",
-              "tutar": -10000,
-              "f": 0.679
-            },
-            {
-              "ad": "Vergi+muh.",
-              "tutar": -45000,
-              "f": 0.783
-            }
-          ],
-          "total": {
-            "ad": "KALAN",
-            "tutar": 167500,
-            "f": 0.966
-          }
-        }
-      ]
-    },
-    {
-      "say": "Ama sözleşme yenilenince ev sahibi kirayı 40'tan 80 bine çıkarırsa, kalan 167 bin 500'den 127 bin 500'e iner.",
-      "text": "Ev sahibi kirayı 40'tan 80 bine çıkarırsa kalan 167.500'den 127.500'e iner!",
-      "bg": "kasa",
-      "actors": [],
-      "props": [
-        {
-          "type": "rakam",
-          "label": "KİRA 40 BİN",
-          "value": 167500,
-          "color": "green",
-          "x": 0.5,
-          "y": 0.22,
-          "scale": 0.85,
-          "f": 0.2
-        },
-        {
-          "type": "rakam",
-          "label": "KİRA 80 BİN",
-          "value": 127500,
-          "color": "red",
-          "x": 0.5,
-          "y": 0.55,
-          "scale": 0.85,
-          "f": 0.62
-        }
-      ]
-    },
-    {
-      "say": "Rakamlar örnek, senin kiran bu yıl ne kadar arttı? Yarın akşam: çiçekçi açsak ne kazanırız?",
-      "text": "Rakamlar örnek. Senin kiran bu yıl ne kadar arttı? Yarın: Çiçekçi açsak ne kazanırız?",
-      "emotion": "mutlu",
-      "narrator": {
-        "x": 0.5,
-        "y": 0.97,
-        "scale": 1.6,
-        "pose": "point",
-        "face": "happy",
-        "beats": [
-          {
-            "f": 0.5,
-            "pose": "wave",
-            "face": "wink"
-          }
-        ]
-      },
-      "props": [
-        {
-          "type": "pop",
-          "text": "YARIN: ÇİÇEKÇİ",
-          "x": 0.5,
-          "y": 0.13,
-          "size": 92,
-          "f": 0.55,
-          "rot": -4
-        }
-      ]
+     "type": "pop",
+     "text": "AMA…",
+     "x": 0.72,
+     "y": 0.45,
+     "size": 120,
+     "f": 0.47,
+     "rot": -6
     }
-  ],
-  "kanca_v2": true
+   ]
+  },
+  {
+   "say": "Parça başı 350 lira diyelim. Günde 45 parça: ayda 409 bin 500 lira!",
+   "text": "Parça başı ortalama 350 ₺ diyelim. Günde 45 parça, 26 gün: 409.500 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "PARÇA BAŞI",
+     "value": 350,
+     "color": "gold",
+     "x": 0.56,
+     "y": 0.18,
+     "scale": 0.8,
+     "f": 0.134
+    },
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 409500,
+     "color": "green",
+     "x": 0.56,
+     "y": 0.43,
+     "scale": 0.85,
+     "f": 0.672
+    }
+   ]
+  },
+  {
+   "say": "Ütücü ve tezgahtar 82 bin. Kira 40 bin. Solvent, askı 35 bin. Elektrik 30 bin. Bağ-Kur 10 bin. Vergi, muhasebe 45 bin. Kalan?",
+   "text": "Ütücü + tezgahtar 82 bin. Kira 40 bin. Solvent + askı + poşet 35 bin. Elektrik 30 bin. Bağ-Kur 10 bin. Vergi + muhasebe 45 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 409500,
+       "f": 0.0
+      },
+      {
+       "ad": "Personel",
+       "tutar": -82000,
+       "f": 0.0
+      },
+      {
+       "ad": "Kira",
+       "tutar": -40000,
+       "f": 0.197
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -35000,
+       "f": 0.328
+      },
+      {
+       "ad": "Elektrik",
+       "tutar": -30000,
+       "f": 0.502
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.632
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -45000,
+       "f": 0.763
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 167500,
+      "f": 0.957
+     }
+    }
+   ]
+  },
+  {
+   "say": "Ev sahibi kirayı 80 bine çıkarırsa, kalan 127 bin 500'e iner.",
+   "text": "Kira 40'tan 80 bine çıkarsa kalan 167.500'den 127.500'e iner!",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "KİRA 40 BİN",
+     "value": 167500,
+     "color": "green",
+     "x": 0.42,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "KİRA 80 BİN",
+     "value": 127500,
+     "color": "red",
+     "x": 0.42,
+     "y": 0.5,
+     "scale": 0.85,
+     "f": 0.616
+    }
+   ]
+  },
+  {
+   "say": "Bunu kira zammı bekleyen arkadaşına gönder. Yarın akşam: çiçekçi açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Bunu kira zammı bekleyen arkadaşına gönder. Yarın: Çiçekçi açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.5,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: ÇİÇEKÇİ",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.5,
+     "rot": -4
+    }
+   ]
+  }
+ ],
+ "kanca_v2": true,
+ "kanca_yazi": "Kuru temizleme 167 bin… ev sahibi ararsa?"
 }

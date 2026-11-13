@@ -1,0 +1,994 @@
+[
+ {
+  "id": "004",
+  "slug": "cay_ocagi",
+  "tabela": "Çay Ocağı",
+  "kanca_yazi": "Çay ocağı ayda 135 bin… ama defter?",
+  "kalan": 135000,
+  "kanca": [
+   "Çay ocağı ayda 135 bin lira bırakıyor. Ama veresiye defteri bunun neredeyse yarısını yiyor.",
+   "Çay ocağı ayda 135 bin lira bırakıyor. Ama veresiye defteri bunun neredeyse yarısını yiyor."
+  ],
+  "fiyat": [
+   "Bursa'da çaya tavan 22 buçuk, biz 20 diyelim. Günde 550 bardak: ayda 286 bin!",
+   "Bursa'da tavan 22,5 ₺, biz 20 ₺ diyelim. Günde 550 bardak, 26 gün: 286.000 ₺!",
+   [
+    "BİR BARDAK ÇAY",
+    20,
+    "20"
+   ],
+   [
+    "AYLIK CİRO",
+    286000,
+    "286"
+   ]
+  ],
+  "gider": [
+   "Çırak 41 bin. Kira 25 bin. Çay, şeker, su 43 bin. Tüp, elektrik 12 bin. Bağ-Kur 10 bin. Vergi, muhasebe 20 bin. Kalan?",
+   "Çırak 41 bin. Kira 25 bin. Çay + şeker + su 43 bin. Tüp + elektrik 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 20 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    286000,
+    null
+   ],
+   [
+    "Çırak",
+    -41000,
+    "çırak"
+   ],
+   [
+    "Kira",
+    -25000,
+    "kira"
+   ],
+   [
+    "Çay+şeker",
+    -43000,
+    "çay"
+   ],
+   [
+    "Tüp+elek.",
+    -12000,
+    "tüp"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -20000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Ama bardakların beşte biri hiç ödenmezse, kalan 135 binden yaklaşık 78 bine iner.",
+   "Bardakların beşte biri ödenmezse kalan 135 binden ≈78 bine iner!",
+   [
+    "HEPSİ ÖDENİRSE",
+    135000,
+    "green",
+    "135"
+   ],
+   [
+    "VERESİYE BATARSA",
+    78000,
+    "red",
+    "78"
+   ]
+  ],
+  "kapanis": [
+   "Bunu çayı hep deftere yazdıran arkadaşına gönder. Yarın akşam: lastikçi açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu çayı hep deftere yazdıran arkadaşına gönder. Yarın: Lastikçi açsak ne kazanırız?"
+  ],
+  "yarin": "LASTİKÇİ"
+ },
+ {
+  "id": "005",
+  "slug": "lastikci",
+  "tabela": "Lastikçi",
+  "kanca_yazi": "Lastikçi ayda 882 bin… ama hangi ay?",
+  "kalan": 882000,
+  "kanca": [
+   "Lastikçi ayda 882 bin lira bırakıyor. Ama bu para yılın sadece birkaç ayında geliyor.",
+   "Lastikçi ayda 882 bin lira bırakıyor. Ama bu para yılın sadece birkaç ayında geliyor."
+  ],
+  "fiyat": [
+   "Balansla araba başı 2500 diyelim. Kasımda günde 20 araba: 1 milyon 300 bin!",
+   "Balansla araba başı 2.500 ₺ diyelim. Kasımda günde 20 araba, 26 gün: 1.300.000 ₺!",
+   [
+    "ARABA BAŞI",
+    2500,
+    "2500"
+   ],
+   [
+    "KASIM CİROSU",
+    1300000,
+    "milyon"
+   ]
+  ],
+  "gider": [
+   "Üç usta 123 bin. Kira 60 bin. Sarf 30 bin. Elektrik 15 bin. Bağ-Kur 10 bin. Vergi, muhasebe 180 bin. Kalan?",
+   "3 usta 123 bin. Kira 60 bin. Sarf 30 bin. Elektrik 15 bin. Bağ-Kur 10 bin. Vergi + muhasebe 180 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    1300000,
+    null
+   ],
+   [
+    "Personel",
+    -123000,
+    "üç"
+   ],
+   [
+    "Kira",
+    -60000,
+    "kira"
+   ],
+   [
+    "Sarf",
+    -30000,
+    "sarf"
+   ],
+   [
+    "Elektrik",
+    -15000,
+    "elektrik"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -180000,
+    "vergi"
+   ]
+  ],
+  "fis_baslik": "KASIM HESABI",
+  "ters": [
+   "Ama ocakta kuyruk biter. Günde 4 araba gelirse kalan 882 binden 36 bine iner.",
+   "Ocakta günde 4 araba gelirse kalan 882 binden 36 bine iner!",
+   [
+    "KASIM",
+    882000,
+    "green",
+    "882"
+   ],
+   [
+    "OCAK",
+    36000,
+    "red",
+    "36"
+   ]
+  ],
+  "kapanis": [
+   "Bunu lastiğini hep son güne bırakan arkadaşına gönder. Yarın akşam: kasap açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu lastiğini hep son güne bırakan arkadaşına gönder. Yarın: Kasap açsak ne kazanırız?"
+  ],
+  "yarin": "KASAP"
+ },
+ {
+  "id": "006",
+  "slug": "kasap",
+  "tabela": "Kasap",
+  "kanca_yazi": "Kasap ayda 116 bin… ama kart?",
+  "kalan": 116000,
+  "kanca": [
+   "Kasap ayda 116 bin lira bırakıyor. Ama her kart çekişte bunun bir kısmı kayboluyor.",
+   "Kasap ayda 116 bin lira bırakıyor. Ama her kart çekişte bunun bir kısmı kayboluyor."
+  ],
+  "fiyat": [
+   "Karışık satışta kilo 950 diyelim. Günde 60 kilo: ayda 1 milyon 482 bin!",
+   "Karışık satışta kilo 950 ₺ diyelim. Günde 60 kilo, 26 gün: 1.482.000 ₺!",
+   [
+    "KİLO BAŞI",
+    950,
+    "950"
+   ],
+   [
+    "AYLIK CİRO",
+    1482000,
+    "milyon"
+   ]
+  ],
+  "gider": [
+   "Karkas et 1 milyon 200 bin. Kalfa 41 bin. Kira 50 bin. Elektrik 20 bin. Bağ-Kur 10 bin. Vergi, muhasebe 45 bin. Kalan?",
+   "Karkas et 1.200.000. Kalfa 41 bin. Kira 50 bin. Elektrik 20 bin. Bağ-Kur 10 bin. Vergi + muhasebe 45 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    1482000,
+    null
+   ],
+   [
+    "Karkas et",
+    -1200000,
+    "karkas"
+   ],
+   [
+    "Kalfa",
+    -41000,
+    "kalfa"
+   ],
+   [
+    "Kira",
+    -50000,
+    "kira"
+   ],
+   [
+    "Elektrik",
+    -20000,
+    "elektrik"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -45000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Komisyon yüzde 3 buçuğu geçiyor. Satışın yüzde 70'i kartla olursa kalan 116 binden 77 bine iner.",
+   "Komisyon %3,5'u geçiyor. Satışın %70'i kartla olursa kalan 116 binden 77 bine iner!",
+   [
+    "HEP NAKİT",
+    116000,
+    "green",
+    "116"
+   ],
+   [
+    "%70 KARTLA",
+    77000,
+    "red",
+    "77"
+   ]
+  ],
+  "kapanis": [
+   "Bunu kasapta hep kart uzatan arkadaşına gönder. Yarın akşam: pideci açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu kasapta hep kart uzatan arkadaşına gönder. Yarın: Pideci açsak ne kazanırız?"
+  ],
+  "yarin": "PİDECİ"
+ },
+ {
+  "id": "007",
+  "slug": "pideci",
+  "tabela": "Pide Salonu",
+  "kanca_yazi": "Pideci ayda 180 bin… kıymaya zam gelirse?",
+  "kalan": 180000,
+  "kanca": [
+   "Pideci ayda 180 bin lira bırakıyor. Ama tek bir kıyma zammı bunun 62 binini götürüyor.",
+   "Pideci ayda 180 bin lira bırakıyor. Ama tek bir kıyma zammı bunun 62 binini götürüyor."
+  ],
+  "fiyat": [
+   "Ayranıyla masa başı 300 lira diyelim. Günde 100 sipariş: ayda 780 bin!",
+   "Ayranıyla masa başı 300 ₺ diyelim. Günde 100 sipariş, 26 gün: 780.000 ₺!",
+   [
+    "MASA BAŞI",
+    300,
+    "300"
+   ],
+   [
+    "AYLIK CİRO",
+    780000,
+    "780"
+   ]
+  ],
+  "gider": [
+   "Malzeme 312 bin. Usta, iki garson 123 bin. Kira 60 bin. Doğalgaz, elektrik 40 bin. Bağ-Kur 10 bin. Vergi, muhasebe 55 bin. Kalan?",
+   "Kıyma + un + kaşar 312 bin. Usta + 2 garson 123 bin. Kira 60 bin. Doğalgaz + elektrik 40 bin. Bağ-Kur 10 bin. Vergi + muhasebe 55 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    780000,
+    null
+   ],
+   [
+    "Malzeme",
+    -312000,
+    "malzeme"
+   ],
+   [
+    "Personel",
+    -123000,
+    "usta"
+   ],
+   [
+    "Kira",
+    -60000,
+    "kira"
+   ],
+   [
+    "Enerji",
+    -40000,
+    "doğalgaz"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -55000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Malzemeye yüzde 20 zam gelir, sen fiyatı artırmazsan, kalan 180 binden yaklaşık 118 bine iner.",
+   "Malzemeye %20 zam gelir, fiyat aynı kalırsa: kalan 180 binden ≈118 bine iner!",
+   [
+    "BUGÜN",
+    180000,
+    "green",
+    "180"
+   ],
+   [
+    "%20 ZAMDAN SONRA",
+    118000,
+    "red",
+    "118"
+   ]
+  ],
+  "kapanis": [
+   "Bunu pidesiz bir hafta geçiremeyen arkadaşına gönder. Yarın akşam: terzi açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu pidesiz bir hafta geçiremeyen arkadaşına gönder. Yarın: Terzi açsak ne kazanırız?"
+  ],
+  "yarin": "TERZİ"
+ },
+ {
+  "id": "008",
+  "slug": "terzi",
+  "tabela": "Terzi",
+  "kanca_yazi": "Terzi ayda 91 bin… usta hastalanırsa?",
+  "kalan": 91400,
+  "kanca": [
+   "Terzi ayda 91 bin 400 lira bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor.",
+   "Terzi ayda 91.400 ₺ bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor."
+  ],
+  "fiyat": [
+   "Paça, fermuar, daraltma; iş başı 300 diyelim. Günde 18 iş, 26 gün: 140 bin 400 lira!",
+   "Paça, fermuar, daraltma: iş başı 300 ₺ diyelim. Günde 18 iş, 26 gün: 140.400 ₺!",
+   [
+    "İŞ BAŞI",
+    300,
+    "300"
+   ],
+   [
+    "AYLIK CİRO",
+    140400,
+    "140"
+   ]
+  ],
+  "gider": [
+   "Usta tek başına. Kira 20 bin. Malzeme 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi, muhasebe 8 bin. Kalan?",
+   "Usta tek başına. Kira 20 bin. İplik + fermuar 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi + muhasebe 8 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    140400,
+    null
+   ],
+   [
+    "Kira",
+    -20000,
+    "kira"
+   ],
+   [
+    "Malzeme",
+    -8000,
+    "malzeme"
+   ],
+   [
+    "Elektrik",
+    -3000,
+    "elektrik"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -8000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Usta bir hafta hastalanırsa dükkân kapalı; kalan 91 bin 400'den 59 bine iner.",
+   "Usta 1 hafta hasta: dükkân kapalı, kalan 91.400'den 59.000'e iner!",
+   [
+    "TAM AY",
+    91400,
+    "green",
+    "91"
+   ],
+   [
+    "1 HAFTA HASTA",
+    59000,
+    "red",
+    "59"
+   ]
+  ],
+  "kapanis": [
+   "Bunu hasta hasta işe giden arkadaşına gönder. Yarın akşam: manav açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu hasta hasta işe giden arkadaşına gönder. Yarın: Manav açsak ne kazanırız?"
+  ],
+  "yarin": "MANAV"
+ },
+ {
+  "id": "009",
+  "slug": "manav",
+  "tabela": "Manav",
+  "kanca_yazi": "Manav ayda 64 bin… sıcak bir ayda?",
+  "kalan": 64600,
+  "kanca": [
+   "Manav ayda 64 bin 600 lira bırakıyor. Ama sıcak bir ay bunu 7 bine indirebiliyor.",
+   "Manav ayda 64.600 ₺ bırakıyor. Ama sıcak bir ay bunu 7 bine indirebiliyor."
+  ],
+  "fiyat": [
+   "Kilosu ortalama 50 liradan, günde 400 kilo, 30 gün: 600 bin lira!",
+   "Kilosu ortalama 50 ₺, günde 400 kilo, 30 gün: 600.000 ₺!",
+   [
+    "KİLO BAŞI SATIŞ",
+    50,
+    "50"
+   ],
+   [
+    "AYLIK CİRO",
+    600000,
+    "600"
+   ]
+  ],
+  "gider": [
+   "Çürüyenler dahil hal alımı 422 bin 400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi, muhasebe 15 bin. Kalan?",
+   "Çürüyenler dahil hal alımı 422.400. Eleman 41 bin. Kira 35 bin. Nakliye 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 15 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    600000,
+    null
+   ],
+   [
+    "Hal alımı",
+    -422400,
+    "çürüyenler"
+   ],
+   [
+    "Eleman",
+    -41000,
+    "eleman"
+   ],
+   [
+    "Kira",
+    -35000,
+    "kira"
+   ],
+   [
+    "Nakliye",
+    -12000,
+    "nakliye"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -15000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Sıcakta günde 100 kilo çürürse, kalan 64 bin 600'den 7 bine iner.",
+   "Günde 40 değil 100 kilo çürürse kalan 64.600'den 7.000'e iner!",
+   [
+    "FİRE 40 KİLO",
+    64600,
+    "green",
+    "64"
+   ],
+   [
+    "FİRE 100 KİLO",
+    7000,
+    "red",
+    "7"
+   ]
+  ],
+  "kapanis": [
+   "Bunu domatesi tek tek seçen arkadaşına gönder. Yarın akşam: kuru temizleme açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu domatesi tek tek seçen arkadaşına gönder. Yarın: Kuru temizleme açsak ne kazanırız?"
+  ],
+  "yarin": "KURU TEMİZLEME"
+ },
+ {
+  "id": "010",
+  "slug": "kuru_temizleme",
+  "tabela": "Kuru Temizleme",
+  "kanca_yazi": "Kuru temizleme 167 bin… ev sahibi ararsa?",
+  "kalan": 167500,
+  "kanca": [
+   "Kuru temizleme ayda 167 bin 500 lira bırakıyor. Ama ev sahibinin tek telefonu 40 binini götürüyor.",
+   "Kuru temizleme ayda 167.500 ₺ bırakıyor. Ama ev sahibinin tek telefonu 40 binini götürüyor."
+  ],
+  "fiyat": [
+   "Parça başı 350 lira diyelim. Günde 45 parça: ayda 409 bin 500 lira!",
+   "Parça başı ortalama 350 ₺ diyelim. Günde 45 parça, 26 gün: 409.500 ₺!",
+   [
+    "PARÇA BAŞI",
+    350,
+    "350"
+   ],
+   [
+    "AYLIK CİRO",
+    409500,
+    "409"
+   ]
+  ],
+  "gider": [
+   "Ütücü ve tezgahtar 82 bin. Kira 40 bin. Solvent, askı 35 bin. Elektrik 30 bin. Bağ-Kur 10 bin. Vergi, muhasebe 45 bin. Kalan?",
+   "Ütücü + tezgahtar 82 bin. Kira 40 bin. Solvent + askı + poşet 35 bin. Elektrik 30 bin. Bağ-Kur 10 bin. Vergi + muhasebe 45 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    409500,
+    null
+   ],
+   [
+    "Personel",
+    -82000,
+    "ütücü"
+   ],
+   [
+    "Kira",
+    -40000,
+    "kira"
+   ],
+   [
+    "Malzeme",
+    -35000,
+    "solvent"
+   ],
+   [
+    "Elektrik",
+    -30000,
+    "elektrik"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -45000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Ev sahibi kirayı 80 bine çıkarırsa, kalan 127 bin 500'e iner.",
+   "Kira 40'tan 80 bine çıkarsa kalan 167.500'den 127.500'e iner!",
+   [
+    "KİRA 40 BİN",
+    167500,
+    "green",
+    "ev"
+   ],
+   [
+    "KİRA 80 BİN",
+    127500,
+    "red",
+    "127"
+   ]
+  ],
+  "kapanis": [
+   "Bunu kira zammı bekleyen arkadaşına gönder. Yarın akşam: çiçekçi açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu kira zammı bekleyen arkadaşına gönder. Yarın: Çiçekçi açsak ne kazanırız?"
+  ],
+  "yarin": "ÇİÇEKÇİ"
+ },
+ {
+  "id": "011",
+  "slug": "cicekci",
+  "title": "Çiçekçi Açsak Ne Kazanırız?",
+  "tag": "Çiçekçi",
+  "tabela": "Çiçekçi",
+  "kanca_yazi": "Çiçekçi ayda 95 bin… ama kime?",
+  "kalan": 95000,
+  "kanca": [
+   "Çiçekçi ayda 95 bin lira bırakıyor. Ama her üç buketten biri kârı başkasıyla paylaşıyor.",
+   "Çiçekçi ayda 95 bin lira bırakıyor. Ama her üç buketten biri kârı başkasıyla paylaşıyor."
+  ],
+  "fiyat": [
+   "Buketler bin liradan başlıyor, ortalama bin diyelim. Günde 15 satış, 26 gün: 390 bin lira!",
+   "Buketler 1.000 ₺'den başlıyor; ortalama 1.000 ₺ diyelim. Günde 15 satış, 26 gün: 390.000 ₺!",
+   [
+    "SATIŞ BAŞI",
+    1000,
+    "ortalama"
+   ],
+   [
+    "AYLIK CİRO",
+    390000,
+    "390"
+   ]
+  ],
+  "gider": [
+   "Çiçek, ambalaj, fire 160 bin. Eleman 41 bin. Kira 40 bin. Soğutma, elektrik 9 bin. Bağ-Kur 10 bin. Vergi, muhasebe 35 bin. Kalan?",
+   "Çiçek + ambalaj + fire 160 bin. Eleman 41 bin. Kira 40 bin. Soğutma + elektrik 9 bin. Bağ-Kur 10 bin. Vergi + muhasebe 35 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    390000,
+    null
+   ],
+   [
+    "Çiçek+amb.",
+    -160000,
+    "çiçek"
+   ],
+   [
+    "Eleman",
+    -41000,
+    "eleman"
+   ],
+   [
+    "Kira",
+    -40000,
+    "kira"
+   ],
+   [
+    "Elektrik",
+    -9000,
+    "soğutma"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -35000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Siparişlerin üçte biri yüzde 30 komisyonlu uygulamadan gelirse, kalan 95 binden 56 bine iner.",
+   "Siparişlerin 1/3'ü %30 komisyonlu uygulamadan gelirse kalan 95 binden 56 bine iner!",
+   [
+    "HEPSİ DÜKKÂNDAN",
+    95000,
+    "green",
+    "95"
+   ],
+   [
+    "1/3'Ü UYGULAMADAN",
+    56000,
+    "red",
+    "56"
+   ]
+  ],
+  "kapanis": [
+   "Bunu çiçek almayı hep unutan birine gönder. Yarın akşam: kuaför açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu çiçek almayı hep unutan birine gönder. Yarın: Kuaför açsak ne kazanırız?"
+  ],
+  "yarin": "KUAFÖR",
+  "caption": "Çiçekçi ayda ne kazanır? 💐\n\nBuket bin liradan başlıyor. Çiçek, fire, eleman, kira… Hepsini düştük. Sondaki komisyon hesabı şaşırtabilir.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSen en son kime, kaç liraya çiçek aldın? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#çiçekçi #esnaf #çiçek #ekonomi #dükkanhesabı",
+  "kaynaklar": [
+   "2026 buket fiyatı: Ankara'da buketler 1.000 TL'den başlıyor (ankaranethaber.com, 22.09.2026); 5 gül + cipso buket 1.000 TL'den başlıyor, tek gül 200 TL'den (yatirimx.com.tr, 12.02.2026); standart gül buketi ~750 TL'den (gazetebirlik.com, 14.02.2026). Ortalama satış 1.000 TL örnek varsayım",
+   "Online çiçek pazaryerinde tasarım çiçek kategorisi komisyonu %30 (ikas.com, dopigo.com 2026 satıcı rehberi); çiçekçi şikâyeti: '%30'a kadar komisyon' (sikayetvar.com, 01.12.2025)",
+   "Çiçekçide fire %10-25, brüt marj %50-70 (lacybird.com, adaptedijital.com); çiçek+ambalaj+fire 160.000 TL (cironun %41'i) örnek varsayım",
+   "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+   "Günlük satış adedi, kira, elektrik, vergi ve uygulama payı (1/3) örnek varsayımdır; ters köşe: 390.000 / 3 × %30 = 39.000 → 95.000 − 39.000 = 56.000"
+  ]
+ },
+ {
+  "id": "012",
+  "slug": "kuafor",
+  "title": "Kuaför Açsak Ne Kazanırız?",
+  "tag": "Kuaför",
+  "tabela": "Kuaför",
+  "kanca_yazi": "Kuaför ayda 104 bin… kalfa giderse?",
+  "kalan": 104000,
+  "kanca": [
+   "Kuaför ayda 104 bin lira bırakıyor. Ama en iyi kalfan karşıya dükkân açarsa…",
+   "Kuaför ayda 104 bin lira bırakıyor. Ama en iyi kalfan karşıya dükkân açarsa…"
+  ],
+  "fiyat": [
+   "Fön, kesim, boya karışık; müşteri başı 800 diyelim. Günde 15 müşteri: ayda 312 bin!",
+   "Fön, kesim, boya karışık: müşteri başı 800 ₺ diyelim. Günde 15 müşteri, 26 gün: 312.000 ₺!",
+   [
+    "MÜŞTERİ BAŞI",
+    800,
+    "800"
+   ],
+   [
+    "AYLIK CİRO",
+    312000,
+    "312"
+   ]
+  ],
+  "gider": [
+   "Kalfa ve çırak 82 bin. Kira 35 bin. Boya, şampuan 36 bin. Su, elektrik 12 bin. Bağ-Kur 10 bin. Vergi, muhasebe 33 bin. Kalan?",
+   "Kalfa + çırak 82 bin. Kira 35 bin. Boya + şampuan 36 bin. Su + elektrik 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 33 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    312000,
+    null
+   ],
+   [
+    "Personel",
+    -82000,
+    "kalfa"
+   ],
+   [
+    "Kira",
+    -35000,
+    "kira"
+   ],
+   [
+    "Malzeme",
+    -36000,
+    "boya"
+   ],
+   [
+    "Su+elek.",
+    -12000,
+    "su"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -33000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Kalfa gider, müşterilerin üçte biri de peşinden giderse, kalan 104 binden 53 bine iner.",
+   "Kalfa gider, müşterilerin 1/3'ü de peşinden giderse kalan 104 binden 53 bine iner!",
+   [
+    "KALFA VARKEN",
+    104000,
+    "green",
+    "104"
+   ],
+   [
+    "KALFA GİDİNCE",
+    53000,
+    "red",
+    "53"
+   ]
+  ],
+  "kapanis": [
+   "Bunu yıllardır aynı kuaföre giden birine gönder. Yarın akşam: esnaf lokantası açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu yıllardır aynı kuaföre giden birine gönder. Yarın: Esnaf lokantası açsak ne kazanırız?"
+  ],
+  "yarin": "LOKANTA",
+  "caption": "Kuaför ayda ne kazanır? 💇‍♀️\n\nFön 300-450, boya 1.000 liradan başlıyor. Kalfa, kira, boya, elektrik… Hepsini düştük. Sondaki senaryo her salonun korkusu.\n\n(Rakamlar örnek hesaptır; şehre ve salona göre değişir.)\n\nSenin kuaföründe fön kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kuaför #esnaf #güzellik #ekonomi #dükkanhesabı",
+  "kaynaklar": [
+   "Kadın kuaförü 2026: Ankara Ticaret Odası azami tarifesi (2. sınıf) fön 398 TL, kesim 1.150 TL, dip boya 1.345 TL (atonet.org.tr, 2026); Sakarya Kuaförler Odası fön 300, düz kesim 900, dip boya 1.300 TL (akyazihaber.com, 11.03.2026); karekod.org 2026 rehberi fön 293-482, kesim 885-1.456, dip boya 1.034-1.703 TL. Müşteri başı karışık ortalama 800 TL örnek varsayım",
+   "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+   "Müşteri sayısı, kira, malzeme, su-elektrik, vergi ve kalfanın müşterilerin 1/3'üyle ayrılması örnek varsayımdır (haber kaynağı yok, senaryo)",
+   "Ters köşe: ciro 208.000; kalfa maaşı (41.000) ve malzemenin 1/3'ü (12.000) düşer → gider 41.000 + 35.000 + 24.000 + 12.000 + 10.000 + 33.000 = 155.000 → kalan 53.000"
+  ]
+ },
+ {
+  "id": "013",
+  "slug": "esnaf_lokantasi",
+  "title": "Esnaf Lokantası Ne Kazanır?",
+  "tag": "Esnaf Lokantası",
+  "tabela": "Esnaf Lokantası",
+  "kanca_yazi": "Lokanta ayda 250 bin… kartla ödersen?",
+  "kalan": 250000,
+  "kanca": [
+   "Esnaf lokantası ayda 250 bin bırakıyor. Ama öğlen çekilen kartlar bunu hem kesiyor hem bekletiyor.",
+   "Esnaf lokantası ayda 250 bin bırakıyor. Ama öğlen çekilen kartlar bunu hem kesiyor hem bekletiyor."
+  ],
+  "fiyat": [
+   "Kuru, pilav, salata 300 diyelim. Günde 150 kişi, ayda 1 milyon 170 bin!",
+   "Kuru + pilav + salata 300 ₺ diyelim. Günde 150 kişi, 26 gün: 1.170.000 ₺!",
+   [
+    "KİŞİ BAŞI",
+    300,
+    "300"
+   ],
+   [
+    "AYLIK CİRO",
+    1170000,
+    "milyon"
+   ]
+  ],
+  "gider": [
+   "Malzeme 500 bin. Beş çalışan 205 bin. Kira 60 bin. Doğalgaz, elektrik 50 bin. Bağ-Kur 10 bin. Vergi, muhasebe 95 bin. Kalan?",
+   "Malzeme 500 bin. 5 çalışan 205 bin. Kira 60 bin. Doğalgaz + elektrik 50 bin. Bağ-Kur 10 bin. Vergi + muhasebe 95 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    1170000,
+    null
+   ],
+   [
+    "Malzeme",
+    -500000,
+    "malzeme"
+   ],
+   [
+    "Personel",
+    -205000,
+    "beş"
+   ],
+   [
+    "Kira",
+    -60000,
+    "kira"
+   ],
+   [
+    "Enerji",
+    -50000,
+    "doğalgaz"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -95000,
+    "vergi"
+   ]
+  ],
+  "ters": [
+   "Beşte dördü yemek kartlıysa, yüzde 6 komisyonla kalan yaklaşık 194 bine iner, o da 30 gün sonra.",
+   "5 müşteriden 4'ü yemek kartlıysa %6 komisyonla kalan ≈194 bine iner. Parası da 30 gün sonra!",
+   [
+    "HEP NAKİT",
+    250000,
+    "green",
+    "beşte"
+   ],
+   [
+    "%80 YEMEK KARTI",
+    194000,
+    "red",
+    "194"
+   ]
+  ],
+  "kapanis": [
+   "Bunu öğlen kartla yiyen iş arkadaşına gönder. Yarın akşam: kırtasiye açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu öğlen kartla yiyen iş arkadaşına gönder. Yarın: Kırtasiye açsak ne kazanırız?"
+  ],
+  "yarin": "KIRTASİYE",
+  "caption": "Esnaf lokantası ayda ne kazanır? 🍲\n\nKuru-pilav 300 lira civarı. Malzeme, beş çalışan, doğalgaz, kira… Hepsini düştük. Sonda öğle kuyruğundaki kartların hesabı var.\n\n(Rakamlar örnek hesaptır; şehre ve lokantaya göre değişir.)\n\nSenin mahallende kuru-pilav kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#esnaflokantası #esnaf #yemek #ekonomi #dükkanhesabı",
+  "kaynaklar": [
+   "Esnaf lokantası 2026: Isparta'da kuru fasulye 160-210 TL, kuru + pilav + salata ortalama 300 TL (haber32.com.tr, 14.07.2026); Kastamonu'da kuru-pilav 230 TL (taskoprupostasi.com, 17.10.2025); Ankara azami tarifesi etsiz bakliyat 480-820 TL, pilav 285-480 TL (karekod.org 2026). Kişi başı 300 TL örnek varsayım",
+   "Yemek kartı komisyonu en fazla %6, ödeme vadesi 30 gün (diken.com.tr 23.05.2018 yönetmelik; ekonomigazetesi.com 26.02.2026 YEKADER); Ticaret Bakanlığı Ağustos 2026: %6 üst sınır, ek ücretler yasak (isinolsa.com, milligazete.com.tr, yenicaggazetesi.com.tr)",
+   "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+   "Müşteri sayısı, malzeme, kira, enerji, vergi ve yemek kartı payı (%80) örnek varsayımdır; ters köşe: 1.170.000 × %80 × %6 = 56.160 → 250.000 − 56.160 = 193.840 ≈ 194 bin"
+  ]
+ },
+ {
+  "id": "014",
+  "slug": "kirtasiye",
+  "title": "Kırtasiye Açsak Ne Kazanırız?",
+  "tag": "Kırtasiye",
+  "tabela": "Kırtasiye",
+  "kanca_yazi": "Kırtasiye eylülde 120 bin… ya kasımda?",
+  "kalan": 120000,
+  "kalan_label": "EYLÜLDE KALAN",
+  "kanca": [
+   "Kırtasiye eylülde 120 bin lira bırakıyor. Ama kasım gelince kasa ters dönüyor.",
+   "Kırtasiye eylülde 120 bin lira bırakıyor. Ama kasım gelince kasa ters dönüyor."
+  ],
+  "fiyat": [
+   "Bir okul çantası 2500 liraya doluyor. Eylülde günde 10 çanta, 26 gün: 650 bin!",
+   "Bir okul çantası ~2.500 ₺'ye doluyor. Eylülde günde 10 çanta, 26 gün: 650.000 ₺!",
+   [
+    "BİR ÇANTA",
+    2500,
+    "2500"
+   ],
+   [
+    "EYLÜL CİROSU",
+    650000,
+    "650"
+   ]
+  ],
+  "gider": [
+   "Defter, kalem alışı 403 bin. Eleman 41 bin. Kira 30 bin. Elektrik 6 bin. Bağ-Kur 10 bin. Vergi, muhasebe 40 bin. Kalan?",
+   "Defter + kalem alışı 403 bin. Eleman 41 bin. Kira 30 bin. Elektrik 6 bin. Bağ-Kur 10 bin. Vergi + muhasebe 40 bin. Kalan?"
+  ],
+  "rows": [
+   [
+    "Ciro",
+    650000,
+    null
+   ],
+   [
+    "Mal alışı",
+    -403000,
+    "defter"
+   ],
+   [
+    "Eleman",
+    -41000,
+    "eleman"
+   ],
+   [
+    "Kira",
+    -30000,
+    "kira"
+   ],
+   [
+    "Elektrik",
+    -6000,
+    "elektrik"
+   ],
+   [
+    "Bağ-Kur",
+    -10000,
+    "bağ-kur"
+   ],
+   [
+    "Vergi+muh.",
+    -40000,
+    "vergi"
+   ]
+  ],
+  "fis_baslik": "EYLÜL HESABI",
+  "ters": [
+   "Kasımda satış üçte bire iner ama kira, eleman aynı. Kalan 120 binden eksi 25 bine düşer.",
+   "Kasımda satış 1/3'e iner, kira ve eleman aynı: kalan 120 binden −25 bine düşer!",
+   [
+    "EYLÜL",
+    120000,
+    "green",
+    "120"
+   ],
+   [
+    "KASIM",
+    -25000,
+    "red",
+    "eksi"
+   ]
+  ],
+  "kapanis": [
+   "Bunu çanta listesini görünce bayılan veliye gönder. Yarın akşam: nalbur açsak ne kazanırız?",
+   "Rakamlar örnek. Bunu çanta listesini görünce bayılan veliye gönder. Yarın: Nalbur açsak ne kazanırız?"
+  ],
+  "yarin": "NALBUR",
+  "caption": "Kırtasiye ayda ne kazanır? ✏️\n\nBir okul çantası 2.500 liraya doluyor. Eylülde kasa dolu, peki kasımda? Defter, eleman, kira… Hepsini düştük.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nBu yıl çantayı kaça doldurdun? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kırtasiye #esnaf #okul #ekonomi #dükkanhesabı",
+  "kaynaklar": [
+   "2026'da bir okul çantası ~2.500 TL'ye doluyor: TÜKİD 2.483 TL (bloomberght.com, 01.09.2026); ~2.500 TL (ekonomist.com.tr 18.09.2026, ekonomigazetesi.com 11.09.2026, gazetebirlik.com 22.08.2026)",
+   "Kırtasiyeciler yıllık satışın ~%40'ını ağustos-eylülde yapıyor (TÜKİD; aa.com.tr 01.09.2021, hurriyet.com.tr 05.09.2020 — eski veri); buna göre sakin ay ≈ eylülün %30'u örnek varsayım",
+   "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+   "Günlük çanta sayısı, mal alış oranı (%62), kira, elektrik ve vergi örnek varsayımdır. Ters köşe (kasım): ciro 650.000 × %30 = 195.000; mal 120.900 + eleman 41.000 + kira 30.000 + elektrik 6.000 + Bağ-Kur 10.000 + vergi/muh. 12.100 = 220.000 → kalan −25.000"
+  ]
+ }
+]

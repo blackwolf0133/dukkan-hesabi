@@ -1,0 +1,225 @@
+{
+ "id": "013",
+ "series": "DÜKKÂN HESABI",
+ "title": "Esnaf Lokantası Ne Kazanır?",
+ "country": {
+  "name": "Esnaf Lokantası"
+ },
+ "instagram_caption": "Esnaf lokantası ayda ne kazanır? 🍲\n\nKuru-pilav 300 lira civarı. Malzeme, beş çalışan, doğalgaz, kira… Hepsini düştük. Sonda öğle kuyruğundaki kartların hesabı var.\n\n(Rakamlar örnek hesaptır; şehre ve lokantaya göre değişir.)\n\nSenin mahallende kuru-pilav kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#esnaflokantası #esnaf #yemek #ekonomi #dükkanhesabı",
+ "kaynaklar": [
+  "Esnaf lokantası 2026: Isparta'da kuru fasulye 160-210 TL, kuru + pilav + salata ortalama 300 TL (haber32.com.tr, 14.07.2026); Kastamonu'da kuru-pilav 230 TL (taskoprupostasi.com, 17.10.2025); Ankara azami tarifesi etsiz bakliyat 480-820 TL, pilav 285-480 TL (karekod.org 2026). Kişi başı 300 TL örnek varsayım",
+  "Yemek kartı komisyonu en fazla %6, ödeme vadesi 30 gün (diken.com.tr 23.05.2018 yönetmelik; ekonomigazetesi.com 26.02.2026 YEKADER); Ticaret Bakanlığı Ağustos 2026: %6 üst sınır, ek ücretler yasak (isinolsa.com, milligazete.com.tr, yenicaggazetesi.com.tr)",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "Müşteri sayısı, malzeme, kira, enerji, vergi ve yemek kartı payı (%80) örnek varsayımdır; ters köşe: 1.170.000 × %80 × %6 = 56.160 → 250.000 − 56.160 = 193.840 ≈ 194 bin"
+ ],
+ "scenes": [
+  {
+   "say": "Esnaf lokantası ayda 250 bin bırakıyor. Ama öğlen çekilen kartlar bunu hem kesiyor hem bekletiyor.",
+   "text": "Esnaf lokantası ayda 250 bin bırakıyor. Ama öğlen çekilen kartlar bunu hem kesiyor hem bekletiyor.",
+   "voice_delay": 0.0,
+   "emotion": "şaşkın",
+   "bg": "dukkan",
+   "narrator": {
+    "x": 0.32,
+    "y": 0.97,
+    "scale": 1.05,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.37,
+      "pose": "think",
+      "face": "think"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Esnaf Lokantası",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "AYDA KALAN",
+     "value": 250000,
+     "color": "green",
+     "x": 0.58,
+     "y": 0.12,
+     "scale": 0.9,
+     "f": 0.0
+    },
+    {
+     "type": "pop",
+     "text": "AMA…",
+     "x": 0.72,
+     "y": 0.45,
+     "size": 120,
+     "f": 0.37,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "say": "Kuru, pilav, salata 300 diyelim. Günde 150 kişi, ayda 1 milyon 170 bin!",
+   "text": "Kuru + pilav + salata 300 ₺ diyelim. Günde 150 kişi, 26 gün: 1.170.000 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "KİŞİ BAŞI",
+     "value": 300,
+     "color": "gold",
+     "x": 0.56,
+     "y": 0.18,
+     "scale": 0.8,
+     "f": 0.211
+    },
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 1170000,
+     "color": "green",
+     "x": 0.56,
+     "y": 0.43,
+     "scale": 0.85,
+     "f": 0.749
+    }
+   ]
+  },
+  {
+   "say": "Malzeme 500 bin. Beş çalışan 205 bin. Kira 60 bin. Doğalgaz, elektrik 50 bin. Bağ-Kur 10 bin. Vergi, muhasebe 95 bin. Kalan?",
+   "text": "Malzeme 500 bin. 5 çalışan 205 bin. Kira 60 bin. Doğalgaz + elektrik 50 bin. Bağ-Kur 10 bin. Vergi + muhasebe 95 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 1170000,
+       "f": 0.0
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -500000,
+       "f": 0.0
+      },
+      {
+       "ad": "Personel",
+       "tutar": -205000,
+       "f": 0.116
+      },
+      {
+       "ad": "Kira",
+       "tutar": -60000,
+       "f": 0.298
+      },
+      {
+       "ad": "Enerji",
+       "tutar": -50000,
+       "f": 0.435
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.616
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -95000,
+       "f": 0.753
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 250000,
+      "f": 0.955
+     }
+    }
+   ]
+  },
+  {
+   "say": "Beşte dördü yemek kartlıysa, yüzde 6 komisyonla kalan yaklaşık 194 bine iner, o da 30 gün sonra.",
+   "text": "5 müşteriden 4'ü yemek kartlıysa %6 komisyonla kalan ≈194 bine iner. Parası da 30 gün sonra!",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "HEP NAKİT",
+     "value": 250000,
+     "color": "green",
+     "x": 0.42,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "%80 YEMEK KARTI",
+     "value": 194000,
+     "color": "red",
+     "x": 0.42,
+     "y": 0.5,
+     "scale": 0.85,
+     "f": 0.509
+    }
+   ]
+  },
+  {
+   "say": "Bunu öğlen kartla yiyen iş arkadaşına gönder. Yarın akşam: kırtasiye açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Bunu öğlen kartla yiyen iş arkadaşına gönder. Yarın: Kırtasiye açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.538,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: KIRTASİYE",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.538,
+     "rot": -4
+    }
+   ]
+  }
+ ],
+ "kanca_v2": true,
+ "kanca_yazi": "Lokanta ayda 250 bin… kartla ödersen?"
+}

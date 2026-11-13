@@ -1,0 +1,225 @@
+{
+ "id": "012",
+ "series": "DÜKKÂN HESABI",
+ "title": "Kuaför Açsak Ne Kazanırız?",
+ "country": {
+  "name": "Kuaför"
+ },
+ "instagram_caption": "Kuaför ayda ne kazanır? 💇‍♀️\n\nFön 300-450, boya 1.000 liradan başlıyor. Kalfa, kira, boya, elektrik… Hepsini düştük. Sondaki senaryo her salonun korkusu.\n\n(Rakamlar örnek hesaptır; şehre ve salona göre değişir.)\n\nSenin kuaföründe fön kaç lira? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#kuaför #esnaf #güzellik #ekonomi #dükkanhesabı",
+ "kaynaklar": [
+  "Kadın kuaförü 2026: Ankara Ticaret Odası azami tarifesi (2. sınıf) fön 398 TL, kesim 1.150 TL, dip boya 1.345 TL (atonet.org.tr, 2026); Sakarya Kuaförler Odası fön 300, düz kesim 900, dip boya 1.300 TL (akyazihaber.com, 11.03.2026); karekod.org 2026 rehberi fön 293-482, kesim 885-1.456, dip boya 1.034-1.703 TL. Müşteri başı karışık ortalama 800 TL örnek varsayım",
+  "2026 asgari ücretin işverene maliyeti 40.874,63 TL (ekonomigazetesi.com, mukellef.co); en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "Müşteri sayısı, kira, malzeme, su-elektrik, vergi ve kalfanın müşterilerin 1/3'üyle ayrılması örnek varsayımdır (haber kaynağı yok, senaryo)",
+  "Ters köşe: ciro 208.000; kalfa maaşı (41.000) ve malzemenin 1/3'ü (12.000) düşer → gider 41.000 + 35.000 + 24.000 + 12.000 + 10.000 + 33.000 = 155.000 → kalan 53.000"
+ ],
+ "scenes": [
+  {
+   "say": "Kuaför ayda 104 bin lira bırakıyor. Ama en iyi kalfan karşıya dükkân açarsa…",
+   "text": "Kuaför ayda 104 bin lira bırakıyor. Ama en iyi kalfan karşıya dükkân açarsa…",
+   "voice_delay": 0.0,
+   "emotion": "şaşkın",
+   "bg": "dukkan",
+   "narrator": {
+    "x": 0.32,
+    "y": 0.97,
+    "scale": 1.05,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.432,
+      "pose": "think",
+      "face": "think"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "tabela",
+     "text": "Kuaför",
+     "delay": 0.0
+    },
+    {
+     "type": "rakam",
+     "label": "AYDA KALAN",
+     "value": 104000,
+     "color": "green",
+     "x": 0.58,
+     "y": 0.12,
+     "scale": 0.9,
+     "f": 0.0
+    },
+    {
+     "type": "pop",
+     "text": "AMA…",
+     "x": 0.72,
+     "y": 0.45,
+     "size": 120,
+     "f": 0.432,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "say": "Fön, kesim, boya karışık; müşteri başı 800 diyelim. Günde 15 müşteri: ayda 312 bin!",
+   "text": "Fön, kesim, boya karışık: müşteri başı 800 ₺ diyelim. Günde 15 müşteri, 26 gün: 312.000 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "MÜŞTERİ BAŞI",
+     "value": 800,
+     "color": "gold",
+     "x": 0.56,
+     "y": 0.18,
+     "scale": 0.8,
+     "f": 0.409
+    },
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 312000,
+     "color": "green",
+     "x": 0.56,
+     "y": 0.43,
+     "scale": 0.85,
+     "f": 0.837
+    }
+   ]
+  },
+  {
+   "say": "Kalfa ve çırak 82 bin. Kira 35 bin. Boya, şampuan 36 bin. Su, elektrik 12 bin. Bağ-Kur 10 bin. Vergi, muhasebe 33 bin. Kalan?",
+   "text": "Kalfa + çırak 82 bin. Kira 35 bin. Boya + şampuan 36 bin. Su + elektrik 12 bin. Bağ-Kur 10 bin. Vergi + muhasebe 33 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 312000,
+       "f": 0.0
+      },
+      {
+       "ad": "Personel",
+       "tutar": -82000,
+       "f": 0.0
+      },
+      {
+       "ad": "Kira",
+       "tutar": -35000,
+       "f": 0.188
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -36000,
+       "f": 0.313
+      },
+      {
+       "ad": "Su+elek.",
+       "tutar": -12000,
+       "f": 0.48
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.647
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -33000,
+       "f": 0.772
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 104000,
+      "f": 0.958
+     }
+    }
+   ]
+  },
+  {
+   "say": "Kalfa gider, müşterilerin üçte biri de peşinden giderse, kalan 104 binden 53 bine iner.",
+   "text": "Kalfa gider, müşterilerin 1/3'ü de peşinden giderse kalan 104 binden 53 bine iner!",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "KALFA VARKEN",
+     "value": 104000,
+     "color": "green",
+     "x": 0.42,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.623
+    },
+    {
+     "type": "rakam",
+     "label": "KALFA GİDİNCE",
+     "value": 53000,
+     "color": "red",
+     "x": 0.42,
+     "y": 0.5,
+     "scale": 0.85,
+     "f": 0.766
+    }
+   ]
+  },
+  {
+   "say": "Bunu yıllardır aynı kuaföre giden birine gönder. Yarın akşam: esnaf lokantası açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Bunu yıllardır aynı kuaföre giden birine gönder. Yarın: Esnaf lokantası açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.5,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: LOKANTA",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.5,
+     "rot": -4
+    }
+   ]
+  }
+ ],
+ "kanca_v2": true,
+ "kanca_yazi": "Kuaför ayda 104 bin… kalfa giderse?"
+}

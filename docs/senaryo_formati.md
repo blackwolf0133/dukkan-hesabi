@@ -85,3 +85,7 @@ Veri: 8 kanalda izleyici ortalama 5-13 sn'de kaydırıyor. Instagram videoyu ön
 En yüksek puan 4'ün altındaysa ilk cümleyi yeniden yaz. Selamlama, giriş, "bugün size … anlatacağım", tarih/yer ile başlamak YASAK; en çarpıcı an ilk cümlede. Doğruluk kuralları aynen geçerli (abartı/uydurma yok).
 
 **Gönderilme (DM) sebebi:** Instagram'da yeni kişilere ulaştıran en güçlü sinyal videonun DM ile birine gönderilmesi. Her bölümün SON seslendirilen cümlesi (ya da kapanış kartı alt yazısı), izleyicinin videoyu belirli birine göndermesi için doğal bir sebep versin; TEK cümle, dilenmeden: "Bunu her ay sonu batan arkadaşına gönder.", "Bunu gece yolculuğu seven birine gönder." Açıklamadaki tek çağrı kuralı aynen kalır (bu cümle videonun içinde).
+
+**Kısa bölüm üretici (13 Kasım):** `python tools/bolum_kisa.py tools/kisa_bolumler.json` 5 sahnelik (kanca · fiyat+ciro · fiş · ters köşe · kapanış)
+kısa yapıyı üretir; fiş/rakam `f`'lerini kelime sırasından hesaplar, fiş toplamını ve `kanca_yazi` uzunluğunu kontrol eder.
+Not: `engine/render.py`'de `draw_kanca_yazi` tanımlı ama render döngüsünde çağrılmıyor; 0. saniye kanca yazısı şu an videoda görünmüyor.

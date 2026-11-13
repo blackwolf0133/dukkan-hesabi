@@ -1,239 +1,220 @@
 {
-  "id": "008",
-  "series": "DÜKKÂN HESABI",
-  "title": "Terzi Açsak Ne Kazanırız?",
-  "country": {
-    "name": "Terzi"
-  },
-  "kaynaklar": [
-    "Ordu Terziler Odası 2026 tarifesi: paça kısaltma 150 TL, ceket kol kısaltma 400 TL, ceket daraltma 550 TL (orduyenidonem.com.tr 24.02.2026)",
-    "İstanbul'da terzi tadilatı 400-2.000 TL, tek pantolon paça kısaltma 450 TL örneği (armut.com, Ekim 2026); iş başı ortalama 300 TL örnek",
-    "2026 en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
-    "İş sayısı, kira, malzeme, vergi ve 1 haftalık hastalık örnek varsayımdır; ters köşe: 6 gün × 18 iş × 300 = 32.400 → kalan 59.000"
-  ],
-  "instagram_caption": "Terzi ayda ne kazanır? 🧵\n\nPaça, fermuar, daraltma… Tek kişilik dükkânın hesabını yaptık. Eleman yok, kira küçük ama sondaki risk büyük.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin dolabında paçası bekleyen kaç pantolon var? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#terzi #tadilat #esnaf #ekonomi #dükkanhesabı",
-  "scenes": [
+ "id": "008",
+ "series": "DÜKKÂN HESABI",
+ "title": "Terzi Açsak Ne Kazanırız?",
+ "country": {
+  "name": "Terzi"
+ },
+ "kaynaklar": [
+  "Ordu Terziler Odası 2026 tarifesi: paça kısaltma 150 TL, ceket kol kısaltma 400 TL, ceket daraltma 550 TL (orduyenidonem.com.tr 24.02.2026)",
+  "İstanbul'da terzi tadilatı 400-2.000 TL, tek pantolon paça kısaltma 450 TL örneği (armut.com, Ekim 2026); iş başı ortalama 300 TL örnek",
+  "2026 en düşük indirimli Bağ-Kur 10.156,73 TL (vergimerkezi.com.tr, politikam.com)",
+  "İş sayısı, kira, malzeme, vergi ve 1 haftalık hastalık örnek varsayımdır; ters köşe: 6 gün × 18 iş × 300 = 32.400 → kalan 59.000"
+ ],
+ "instagram_caption": "Terzi ayda ne kazanır? 🧵\n\nPaça, fermuar, daraltma… Tek kişilik dükkânın hesabını yaptık. Eleman yok, kira küçük ama sondaki risk büyük.\n\n(Rakamlar örnek hesaptır; şehre ve dükkâna göre değişir.)\n\nSenin dolabında paçası bekleyen kaç pantolon var? 👇\nHer akşam 19:30'da yeni bir dükkân hesabı için takip et 🧮\n\n#terzi #tadilat #esnaf #ekonomi #dükkanhesabı",
+ "scenes": [
+  {
+   "say": "Terzi ayda 91 bin 400 lira bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor.",
+   "text": "Terzi ayda 91.400 ₺ bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor.",
+   "voice_delay": 0.0,
+   "emotion": "şaşkın",
+   "bg": "dukkan",
+   "narrator": {
+    "x": 0.32,
+    "y": 0.97,
+    "scale": 1.05,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.407,
+      "pose": "think",
+      "face": "think"
+     }
+    ]
+   },
+   "props": [
     {
-      "say": "Terzi ayda 91 bin lira bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor.",
-      "text": "Terzi ayda 91 bin lira bırakıyor. Ama ustanın bir haftalık gribi bunun üçte birini götürüyor.",
-      "voice_delay": 0.0,
-      "emotion": "şaşkın",
-      "bg": "dukkan",
-      "narrator": {
-        "x": 0.32,
-        "y": 0.97,
-        "scale": 1.05,
-        "pose": "point",
-        "face": "happy",
-        "beats": [
-          {
-            "f": 0.55,
-            "pose": "think",
-            "face": "think"
-          }
-        ]
-      },
-      "props": [
-        {
-          "type": "tabela",
-          "text": "Terzi",
-          "delay": 0.0
-        },
-        {
-          "type": "rakam",
-          "label": "AYDA KALAN",
-          "value": 91400,
-          "color": "green",
-          "x": 0.58,
-          "y": 0.12,
-          "scale": 0.9,
-          "f": 0.0
-        },
-        {
-          "type": "pop",
-          "text": "AMA…",
-          "x": 0.72,
-          "y": 0.45,
-          "size": 120,
-          "f": 0.52,
-          "rot": -6
-        }
-      ]
+     "type": "tabela",
+     "text": "Terzi",
+     "delay": 0.0
     },
     {
-      "say": "Ordu'da oda tarifesinde paça kısaltma 150 lira, büyük şehirde 400'ü buluyor. Fermuar, kol, daraltma derken iş başı 300 diyelim.",
-      "text": "Ordu tarifesi: paça 150 ₺. Büyük şehirde 400 ₺'yi buluyor. İş başı ortalama 300 ₺ diyelim.",
-      "bg": "dukkan",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.2,
-          "pose": "hips",
-          "face": "happy",
-          "scale": 1.0
-        }
-      ],
-      "props": [
-        {
-          "type": "tabela",
-          "text": "Terzi",
-          "delay": 0.0
-        },
-        {
-          "type": "rakam",
-          "label": "İŞ BAŞI",
-          "value": 300,
-          "color": "gold",
-          "x": 0.62,
-          "y": 0.2,
-          "scale": 0.85,
-          "f": 0.4
-        }
-      ]
+     "type": "rakam",
+     "label": "AYDA KALAN",
+     "value": 91400,
+     "color": "green",
+     "x": 0.58,
+     "y": 0.12,
+     "scale": 0.9,
+     "f": 0.0
     },
     {
-      "say": "Günde 18 iş, ayda 26 gün. Kasaya giren: 140 bin 400 lira!",
-      "text": "Günde 18 iş, 26 gün. Kasaya giren: 140.400 ₺!",
-      "bg": "kasa",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.18,
-          "pose": "open",
-          "face": "happy",
-          "scale": 1.0
-        }
-      ],
-      "props": [
-        {
-          "type": "rakam",
-          "label": "AYLIK CİRO",
-          "value": 140400,
-          "color": "green",
-          "x": 0.55,
-          "y": 0.28,
-          "f": 0.4
-        }
-      ]
-    },
-    {
-      "say": "Usta tek başına, eleman yok. Küçük bir dükkân, kira 20 bin. İplik, fermuar, düğme 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi ve muhasebe 8 bin. Kalan?",
-      "text": "Eleman yok. Kira 20 bin. İplik + fermuar + düğme 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi + muhasebe 8 bin. Kalan?",
-      "bg": "kasa",
-      "actors": [
-        {
-          "id": "k",
-          "x": 0.14,
-          "pose": "think",
-          "face": "think",
-          "scale": 0.9
-        }
-      ],
-      "props": [
-        {
-          "type": "fis",
-          "title": "AYLIK HESAP",
-          "x": 0.6,
-          "y": 0.47,
-          "scale": 0.9,
-          "rows": [
-            {
-              "ad": "Ciro",
-              "tutar": 140400,
-              "f": 0.0
-            },
-            {
-              "ad": "Kira",
-              "tutar": -20000,
-              "f": 0.168
-            },
-            {
-              "ad": "Malzeme",
-              "tutar": -8000,
-              "f": 0.382
-            },
-            {
-              "ad": "Elektrik",
-              "tutar": -3000,
-              "f": 0.561
-            },
-            {
-              "ad": "Bağ-Kur",
-              "tutar": -10000,
-              "f": 0.668
-            },
-            {
-              "ad": "Vergi+muh.",
-              "tutar": -8000,
-              "f": 0.775
-            }
-          ],
-          "total": {
-            "ad": "KALAN",
-            "tutar": 91400,
-            "f": 0.964
-          }
-        }
-      ]
-    },
-    {
-      "say": "Asıl risk şu: usta tek kişi. Bir hafta hastalanırsa dükkân kapalı, kalan 91 bin 400'den 59 bine iner.",
-      "text": "Usta tek kişi! 1 hafta hastalanırsa dükkân kapalı: kalan 91.400'den 59.000'e iner.",
-      "bg": "kasa",
-      "actors": [],
-      "props": [
-        {
-          "type": "rakam",
-          "label": "TAM AY",
-          "value": 91400,
-          "color": "green",
-          "x": 0.5,
-          "y": 0.22,
-          "scale": 0.85,
-          "f": 0.2
-        },
-        {
-          "type": "rakam",
-          "label": "1 HAFTA HASTA",
-          "value": 59000,
-          "color": "red",
-          "x": 0.5,
-          "y": 0.55,
-          "scale": 0.85,
-          "f": 0.62
-        }
-      ]
-    },
-    {
-      "say": "Rakamlar örnek, sen olsan bir hafta izne çıkabilir miydin? Yarın akşam: manav açsak ne kazanırız?",
-      "text": "Rakamlar örnek. Sen olsan izne çıkabilir miydin? Yarın: Manav açsak ne kazanırız?",
-      "emotion": "mutlu",
-      "narrator": {
-        "x": 0.5,
-        "y": 0.97,
-        "scale": 1.6,
-        "pose": "point",
-        "face": "happy",
-        "beats": [
-          {
-            "f": 0.5,
-            "pose": "wave",
-            "face": "wink"
-          }
-        ]
-      },
-      "props": [
-        {
-          "type": "pop",
-          "text": "YARIN: MANAV",
-          "x": 0.5,
-          "y": 0.13,
-          "size": 92,
-          "f": 0.55,
-          "rot": -4
-        }
-      ]
+     "type": "pop",
+     "text": "AMA…",
+     "x": 0.72,
+     "y": 0.45,
+     "size": 120,
+     "f": 0.407,
+     "rot": -6
     }
-  ],
-  "kanca_v2": true
+   ]
+  },
+  {
+   "say": "Paça, fermuar, daraltma; iş başı 300 diyelim. Günde 18 iş, 26 gün: 140 bin 400 lira!",
+   "text": "Paça, fermuar, daraltma: iş başı 300 ₺ diyelim. Günde 18 iş, 26 gün: 140.400 ₺!",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.18,
+     "pose": "open",
+     "face": "happy",
+     "scale": 1.0
+    }
+   ],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "İŞ BAŞI",
+     "value": 300,
+     "color": "gold",
+     "x": 0.56,
+     "y": 0.18,
+     "scale": 0.8,
+     "f": 0.292
+    },
+    {
+     "type": "rakam",
+     "label": "AYLIK CİRO",
+     "value": 140400,
+     "color": "green",
+     "x": 0.56,
+     "y": 0.43,
+     "scale": 0.85,
+     "f": 0.73
+    }
+   ]
+  },
+  {
+   "say": "Usta tek başına. Kira 20 bin. Malzeme 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi, muhasebe 8 bin. Kalan?",
+   "text": "Usta tek başına. Kira 20 bin. İplik + fermuar 8 bin. Elektrik 3 bin. Bağ-Kur 10 bin. Vergi + muhasebe 8 bin. Kalan?",
+   "bg": "kasa",
+   "actors": [
+    {
+     "id": "k",
+     "x": 0.14,
+     "pose": "think",
+     "face": "think",
+     "scale": 0.9
+    }
+   ],
+   "props": [
+    {
+     "type": "fis",
+     "title": "AYLIK HESAP",
+     "x": 0.6,
+     "y": 0.47,
+     "scale": 0.9,
+     "rows": [
+      {
+       "ad": "Ciro",
+       "tutar": 140400,
+       "f": 0.0
+      },
+      {
+       "ad": "Kira",
+       "tutar": -20000,
+       "f": 0.13
+      },
+      {
+       "ad": "Malzeme",
+       "tutar": -8000,
+       "f": 0.28
+      },
+      {
+       "ad": "Elektrik",
+       "tutar": -3000,
+       "f": 0.43
+      },
+      {
+       "ad": "Bağ-Kur",
+       "tutar": -10000,
+       "f": 0.58
+      },
+      {
+       "ad": "Vergi+muh.",
+       "tutar": -8000,
+       "f": 0.73
+      }
+     ],
+     "total": {
+      "ad": "KALAN",
+      "tutar": 91400,
+      "f": 0.95
+     }
+    }
+   ]
+  },
+  {
+   "say": "Usta bir hafta hastalanırsa dükkân kapalı; kalan 91 bin 400'den 59 bine iner.",
+   "text": "Usta 1 hafta hasta: dükkân kapalı, kalan 91.400'den 59.000'e iner!",
+   "bg": "kasa",
+   "actors": [],
+   "props": [
+    {
+     "type": "rakam",
+     "label": "TAM AY",
+     "value": 91400,
+     "color": "green",
+     "x": 0.42,
+     "y": 0.2,
+     "scale": 0.85,
+     "f": 0.518
+    },
+    {
+     "type": "rakam",
+     "label": "1 HAFTA HASTA",
+     "value": 59000,
+     "color": "red",
+     "x": 0.42,
+     "y": 0.5,
+     "scale": 0.85,
+     "f": 0.749
+    }
+   ]
+  },
+  {
+   "say": "Bunu hasta hasta işe giden arkadaşına gönder. Yarın akşam: manav açsak ne kazanırız?",
+   "text": "Rakamlar örnek. Bunu hasta hasta işe giden arkadaşına gönder. Yarın: Manav açsak ne kazanırız?",
+   "emotion": "mutlu",
+   "narrator": {
+    "x": 0.5,
+    "y": 0.97,
+    "scale": 1.6,
+    "pose": "point",
+    "face": "happy",
+    "beats": [
+     {
+      "f": 0.538,
+      "pose": "wave",
+      "face": "wink"
+     }
+    ]
+   },
+   "props": [
+    {
+     "type": "pop",
+     "text": "YARIN: MANAV",
+     "x": 0.5,
+     "y": 0.13,
+     "size": 92,
+     "f": 0.538,
+     "rot": -4
+    }
+   ]
+  }
+ ],
+ "kanca_v2": true,
+ "kanca_yazi": "Terzi ayda 91 bin… usta hastalanırsa?"
 }
