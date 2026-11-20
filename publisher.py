@@ -95,8 +95,8 @@ def _wait_container(host, container_id, token, timeout=900):
     raise PublishError(f"Video işleme zaman aşımı. Son durum: {last}")
 
 
-HESAPLAR = {"nekazanir.tr", "kacsaniyenvar"} | {x.strip().lstrip("@").lower() for x in os.environ.get("IG_USERNAME", "").split(",") if x.strip()}
-HESAP = "kacsaniyenvar"
+HESAPLAR = {"nekazanir.tr", "kacsaniyenvar", "kacsaniyenvar.tr"} | {x.strip().lstrip("@").lower() for x in os.environ.get("IG_USERNAME", "").split(",") if x.strip()}
+HESAP = "kacsaniyenvar.tr"
 VARSAYILAN_KIMLIK = os.environ.get("IG_KIMLIK", "17841471206025263")   # eski @nekazanir.tr hesabı (21 Kasım: Kaç Saniyen Var? oldu)
 
 
