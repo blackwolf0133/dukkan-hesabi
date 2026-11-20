@@ -1,0 +1,52 @@
+{
+  "id": "101",
+  "slug": "suya_dusen_araba",
+  "title": "Suya Düşen Araba",
+  "dizi_adi": "Suya Düşen Araba",
+  "gece": 1,
+  "seed": 71011,
+  "sure_sn": 60,
+  "kanca_yazi": "Altmış saniyen var.",
+  "scenes": [
+    {
+      "text": "Araban suya düştü. Altmış saniyen var.",
+      "prompt": "First-person view from the driver's seat of a car that has just plunged into a dark river at night, water splashing over the hood, headlights shining into murky water, dramatic moonlight"
+    },
+    {
+      "text": "Gece, ıslak bir köprü yolu. Direksiyon kaydı ve araba nehre uçtu.",
+      "prompt": "A small car flying off a wet bridge road at night toward a river, rain, guardrail broken, wide cinematic shot"
+    },
+    {
+      "text": "Araba şimdilik yüzüyor. Ama su, kapının altından içeri sızıyor.",
+      "prompt": "Inside a car floating on a river, water seeping in around the door bottom and over the floor mats, dashboard lights glowing"
+    },
+    {
+      "text": "Kapıyı itiyorsun. Kıpırdamıyor. Dışarıdaki su onu bastırıyor.",
+      "prompt": "Close view of a car door from inside, water pressing against the outside of the window up to the middle, a hand pushing the door handle, no face visible"
+    },
+    {
+      "text": "Aklına filmlerde gördüğün o sahne geliyor: içerisi dolsun, basınç eşitlensin, sonra kapıyı aç.",
+      "prompt": "A dreamy movie-scene style image of a car fully underwater with a calm person inside waiting, bubbles rising, cinematic blue light, seen from outside the car"
+    },
+    {
+      "text": "Ama camlar hâlâ çalışıyor. Su ise camın altına kadar geldi.",
+      "prompt": "A car side window from inside, river water outside reaching the bottom edge of the glass, the window switch on the door panel lit"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Bekleyip kapıdan mı çıkardın, yoksa hemen camdan mı?",
+      "prompt": "A car half sunk in a river at night seen from outside, front end dipping under water, ripples and moonlight"
+    }
+  ],
+  "secim": {
+    "A": "Su dolsun, sonra kapıdan çık",
+    "B": "Hemen camı aç, camdan çık"
+  },
+  "caption": "Araban suya düştü, altmış saniyen var. Filmlerdeki gibi beklemek mi, hemen camdan çıkmak mı? 🚗🌊",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ]
+}

@@ -95,8 +95,9 @@ def _wait_container(host, container_id, token, timeout=900):
     raise PublishError(f"Video işleme zaman aşımı. Son durum: {last}")
 
 
-HESAP = os.environ.get("IG_USERNAME", "nekazanir.tr").strip().lstrip("@").lower()
-VARSAYILAN_KIMLIK = "17841471206025263" if HESAP == "nekazanir.tr" else ""   # @nekazanir.tr Instagram kimliği
+HESAPLAR = {"nekazanir.tr", "kacsaniyenvar"} | {x.strip().lstrip("@").lower() for x in os.environ.get("IG_USERNAME", "").split(",") if x.strip()}
+HESAP = "kacsaniyenvar"
+VARSAYILAN_KIMLIK = os.environ.get("IG_KIMLIK", "17841471206025263")   # eski @nekazanir.tr hesabı (21 Kasım: Kaç Saniyen Var? oldu)
 
 
 def _kullanici_adi(uid, token, mode):
@@ -106,12 +107,12 @@ def _kullanici_adi(uid, token, mode):
 
 def resolve_user_id(token, mode):
     """Paylaşılacak Instagram hesabının kimliği. Aynı anahtar başka kanallara da erişebildiği için
-    hesap HER ZAMAN kullanıcı adıyla (IG_USERNAME, varsayılan sonmola.dizi) doğrulanır; eşleşmezse paylaşım yapılmaz."""
+    hesap HER ZAMAN kullanıcı adıyla (IG_USERNAME, @nekazanir.tr / @kacsaniyenvar) doğrulanır; eşleşmezse paylaşım yapılmaz."""
     uid = os.environ.get("IG_USER_ID", "").strip() or VARSAYILAN_KIMLIK
     if uid:
         ad = _kullanici_adi(uid, token, mode)
-        if ad != HESAP:
-            raise PublishError(f"IG_USER_ID başka bir hesaba ait (@{ad}), @{HESAP} değil. Paylaşım durduruldu.")
+        if ad not in HESAPLAR:
+            raise PublishError(f"IG_USER_ID başka bir hesaba ait (@{ad}), {sorted(HESAPLAR)} değil. Paylaşım durduruldu.")
         return uid
     if mode != "instagram":
         g = f"https://graph.facebook.com/{API_VERSION}"
@@ -135,20 +136,20 @@ def resolve_user_id(token, mode):
                 except PublishError:
                     pass
         for h in adaylar:
-            if (h.get("username") or "").lower() == HESAP:
+            if (h.get("username") or "").lower() in HESAPLAR:
                 return h["id"]
         bulunan = ", ".join(sorted({"@" + (h.get("username") or "?") for h in adaylar})) or "hiçbiri"
         raise PublishError(f"@{HESAP} hesabı bu anahtarla bulunamadı (erişilen hesaplar: {bulunan}). "
                            "Hesabı sistem kullanıcısına atayın ya da IG_USER_ID secret'ını ekleyin.")
     me = _request("GET", f"https://graph.instagram.com/{API_VERSION}/me",
                   {"fields": "user_id,username", "access_token": token})
-    if (me.get("username") or "").lower() != HESAP:
+    if (me.get("username") or "").lower() not in HESAPLAR:
         raise PublishError(f"Anahtar @{me.get('username')} hesabına ait, @{HESAP} değil. Paylaşım durduruldu.")
     return str(me.get("user_id") or me["id"])
 
 
 def publish_reel(video_path=None, video_url=None, caption="", mode=None,
-                 user_id=None, token=None, share_to_feed=True):
+                 user_id=None, token=None, share_to_feed=True, klasik=False):
     """Reel paylaşır, {"media_id", "permalink"} döndürür."""
     token = token or os.environ["IG_ACCESS_TOKEN"]
     mode = mode or detect_mode(token)
@@ -160,7 +161,13 @@ def publish_reel(video_path=None, video_url=None, caption="", mode=None,
               "share_to_feed": "true" if share_to_feed else "false", "access_token": token}
 
     upload_error = None
-    if mode == "facebook":
+    if klasik and video_url:
+        # 15 Kasım testi: @kayip.vakalar'da büyük dosyalar rupload ile hiç işlenmedi (2207082), ama
+        # klasik yol (Meta videoyu adresten kendisi indiriyor) aynı videoyu 60 sn'de işledi.
+        params["video_url"] = video_url
+        c = _request("POST", f"{base}/{user_id}/media", params)
+        cid = c["id"]
+    elif mode == "facebook":
         # 1) Yükleme oturumu aç
         params["upload_type"] = "resumable"
         c = _request("POST", f"{base}/{user_id}/media", params)

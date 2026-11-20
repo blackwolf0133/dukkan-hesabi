@@ -1,0 +1,56 @@
+{
+  "id": "102B",
+  "slug": "camdan_ciktin",
+  "title": "Camdan Çıktın",
+  "dizi_adi": "Suya Düşen Araba",
+  "gece": 2,
+  "dal": "B",
+  "seed": 71022,
+  "scenes": [
+    {
+      "text": "Camı açmayı seçtin. Doğru seçim.",
+      "prompt": "A car side window rolling down while the car floats on a river at night, water at the lower edge of the window"
+    },
+    {
+      "text": "Önce kemeri çözdün. Su soğuktu ama cam açıktı.",
+      "prompt": "Close view of a seatbelt being unbuckled inside a car, water up to the seat, dramatic light"
+    },
+    {
+      "text": "Camdan sıyrıldın ve arabanın tavanına tırmandın.",
+      "prompt": "A person climbing out of a car window onto the roof of a floating car in a river at night, seen from behind, moonlight"
+    },
+    {
+      "text": "Birkaç saniye sonra camlar sustu, araba suya gömüldü. Sen kıyıya yüzdün.",
+      "prompt": "A person swimming toward a riverbank with flashlights shining from the shore, a car disappearing under water behind, night"
+    },
+    {
+      "text": "Batan araç deneyleri yapan araştırmacı Gordon Giesbrecht'e göre ilk altmış saniyede kapılar açılmaz, ama camlar çalışır.",
+      "prompt": "A safety test pool with a car being lowered into water by a crane, divers nearby, bright daylight, documentary feel"
+    },
+    {
+      "text": "Uzmanların sırası şu: kemer, cam, çocuklar, dışarı.",
+      "prompt": "Simple illustrated scene inside a car: an unbuckled seatbelt, an open side window, a child seat in the back, clean bright lighting, no text"
+    },
+    {
+      "text": "Kemeri çöz, camı aç, önce çocukları çıkar, sonra sen çık. Telefonla vakit kaybetme.",
+      "prompt": "A person helping a child climb out of a car window onto the roof of a floating car, river at dusk, hopeful lighting, faces not visible"
+    },
+    {
+      "text": "Bunu araba kullanan birine gönder. Bir gün bu altmış saniye ona lazım olabilir.",
+      "prompt": "A car parked safely on a riverside road at sunrise, calm water, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Hemen kemeri çöz, camı aç, camdan çık",
+    "kaynak": "G. Giesbrecht batan araç testleri, AAA"
+  },
+  "caption": "Çoğunluk camdan çıktı ve haklıydı. Ama neden kapı değil, cam? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ]
+}

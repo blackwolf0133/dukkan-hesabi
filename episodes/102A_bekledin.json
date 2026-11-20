@@ -1,0 +1,60 @@
+{
+  "id": "102A",
+  "slug": "bekledin",
+  "title": "Beklemeyi Seçtin",
+  "dizi_adi": "Suya Düşen Araba",
+  "gece": 2,
+  "dal": "A",
+  "seed": 71021,
+  "scenes": [
+    {
+      "text": "Beklemeyi seçtin. Saniyeler uzadıkça uzadı.",
+      "prompt": "Inside a sinking car, water rising to the chest level of the driver seen from behind, dim green underwater light coming through the windows"
+    },
+    {
+      "text": "Su göğsüne çıktı. Camın düğmesine bastın. Artık çalışmıyor.",
+      "prompt": "Close view of a car door window switch underwater, lights flickering off, bubbles"
+    },
+    {
+      "text": "Araba burnunu suya gömdü. Etraf karanlık bir yeşile döndü.",
+      "prompt": "A car sinking nose first into a dark green river, seen from underwater, headlights fading"
+    },
+    {
+      "text": "Kapı ancak içerisi tamamen dolunca açıldı. Nefesin bitmek üzereydi.",
+      "prompt": "A car door slowly opening underwater, a figure swimming up toward the light surface, seen from behind, bubbles"
+    },
+    {
+      "text": "Bu sefer şanslıydın. Gerçekte ise uzmanlar bu yolu en tehlikelisi sayıyor.",
+      "prompt": "A person sitting wrapped in a blanket on a riverbank at night, ambulance lights in the distance, seen from behind"
+    },
+    {
+      "text": "Batan araç deneyleri yapan araştırmacı Gordon Giesbrecht'e göre ilk altmış saniyede kapılar açılmaz, ama camlar çalışır.",
+      "prompt": "A safety test pool with a car being lowered into water by a crane, divers nearby, bright daylight, documentary feel"
+    },
+    {
+      "text": "Uzmanların sırası şu: kemer, cam, çocuklar, dışarı.",
+      "prompt": "Simple illustrated scene inside a car: an unbuckled seatbelt, an open side window, a child seat in the back, clean bright lighting, no text"
+    },
+    {
+      "text": "Kemeri çöz, camı aç, önce çocukları çıkar, sonra sen çık. Telefonla vakit kaybetme.",
+      "prompt": "A person helping a child climb out of a car window onto the roof of a floating car, river at dusk, hopeful lighting, faces not visible"
+    },
+    {
+      "text": "Bunu araba kullanan birine gönder. Bir gün bu altmış saniye ona lazım olabilir.",
+      "prompt": "A car parked safely on a riverside road at sunrise, calm water, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Hemen kemeri çöz, camı aç, camdan çık",
+    "kaynak": "G. Giesbrecht batan araç testleri, AAA"
+  },
+  "caption": "Çoğunluk beklemeyi seçti. Filmlerdeki bu yol gerçekte en tehlikelisi. Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ]
+}
