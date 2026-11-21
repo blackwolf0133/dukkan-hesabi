@@ -1,0 +1,60 @@
+{
+  "id": "201",
+  "slug": "sobali_oda",
+  "title": "Sobalı Oda",
+  "dizi_adi": "Sobalı Oda",
+  "gece": 1,
+  "seed": 72011,
+  "sure_sn": 60,
+  "kanca_yazi": "Altmış saniyen var.",
+  "scenes": [
+    {
+      "text": "Gece üç. Başın çatlıyor. Altmış saniyen var.",
+      "prompt": "First-person view waking up in a dark small bedroom at night, an old cast-iron coal stove glowing orange in the corner, blurry vision, cold blue moonlight from a window"
+    },
+    {
+      "text": "Sobalı odada, kardeşinle uyuyordun. Bir baş ağrısıyla uyandın.",
+      "prompt": "A cozy old-style Turkish room at night with a coal stove and its metal pipe going into the wall, two beds, blankets, warm dim glow, wide shot, no people's faces visible"
+    },
+    {
+      "text": "Midene bir bulantı oturdu. Ayağa kalkınca başın dönüyor.",
+      "prompt": "First-person view looking down at bare feet on a patterned carpet, the room slightly tilted and blurry, dim orange stove light"
+    },
+    {
+      "text": "Kardeşin uyuyor. Seslendin ama gözünü zor açıyor.",
+      "prompt": "A child sleeping under a thick blanket seen from behind, only hair and blanket visible, a hand gently shaking the shoulder, dim stove light"
+    },
+    {
+      "text": "Soba hâlâ yanıyor. Odada ne bir koku var ne de duman.",
+      "prompt": "Close view of a coal stove with glowing embers behind its small window, clean clear air in the room, no smoke, quiet night"
+    },
+    {
+      "text": "Aklından geçen şu: biraz hava alsan geçer. Pencereyi aralayıp tekrar uzanırsın.",
+      "prompt": "A hand reaching toward the handle of a closed window with frost on the glass, snowy night outside, a bed in the foreground"
+    },
+    {
+      "text": "Ya da hiç beklemeden kardeşini kaldırıp kapıdan çıkarsın. Dışarısı gece ayazı.",
+      "prompt": "A bedroom door half open leading to a dark hallway and stairs, cold blue light, the stove glow behind, seen from the bed"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Pencereyi açıp uzanır mıydın, yoksa hemen dışarı mı çıkardın?",
+      "prompt": "Wide shot of a small snowy apartment building at night with one window glowing orange from a stove, quiet street, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Pencereyi aç, biraz uzan",
+    "B": "Kardeşini kaldır, hemen dışarı çık"
+  },
+  "caption": "Gece üçte baş ağrısıyla uyandın, oda sobalı. Pencereyi açıp uzanmak mı, hemen dışarı çıkmak mı? 🔥😵‍💫",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://halksagligi.hacettepe.edu.tr/duyurular/halkayonelik/cobilginotu2026.pdf",
+    "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/karbonmonoksit-zehirlenmesi/"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "502B",
+  "slug": "suya_atladin",
+  "title": "Suya Atladın",
+  "dizi_adi": "Gölde Çırpınan",
+  "gece": 2,
+  "dal": "B",
+  "seed": 75022,
+  "scenes": [
+    {
+      "text": "Suya atlamayı seçtin.",
+      "prompt": "A person seen from behind diving off a wooden pier into a lake, splash, afternoon"
+    },
+    {
+      "text": "Göl düşündüğünden soğuk ve derindi. Kolların çabuk yoruldu.",
+      "prompt": "Underwater view of a dark green lake, legs kicking, light rays from above, deep water below"
+    },
+    {
+      "text": "Yanına varınca arkadaşın panikle omuzlarına tutundu. İkiniz birden suya gömüldünüz.",
+      "prompt": "Two people at the lake surface seen from behind, one grabbing the other's shoulders, splashing, tense"
+    },
+    {
+      "text": "Neyse ki kıyıdaki biri can simidini attı. İkiniz de ona sarıldınız.",
+      "prompt": "A life ring landing between two swimmers in a lake, both reaching for it, seen from the pier"
+    },
+    {
+      "text": "Bu sefer şanslıydın. Uzmanlar bu yolu en tehlikelisi sayıyor.",
+      "prompt": "Two people seen from behind sitting wrapped in towels on a lake shore, calm water"
+    },
+    {
+      "text": "Kızılhaç'ın kuralı şu: uzan ya da at, ama suya girme.",
+      "prompt": "A clean educational scene of a lake pier with a long pole and a life ring placed side by side, bright daylight, no text"
+    },
+    {
+      "text": "Panikleyen biri kurtarıcısına tutunur ve onu da suyun altına çekebilir.",
+      "prompt": "Stylized underwater view of a swimmer's hands reaching up toward the light, calm educational tone, no faces"
+    },
+    {
+      "text": "Önce yardım çağır. Yüzüstü yatıp bir dal uzat ya da yüzen bir şey at. Ucunda ip olursa daha iyi.",
+      "prompt": "A person lying on their stomach on a pier holding out a long branch toward the water, seen from behind"
+    },
+    {
+      "text": "Bunu yüzmeye giden birine gönder. Bir gün iki hayatı birden kurtarabilir.",
+      "prompt": "A peaceful lake at sunset with a life ring hanging on a pier post, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Suya girme, ipli yüzen bir şey at",
+    "kaynak": "Amerikan Kızılhaçı (Red Cross)"
+  },
+  "caption": "Çoğunluk suya atladı. Uzmanlar bu yolu neden en tehlikelisi sayıyor? Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/content/dam/redcross/training-services/whale-tales/pdfs/Lesson_8_FINAL.pdf",
+    "https://discover.pbc.gov/drowningprevention/Pages/Reach-Throw-DontGo.aspx"
+  ]
+}

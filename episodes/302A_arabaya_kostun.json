@@ -1,0 +1,60 @@
+{
+  "id": "302A",
+  "slug": "arabaya_kostun",
+  "title": "Arabaya Koştun",
+  "dizi_adi": "Çayırda Fırtına",
+  "gece": 2,
+  "dal": "A",
+  "seed": 73021,
+  "scenes": [
+    {
+      "text": "Arabaya koşmayı seçtin. Doğru seçim.",
+      "prompt": "A hiker seen from behind running across a wet meadow toward a distant car in the rain, storm sky"
+    },
+    {
+      "text": "Yağmurun altında çayırı geçtin. Sırılsıklam oldun ama durmadın.",
+      "prompt": "Feet in hiking boots splashing through wet grass, rain, low angle, motion"
+    },
+    {
+      "text": "Kapıyı kapadın, camları sıkıca kapattın.",
+      "prompt": "Inside a car looking out through a rain-covered windshield at the stormy meadow, a hand on the closed window, warm dashboard glow"
+    },
+    {
+      "text": "Birkaç dakika sonra çayırdaki o ağaca yıldırım düştü. Sen arabada güvendeydin.",
+      "prompt": "A lightning bolt striking a lone tree on a meadow seen through a rainy car windshield, safe cozy car interior in the foreground"
+    },
+    {
+      "text": "ABD Ulusal Hava Servisi'ne göre ağaç altına sığınmak, yıldırım kazalarının en sık ikinci nedeni.",
+      "prompt": "A lone large tree on an open meadow under a dark stormy sky, lightning in the far distance, wide educational shot"
+    },
+    {
+      "text": "Yere yatmak ya da çömelmek de korumaz. Toprağa yayılan akım yatana daha çok ulaşır.",
+      "prompt": "An open grassy field in the rain with a faint glowing ripple spreading across the ground, stylized, no people"
+    },
+    {
+      "text": "Güvenli yer sağlam bir bina ya da camları kapalı, tavanı sert bir araba. Motosiklet, üstü açık araç güvenli değil.",
+      "prompt": "A closed hard-top car with rain on its windows parked by a road, stormy sky, warm light inside the car"
+    },
+    {
+      "text": "Bunu doğa yürüyüşü seven birine gönder. Bir gün o otuz saniye ona lazım olabilir.",
+      "prompt": "A green meadow after the storm with a rainbow and sunlight breaking through clouds, a hiking trail, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Sağlam binaya ya da kapalı arabaya sığın",
+    "kaynak": "ABD Ulusal Hava Servisi (NOAA), CDC"
+  },
+  "caption": "Çoğunluk arabaya koştu ve haklıydı. Peki ağaç neden bu kadar tehlikeli? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.weather.gov/safety/lightning-myths",
+    "https://www.cdc.gov/lightning/safety/index.html"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "401",
+  "slug": "tavada_alev",
+  "title": "Tavada Alev",
+  "dizi_adi": "Tavada Alev",
+  "gece": 1,
+  "seed": 74011,
+  "sure_sn": 10,
+  "kanca_yazi": "On saniyen var.",
+  "scenes": [
+    {
+      "text": "Tavadaki yağ alev aldı. On saniyen var.",
+      "prompt": "First-person view of a frying pan on a stove with tall orange flames rising from the oil, kitchen at evening"
+    },
+    {
+      "text": "Akşam yemeği için patates kızartıyordun. Bir an telefona baktın.",
+      "prompt": "A home kitchen with a frying pan of oil on the stove and a bowl of cut potatoes, a phone on the counter glowing, cozy evening light"
+    },
+    {
+      "text": "Döndüğünde alevler tavadan yükseliyor, dolabın altına uzanıyor.",
+      "prompt": "Flames from a frying pan licking up toward a wooden cabinet above the stove, smoke curling, dramatic orange light"
+    },
+    {
+      "text": "Mutfak dumanla doluyor. Lavabo hemen yanında, musluk elinin altında.",
+      "prompt": "A kitchen sink with a faucet right next to a stove on fire, a glass on the counter, smoky air"
+    },
+    {
+      "text": "Tezgâhta tencerenin kapağı duruyor. Ocak hâlâ yanıyor.",
+      "prompt": "Close view of a metal pot lid lying on a kitchen counter, flames reflected on its surface"
+    },
+    {
+      "text": "Aklına ilk gelen şu: ateş her zaman suyla söner.",
+      "prompt": "A hand reaching for a glass of water by the sink, flames glowing in the background, no face"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Bir bardak su mu dökerdin, yoksa kapağı mı kapatırdın?",
+      "prompt": "Wide shot of a smoky home kitchen with a burning frying pan on the stove, a glass of water and a pot lid on the counter, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Tavaya bir bardak su dök",
+    "B": "Kapağı kapat, ocağı kapat"
+  },
+  "caption": "Tavadaki yağ alev aldı. Elinin altında su da var, kapak da. Sen hangisini kapardın? 🔥🍳",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://cambridgema.gov/en/cfd/News/2023/05/cookingfiresafety",
+    "https://www.in.gov/dhs/get-prepared/fire-safety/cooking-safety",
+    "https://www.kidde.com/safety-hub/seasonal-safety/kitchen-fire-safety-and-prevention"
+  ]
+}

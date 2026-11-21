@@ -1,0 +1,56 @@
+{
+  "id": "301",
+  "slug": "cayirda_firtina",
+  "title": "Çayırda Fırtına",
+  "dizi_adi": "Çayırda Fırtına",
+  "gece": 1,
+  "seed": 73011,
+  "sure_sn": 30,
+  "kanca_yazi": "Otuz saniyen var.",
+  "scenes": [
+    {
+      "text": "Tepende şimşek çaktı. Otuz saniyen var.",
+      "prompt": "First-person view on an open green meadow looking up at a dark storm sky split by a bright lightning bolt, dramatic"
+    },
+    {
+      "text": "Açık bir çayırda yürüyüştesin. Gök birden karardı.",
+      "prompt": "A hiker seen from behind with a backpack on an open hilly meadow, black storm clouds rolling in fast, wind in the grass"
+    },
+    {
+      "text": "Gök gürültüsü şimşeğin hemen ardından geliyor. Fırtına tam üstünde.",
+      "prompt": "Heavy dark clouds directly overhead a grassy field, rain starting to fall, flash of light inside the clouds"
+    },
+    {
+      "text": "Yirmi metre ötede kocaman, tek başına bir ağaç var. Yaprakları yağmuru tutuyor.",
+      "prompt": "A lone big leafy tree in the middle of a meadow, dry ground under its canopy, rain all around, inviting shelter"
+    },
+    {
+      "text": "Arabanı ise üç yüz metre geride, yolun kenarında bıraktın.",
+      "prompt": "A small hard-top car parked far away at the edge of a country road across a wide wet meadow, seen from a distance, rain"
+    },
+    {
+      "text": "Koşarsan açık arazide yalnız kalacaksın. Yağmur hızlandı.",
+      "prompt": "First-person view of a long open wet field ahead, rain streaks, the tiny car on the horizon, lightning flicker"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Arabaya mı koşardın, yoksa ağacın altına mı sığınırdın?",
+      "prompt": "Split composition: a lone tree on the left and a distant car on the right on a stormy meadow, lightning above, cinematic wide shot"
+    }
+  ],
+  "secim": {
+    "A": "Üç yüz metre koş, arabaya bin",
+    "B": "Ağacın altına sığın"
+  },
+  "caption": "Açık çayırda fırtınaya yakalandın. Yakındaki ağaç mı, üç yüz metre ötedeki araban mı? ⚡🌳",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.weather.gov/safety/lightning-myths",
+    "https://www.cdc.gov/lightning/safety/index.html"
+  ]
+}

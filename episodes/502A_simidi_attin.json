@@ -1,0 +1,60 @@
+{
+  "id": "502A",
+  "slug": "simidi_attin",
+  "title": "Simidi Attın",
+  "dizi_adi": "Gölde Çırpınan",
+  "gece": 2,
+  "dal": "A",
+  "seed": 75021,
+  "scenes": [
+    {
+      "text": "Can simidini atmayı seçtin. Doğru seçim.",
+      "prompt": "A hand grabbing a life ring with a rope from a wooden post on a pier, lake behind"
+    },
+    {
+      "text": "Önce bağırıp yardım çağırdın. Sonra simidi onun hemen yanına fırlattın.",
+      "prompt": "A life ring flying through the air over a lake toward a person in the water, rope trailing back to the pier"
+    },
+    {
+      "text": "Arkadaşın simide sarıldı. İpi yavaş yavaş çekip onu kıyıya getirdin.",
+      "prompt": "A person seen from behind on a pier pulling a rope, a swimmer holding a life ring being drawn toward the shore"
+    },
+    {
+      "text": "Titriyordu ama nefes alıyordu. İkiniz de kıyıdaydınız.",
+      "prompt": "Two people seen from behind sitting on a pier wrapped in a towel, lake calm, golden hour"
+    },
+    {
+      "text": "Kızılhaç'ın kuralı şu: uzan ya da at, ama suya girme.",
+      "prompt": "A clean educational scene of a lake pier with a long pole and a life ring placed side by side, bright daylight, no text"
+    },
+    {
+      "text": "Panikleyen biri kurtarıcısına tutunur ve onu da suyun altına çekebilir.",
+      "prompt": "Stylized underwater view of a swimmer's hands reaching up toward the light, calm educational tone, no faces"
+    },
+    {
+      "text": "Önce yardım çağır. Yüzüstü yatıp bir dal uzat ya da yüzen bir şey at. Ucunda ip olursa daha iyi.",
+      "prompt": "A person lying on their stomach on a pier holding out a long branch toward the water, seen from behind"
+    },
+    {
+      "text": "Bunu yüzmeye giden birine gönder. Bir gün iki hayatı birden kurtarabilir.",
+      "prompt": "A peaceful lake at sunset with a life ring hanging on a pier post, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Suya girme, ipli yüzen bir şey at",
+    "kaynak": "Amerikan Kızılhaçı (Red Cross)"
+  },
+  "caption": "Çoğunluk simidi attı ve haklıydı. Peki neden suya atlamamalısın? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/content/dam/redcross/training-services/whale-tales/pdfs/Lesson_8_FINAL.pdf",
+    "https://discover.pbc.gov/drowningprevention/Pages/Reach-Throw-DontGo.aspx"
+  ]
+}

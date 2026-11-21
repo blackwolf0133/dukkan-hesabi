@@ -1,0 +1,60 @@
+{
+  "id": "602B",
+  "slug": "sirtina_vurdun",
+  "title": "Sırtına Vurdun",
+  "dizi_adi": "Takılan Lokma",
+  "gece": 2,
+  "dal": "B",
+  "seed": 76022,
+  "scenes": [
+    {
+      "text": "Sırtına vurmayı seçtin. Doğru seçim.",
+      "prompt": "A person seen from behind standing up from a restaurant table and moving behind a friend"
+    },
+    {
+      "text": "Onu öne eğdin, kürek kemiklerinin arasına beş sert vuruş yaptın.",
+      "prompt": "A hand with the heel of the palm striking between the shoulder blades of a person leaning forward, seen from behind"
+    },
+    {
+      "text": "Olmadı. Arkasına geçip karnından içeri ve yukarı bastırdın.",
+      "prompt": "A person seen from behind standing behind a friend, arms wrapped around the friend's upper belly, restaurant setting"
+    },
+    {
+      "text": "Üçüncüde lokma fırladı. Arkadaşın derin bir nefes aldı.",
+      "prompt": "A seated person seen from behind taking a deep breath, shoulders relaxing, a friend's hand on the back, warm light"
+    },
+    {
+      "text": "Amerikan Kızılhaçı'na göre: kişi konuşamıyor, öksüremiyorsa önce kürek kemiklerinin arasına beş vuruş.",
+      "prompt": "Educational first aid scene with a training mannequin leaning forward and a hand at its upper back, bright clean room, no text"
+    },
+    {
+      "text": "Olmazsa arkasına geç, yumruğunu göbeğinin biraz üstüne koy, beş kez içeri ve yukarı bastır.",
+      "prompt": "Educational first aid scene showing hands placed just above the navel of a standing mannequin from behind, bright clean room, no text"
+    },
+    {
+      "text": "Lokma çıkana kadar sırayla devam et. Biri de hemen yüz on ikiyi arasın. Ama güçlü öksürüyorsa dokunma, öksürsün.",
+      "prompt": "A phone in a hand calling for help in a restaurant, blurred background of people helping, no faces"
+    },
+    {
+      "text": "Bunu yemek masasını paylaştığın birine gönder. O on saniye bir gün ona lazım olabilir.",
+      "prompt": "A family dinner table seen from above with plates and warm light, empty chairs, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Beş sırt vuruşu, beş karın bastırması",
+    "kaynak": "Amerikan Kızılhaçı, MedlinePlus"
+  },
+  "caption": "Çoğunluk sırtına vurup karnından bastırdı ve haklıydı. Doğru sıra nasıl? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking",
+    "https://medlineplus.gov/ency/article/000049.htm"
+  ]
+}

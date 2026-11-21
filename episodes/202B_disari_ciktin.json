@@ -1,0 +1,60 @@
+{
+  "id": "202B",
+  "slug": "disari_ciktin",
+  "title": "Dışarı Çıktın",
+  "dizi_adi": "Sobalı Oda",
+  "gece": 2,
+  "dal": "B",
+  "seed": 72022,
+  "scenes": [
+    {
+      "text": "Kardeşini kaldırıp dışarı çıkmayı seçtin. Doğru seçim.",
+      "prompt": "A person seen from behind helping a sleepy child in pajamas out of a bedroom door, blanket over the child's shoulders, night"
+    },
+    {
+      "text": "Onu koluna taktın, merdivenleri indin. Soğuk hava ciğerlerine doldu.",
+      "prompt": "Two figures seen from behind walking down an apartment stairwell at night, cold blue light from a window"
+    },
+    {
+      "text": "Apartmanın önünde yüz on ikiyi aradın. Ambulans çabuk geldi.",
+      "prompt": "A phone held in a hand in front of a snowy apartment entrance at night, screen glow, ambulance lights approaching"
+    },
+    {
+      "text": "Ekip söyledi: soba bacası tıkalıymış, oda gazla dolmuş.",
+      "prompt": "A soot-blocked metal stove pipe on a wall, flashlight beam on it, firefighter gloves holding the flashlight, no faces"
+    },
+    {
+      "text": "Karbonmonoksitin kokusu da rengi de yok. Baş ağrısı, bulantı, baş dönmesi ve uyku hali ilk işaretleri.",
+      "prompt": "An invisible danger visualized as a faint transparent shimmer around a coal stove in an empty room, calm educational lighting, no text"
+    },
+    {
+      "text": "Hacettepe halk sağlığı uzmanlarına göre yapılacak şey açık: hemen temiz havaya çık, yüz on ikiyi ara.",
+      "prompt": "An open apartment door leading out to fresh snowy night air, a person seen from behind stepping outside, an ambulance waiting"
+    },
+    {
+      "text": "Odayı havalandırmak için içeride kalma. Önce herkesi dışarı çıkar. Yatmadan önce de sobaya yakıt atma.",
+      "prompt": "A coal stove with its door closed and a coal bucket set aside, a tidy room in morning light, calm"
+    },
+    {
+      "text": "Bunu sobalı evde yaşayan birine gönder. Bu kış ona lazım olabilir.",
+      "prompt": "A small snowy town at sunrise with chimneys and clean sky, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Herkesi kaldır, temiz havaya çık, 112'yi ara",
+    "kaynak": "Hacettepe Halk Sağlığı, Acıbadem"
+  },
+  "caption": "Çoğunluk hemen dışarı çıktı ve haklıydı. Ama neden pencere yetmez? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://halksagligi.hacettepe.edu.tr/duyurular/halkayonelik/cobilginotu2026.pdf",
+    "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/karbonmonoksit-zehirlenmesi/"
+  ]
+}

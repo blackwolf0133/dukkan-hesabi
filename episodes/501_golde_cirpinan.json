@@ -1,0 +1,56 @@
+{
+  "id": "501",
+  "slug": "golde_cirpinan",
+  "title": "Gölde Çırpınan",
+  "dizi_adi": "Gölde Çırpınan",
+  "gece": 1,
+  "seed": 75011,
+  "sure_sn": 20,
+  "kanca_yazi": "Yirmi saniyen var.",
+  "scenes": [
+    {
+      "text": "Arkadaşın suda çırpınıyor. Yirmi saniyen var.",
+      "prompt": "First-person view from a lake shore looking at a person splashing in the water in the distance, arms slapping the surface, seen from behind, afternoon"
+    },
+    {
+      "text": "Bir göl kıyısında piknikteydiniz. O serinlemek için açıldı.",
+      "prompt": "A picnic blanket on a lake shore with a basket, a wooden pier, calm water and pine trees, summer afternoon"
+    },
+    {
+      "text": "Şimdi kollarını suya vuruyor, başı batıp çıkıyor. Bağıramıyor bile.",
+      "prompt": "A person in a lake seen from behind and far away, only the back of the head and arms at the water surface, splashes"
+    },
+    {
+      "text": "Kıyıdan on beş metre uzakta. Sen iyi yüzersin.",
+      "prompt": "First-person view standing at the edge of a wooden pier looking at deep dark lake water, the person in the distance"
+    },
+    {
+      "text": "İskelenin direğinde bir can simidi asılı, ucunda ip var.",
+      "prompt": "A red and white life ring with a coiled rope hanging on a wooden post of a pier, lake behind, no text"
+    },
+    {
+      "text": "Filmlerdeki kahraman hiç düşünmeden suya atlar. Sen de atlayabilirsin.",
+      "prompt": "A movie-style heroic silhouette diving off a pier into a lake, dramatic backlight, seen from behind"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Simidi mi atardın, yoksa suya mı atlardın?",
+      "prompt": "Wide shot of a lake pier with a life ring on a post and a person splashing in the water further out, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Can simidini ona fırlat",
+    "B": "Hemen atla, ona yüz"
+  },
+  "caption": "Arkadaşın gölde çırpınıyor, sen iyi yüzersin. Simidi atmak mı, suya atlamak mı? 🛟🌊",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/content/dam/redcross/training-services/whale-tales/pdfs/Lesson_8_FINAL.pdf",
+    "https://discover.pbc.gov/drowningprevention/Pages/Reach-Throw-DontGo.aspx"
+  ]
+}

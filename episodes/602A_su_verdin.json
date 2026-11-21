@@ -1,0 +1,64 @@
+{
+  "id": "602A",
+  "slug": "su_verdin",
+  "title": "Su Verdin",
+  "dizi_adi": "Takılan Lokma",
+  "gece": 2,
+  "dal": "A",
+  "seed": 76021,
+  "scenes": [
+    {
+      "text": "Su vermeyi seçtin.",
+      "prompt": "A hand pouring water from a jug into a glass on a restaurant table, tense mood"
+    },
+    {
+      "text": "Bardağı dudağına götürdün. Ama yutamadı, su ağzından taştı.",
+      "prompt": "A glass of water held up near a person seen from behind, water spilling onto the table"
+    },
+    {
+      "text": "Yol tıkalıyken su da geçemedi. Saniyeler akıp gidiyordu.",
+      "prompt": "A restaurant wall clock with its second hand moving, blurred table in the background"
+    },
+    {
+      "text": "Neyse ki yan masadaki garson arkasına geçti ve doğru hareketi yaptı. Lokma fırladı.",
+      "prompt": "A waiter seen from behind standing behind a seated guest with arms around the waist, restaurant lights"
+    },
+    {
+      "text": "Bu sefer şanslıydın. Gerçekte bu durumda her saniye önemli.",
+      "prompt": "Two people seen from behind sitting at a restaurant table, relieved, a hand on a shoulder, warm light"
+    },
+    {
+      "text": "Amerikan Kızılhaçı'na göre: kişi konuşamıyor, öksüremiyorsa önce kürek kemiklerinin arasına beş vuruş.",
+      "prompt": "Educational first aid scene with a training mannequin leaning forward and a hand at its upper back, bright clean room, no text"
+    },
+    {
+      "text": "Olmazsa arkasına geç, yumruğunu göbeğinin biraz üstüne koy, beş kez içeri ve yukarı bastır.",
+      "prompt": "Educational first aid scene showing hands placed just above the navel of a standing mannequin from behind, bright clean room, no text"
+    },
+    {
+      "text": "Lokma çıkana kadar sırayla devam et. Biri de hemen yüz on ikiyi arasın. Ama güçlü öksürüyorsa dokunma, öksürsün.",
+      "prompt": "A phone in a hand calling for help in a restaurant, blurred background of people helping, no faces"
+    },
+    {
+      "text": "Bunu yemek masasını paylaştığın birine gönder. O on saniye bir gün ona lazım olabilir.",
+      "prompt": "A family dinner table seen from above with plates and warm light, empty chairs, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Beş sırt vuruşu, beş karın bastırması",
+    "kaynak": "Amerikan Kızılhaçı, MedlinePlus"
+  },
+  "caption": "Çoğunluk su verdi. Ama boğaz tıkalıyken su işe yarar mı? Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking",
+    "https://medlineplus.gov/ency/article/000049.htm"
+  ]
+}

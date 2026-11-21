@@ -1,0 +1,56 @@
+{
+  "id": "601",
+  "slug": "takilan_lokma",
+  "title": "Takılan Lokma",
+  "dizi_adi": "Takılan Lokma",
+  "gece": 1,
+  "seed": 76011,
+  "sure_sn": 10,
+  "kanca_yazi": "On saniyen var.",
+  "scenes": [
+    {
+      "text": "Arkadaşının nefesi kesildi. On saniyen var.",
+      "prompt": "First-person view across a restaurant table at a friend seen from the side, hands at the throat, face not visible, warm restaurant lights"
+    },
+    {
+      "text": "Bir lokantada et yiyordunuz. Bir lokma boğazına takıldı.",
+      "prompt": "A cozy restaurant table with plates of grilled meat, a water jug and glasses, two people seen from behind, evening"
+    },
+    {
+      "text": "Elleriyle boğazını tutuyor. Konuşamıyor, öksüremiyor bile.",
+      "prompt": "Close view of two hands clutching a throat, shirt collar, no face visible, tense lighting"
+    },
+    {
+      "text": "Etraftakiler donup kaldı. Kimse ne yapacağını bilmiyor.",
+      "prompt": "Restaurant guests seen from behind frozen at their tables, turned toward one table, soft blur"
+    },
+    {
+      "text": "Masada bir sürahi su duruyor. Herkes aynı şeyi söylüyor: su ver, yutsun.",
+      "prompt": "A glass water jug and an empty glass on a restaurant table, a hand reaching for the jug"
+    },
+    {
+      "text": "Bir de ilk yardım kursunda gördüğün o hareket var. Sırta vurmak, karından bastırmak.",
+      "prompt": "A first aid class scene with a training mannequin in a bright room, an instructor seen from behind, no text"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Su mu verirdin, yoksa sırtına vurup karnından mı bastırırdın?",
+      "prompt": "Wide shot of a restaurant with one table in focus, a person standing behind a seated friend, a water jug on the table, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Hemen su ver, yutsun",
+    "B": "Sırtına vur, karnından bastır"
+  },
+  "caption": "Arkadaşının boğazına lokma kaçtı, konuşamıyor. Masada su var. Sen ne yapardın? 🍽️😮‍💨",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking",
+    "https://medlineplus.gov/ency/article/000049.htm"
+  ]
+}

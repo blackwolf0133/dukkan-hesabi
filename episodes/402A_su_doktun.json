@@ -1,0 +1,65 @@
+{
+  "id": "402A",
+  "slug": "su_doktun",
+  "title": "Su Döktün",
+  "dizi_adi": "Tavada Alev",
+  "gece": 2,
+  "dal": "A",
+  "seed": 74021,
+  "scenes": [
+    {
+      "text": "Su dökmeyi seçtin.",
+      "prompt": "A glass of water being tipped toward a burning frying pan, seen from first-person view, flames"
+    },
+    {
+      "text": "Su kızgın yağın dibine indi ve bir anda buhara döndü.",
+      "prompt": "Slow-motion close view of water droplets hitting hot oil in a pan and bursting into steam"
+    },
+    {
+      "text": "Alev tavadan bir top gibi tavana fırladı. Geri sıçradın.",
+      "prompt": "A big fireball rising from a frying pan up to the kitchen ceiling, seen from a few steps back, nobody hurt, dramatic"
+    },
+    {
+      "text": "Neyse ki komşun koştu, bir tepsiyi tavanın üstüne kaydırdı ve ocağı kapattı.",
+      "prompt": "A person seen from behind with an oven mitt sliding a metal baking sheet over a frying pan on the stove, flames going out"
+    },
+    {
+      "text": "Bu sefer şanslıydın. İtfaiyeciler yağ yangınına su dökmeyi en tehlikeli hata sayıyor.",
+      "prompt": "A smoky but safe kitchen with an open window, a covered pan on a turned-off stove, two people seen from behind catching their breath"
+    },
+    {
+      "text": "Su, kızgın yağın altına çöker, bir anda buhar olur ve yanan yağı mutfağa saçar.",
+      "prompt": "Educational stylized cross-section of a frying pan showing water sinking under hot oil and turning to steam, clean background, no text"
+    },
+    {
+      "text": "Amerikan itfaiye birimlerine göre doğrusu: eldivenle kapağı ya da bir tepsiyi tavanın üstüne kaydır, ocağı kapat.",
+      "prompt": "A firefighter's gloved hand sliding a lid over a pan in a demonstration kitchen, bright daylight, no face"
+    },
+    {
+      "text": "Tavayı taşıma, kapağı soğuyana kadar kaldırma. Alev büyürse dışarı çık, yüz on ikiyi ara.",
+      "prompt": "A kitchen door open to a hallway, a phone in a hand outside, calm, safe"
+    },
+    {
+      "text": "Bunu mutfakta kızartma yapan birine gönder. O on saniye bir gün ona lazım olabilir.",
+      "prompt": "A tidy kitchen with a lid resting next to a frying pan on the counter, warm morning sunlight, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kapağı kaydır, ocağı kapat, asla su dökme",
+    "kaynak": "Cambridge İtfaiyesi, Indiana İç Güvenlik"
+  },
+  "caption": "Çoğunluk su döktü. İtfaiyeciler buna neden en tehlikeli hata diyor? Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://cambridgema.gov/en/cfd/News/2023/05/cookingfiresafety",
+    "https://www.in.gov/dhs/get-prepared/fire-safety/cooking-safety",
+    "https://www.kidde.com/safety-hub/seasonal-safety/kitchen-fire-safety-and-prevention"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "302B",
+  "slug": "agaca_sigindin",
+  "title": "Ağaca Sığındın",
+  "dizi_adi": "Çayırda Fırtına",
+  "gece": 2,
+  "dal": "B",
+  "seed": 73022,
+  "scenes": [
+    {
+      "text": "Ağacın altına sığınmayı seçtin.",
+      "prompt": "A hiker seen from behind standing under a lone large tree on a meadow, rain falling around, dark sky"
+    },
+    {
+      "text": "Yapraklar yağmuru tuttu. Bir an rahatladın.",
+      "prompt": "First-person view looking up into thick green leaves of a tree, raindrops dripping, dark clouds beyond"
+    },
+    {
+      "text": "Sonra gök öyle bir gürledi ki yer titredi. Yıldırım, yan tepedeki direğe düştü.",
+      "prompt": "A lightning bolt striking a lone pole on a nearby hill, seen from under a tree branch, dramatic flash"
+    },
+    {
+      "text": "Bu sefer şanslıydın. Gerçekte ağaç altı, fırtınada en tehlikeli yerlerden biri.",
+      "prompt": "A hiker seen from behind walking away from a lone tree toward a road after the storm, clouds parting"
+    },
+    {
+      "text": "ABD Ulusal Hava Servisi'ne göre ağaç altına sığınmak, yıldırım kazalarının en sık ikinci nedeni.",
+      "prompt": "A lone large tree on an open meadow under a dark stormy sky, lightning in the far distance, wide educational shot"
+    },
+    {
+      "text": "Yere yatmak ya da çömelmek de korumaz. Toprağa yayılan akım yatana daha çok ulaşır.",
+      "prompt": "An open grassy field in the rain with a faint glowing ripple spreading across the ground, stylized, no people"
+    },
+    {
+      "text": "Güvenli yer sağlam bir bina ya da camları kapalı, tavanı sert bir araba. Motosiklet, üstü açık araç güvenli değil.",
+      "prompt": "A closed hard-top car with rain on its windows parked by a road, stormy sky, warm light inside the car"
+    },
+    {
+      "text": "Bunu doğa yürüyüşü seven birine gönder. Bir gün o otuz saniye ona lazım olabilir.",
+      "prompt": "A green meadow after the storm with a rainbow and sunlight breaking through clouds, a hiking trail, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Sağlam binaya ya da kapalı arabaya sığın",
+    "kaynak": "ABD Ulusal Hava Servisi (NOAA), CDC"
+  },
+  "caption": "Çoğunluk ağacın altına sığındı. Uzmanlar buna ne diyor? Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.weather.gov/safety/lightning-myths",
+    "https://www.cdc.gov/lightning/safety/index.html"
+  ]
+}

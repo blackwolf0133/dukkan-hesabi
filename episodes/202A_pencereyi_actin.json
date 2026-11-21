@@ -1,0 +1,64 @@
+{
+  "id": "202A",
+  "slug": "pencereyi_actin",
+  "title": "Pencereyi Açtın",
+  "dizi_adi": "Sobalı Oda",
+  "gece": 2,
+  "dal": "A",
+  "seed": 72021,
+  "scenes": [
+    {
+      "text": "Pencereyi açıp uzanmayı seçtin.",
+      "prompt": "A window opened a crack with snowy cold air coming in, curtains moving, a bed below, night"
+    },
+    {
+      "text": "Soğuk hava yüzüne vurdu. Biraz iyi geldi sanki.",
+      "prompt": "First-person view lying in bed looking at the ceiling, cold blue light from the window, stove glow on the wall"
+    },
+    {
+      "text": "Ama soba yanmaya devam etti. Göz kapakların ağırlaştı.",
+      "prompt": "The coal stove still glowing in a dark room, the view getting darker at the edges like heavy eyelids"
+    },
+    {
+      "text": "Neyse ki baban da baş ağrısıyla uyandı. İkinizi de kaldırıp dışarı çıkardı, ambulansı aradı.",
+      "prompt": "A father seen from behind leading two children wrapped in blankets out of an apartment door at night, snowy street, ambulance lights in the distance"
+    },
+    {
+      "text": "Bu sefer şanslıydın. Karbonmonoksit en çok uykuda, fark ettirmeden zehirler.",
+      "prompt": "Three people wrapped in blankets sitting at the back of an ambulance on a snowy night, seen from behind, warm hopeful lights"
+    },
+    {
+      "text": "Karbonmonoksitin kokusu da rengi de yok. Baş ağrısı, bulantı, baş dönmesi ve uyku hali ilk işaretleri.",
+      "prompt": "An invisible danger visualized as a faint transparent shimmer around a coal stove in an empty room, calm educational lighting, no text"
+    },
+    {
+      "text": "Hacettepe halk sağlığı uzmanlarına göre yapılacak şey açık: hemen temiz havaya çık, yüz on ikiyi ara.",
+      "prompt": "An open apartment door leading out to fresh snowy night air, a person seen from behind stepping outside, an ambulance waiting"
+    },
+    {
+      "text": "Odayı havalandırmak için içeride kalma. Önce herkesi dışarı çıkar. Yatmadan önce de sobaya yakıt atma.",
+      "prompt": "A coal stove with its door closed and a coal bucket set aside, a tidy room in morning light, calm"
+    },
+    {
+      "text": "Bunu sobalı evde yaşayan birine gönder. Bu kış ona lazım olabilir.",
+      "prompt": "A small snowy town at sunrise with chimneys and clean sky, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Herkesi kaldır, temiz havaya çık, 112'yi ara",
+    "kaynak": "Hacettepe Halk Sağlığı, Acıbadem"
+  },
+  "caption": "Çoğunluk pencereyi açıp uzandı. Sobalı odada bu yol neden tehlikeli? Doğrusu videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://halksagligi.hacettepe.edu.tr/duyurular/halkayonelik/cobilginotu2026.pdf",
+    "https://www.acibadem.com.tr/hastaliklar-ve-belirtiler/karbonmonoksit-zehirlenmesi/"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "402B",
+  "slug": "kapagi_kapattin",
+  "title": "Kapağı Kapattın",
+  "dizi_adi": "Tavada Alev",
+  "gece": 2,
+  "dal": "B",
+  "seed": 74022,
+  "scenes": [
+    {
+      "text": "Kapağı kapatmayı seçtin. Doğru seçim.",
+      "prompt": "A hand in an oven mitt holding a pot lid near a burning frying pan, first-person view"
+    },
+    {
+      "text": "Eldiveni giydin, kapağı tavanın üstüne yandan kaydırdın.",
+      "prompt": "Close view of a metal lid sliding over a frying pan from the side, flames being covered"
+    },
+    {
+      "text": "Sonra ocağın düğmesini çevirdin. Alev, havasız kalınca sönüverdi.",
+      "prompt": "A hand turning a stove knob off, a covered pan, the last smoke rising"
+    },
+    {
+      "text": "Kapağı kaldırmadın, tavayı yerinden oynatmadın. Yağ yavaş yavaş soğudu.",
+      "prompt": "A covered frying pan resting on a turned-off stove in a calm kitchen, open window, evening light"
+    },
+    {
+      "text": "Su, kızgın yağın altına çöker, bir anda buhar olur ve yanan yağı mutfağa saçar.",
+      "prompt": "Educational stylized cross-section of a frying pan showing water sinking under hot oil and turning to steam, clean background, no text"
+    },
+    {
+      "text": "Amerikan itfaiye birimlerine göre doğrusu: eldivenle kapağı ya da bir tepsiyi tavanın üstüne kaydır, ocağı kapat.",
+      "prompt": "A firefighter's gloved hand sliding a lid over a pan in a demonstration kitchen, bright daylight, no face"
+    },
+    {
+      "text": "Tavayı taşıma, kapağı soğuyana kadar kaldırma. Alev büyürse dışarı çık, yüz on ikiyi ara.",
+      "prompt": "A kitchen door open to a hallway, a phone in a hand outside, calm, safe"
+    },
+    {
+      "text": "Bunu mutfakta kızartma yapan birine gönder. O on saniye bir gün ona lazım olabilir.",
+      "prompt": "A tidy kitchen with a lid resting next to a frying pan on the counter, warm morning sunlight, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kapağı kaydır, ocağı kapat, asla su dökme",
+    "kaynak": "Cambridge İtfaiyesi, Indiana İç Güvenlik"
+  },
+  "caption": "Çoğunluk kapağı kapattı ve haklıydı. Peki su neden felaket olurdu? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://cambridgema.gov/en/cfd/News/2023/05/cookingfiresafety",
+    "https://www.in.gov/dhs/get-prepared/fire-safety/cooking-safety",
+    "https://www.kidde.com/safety-hub/seasonal-safety/kitchen-fire-safety-and-prevention"
+  ]
+}
