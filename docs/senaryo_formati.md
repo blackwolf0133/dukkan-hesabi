@@ -9,7 +9,7 @@ apartman, siren-sığınak vb. aynı öncül), metinleri, adları.
 
 ## Bizim farkımız: 2. bölümde GERÇEK doğru cevap
 Her senaryo iki video:
-- **N01 — KARAR (14:45):** 30-40 sn. Tehlike anı, birinci/ikinci şahıs ("Araban suya düştü."), sonda A/B.
+- **N01 — KARAR (12:00):** 30-40 sn. Tehlike anı, birinci/ikinci şahıs ("Araban suya düştü."), sonda A/B.
   Ekranda sağ üstte geri sayım (`sure_sn`, ör. 60 → 0), sonda A/B kartı. Seçeneklerin biri yaygın bir YANILGI
   (filmlerde görülen, "mantıklı gibi" duran), öbürü uzmanların doğru dediği şey olsun; hangisinin doğru olduğu
   belli olmasın, yorumlarda tartışma çıksın. Doğru cevap bazen A, bazen B olsun.
@@ -37,7 +37,7 @@ ready.gov, Red Cross, AAA, hakemli araştırma). Tartışmalı ya da "duruma gö
 - Senaryo numarası yüzler basamağı: 1. senaryo 1xx, 2. senaryo 2xx …
 - `N01_kisa_ad.json` (KARAR, "gece": 1, "secim", "sure_sn"), `N02A_…json` ve `N02B_…json` (SONUÇ, "gece": 2,
   "dal": "A"/"B", "dogru", "secim" YOK).
-- Paylaşım sırası: her gün bir senaryo — 14:45 KARAR, 21:30 SONUÇ.
+- Paylaşım sırası: her gün bir senaryo — 12:00 KARAR, 21:30 SONUÇ.
 
 ## JSON
 ```json
