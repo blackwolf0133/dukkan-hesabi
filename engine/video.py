@@ -1,4 +1,6 @@
 """KAÇ SANİYEN VAR? video motoru (21 Kasım: Son Mola motorundan uyarlandı; hayatta kalma kararları, A/B + doğru cevap).
+21 Kasım (2): tam ekran çizim, elde kamera sarsıntısı, sahne girişlerinde zoom vuruşu, zıplayan alt yazı, nabız gibi atan
+geri sayım + üstte eriyen süre çubuğu, son kartta kayarak gelen A/B kutuları; açılış/kapanış efekt sesleri yok.
 Sahne = yapay zekâ çizimi (hareketli: parallax + parçacık) + karanlık renk + film greni + sis + kelime kelime alt yazı
 + isteğe bağlı TELEFON ekranı (grup mesajları / bildirim) + sonda A/B SEÇİM kartı.
 Kullanım: python -m engine.video <bölüm.json> <resim_klasörü> <çıktı.mp4>"""
@@ -9,20 +11,24 @@ import os
 import subprocess
 import sys
 
+import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from . import ses as S
 
 W, H, FPS = 1080, 1920, 30
-IMG_Y, IMG_H = 210, 1440
+IMG_Y, IMG_H = 0, 1920          # 21 Kasım: tam ekran çizim (üst/alt siyah bant yok)
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "fonts", "Poppins-Bold.ttf")
 HANDLE = os.environ.get("KANAL_HANDLE", "@kacsaniyenvar.tr")
 RED = (226, 58, 52)
+BLUE = (70, 120, 225)
+GREEN = (90, 210, 125)
 WHITE = (240, 240, 244)
-LEAD, GAP, FADE, END = 0.4, 0.45, 0.6, 3.2
-CAP_Y = 1360
+LEAD, GAP, FADE, END = 0.25, 0.3, 0.16, 3.4   # 21 Kasım: daha hızlı tempo, sert geçişler
+CAP_Y = 1180
+PUNCH = 0.38                     # her sahne girişinde zoom vuruşu (sn)
 
 
 def font(size):
@@ -45,30 +51,43 @@ def bolum_etiketi(ep):
 
 
 def header(ep):
-    im = Image.new("RGB", (W, H), (6, 7, 10))
+    """Tam ekran çizimin üstüne binen katman: üstte koyu geçiş + kanal adı + bölüm etiketi, altta alt yazı için koyu geçiş."""
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    a = np.zeros((H,), np.float32)
+    a[:430] = 0.82 * (1 - np.linspace(0, 1, 430)) ** 1.6
+    a[1050:] = np.maximum(a[1050:], 0.78 * np.linspace(0, 1, H - 1050) ** 1.4)
+    grad = np.zeros((H, W, 4), np.uint8)
+    grad[..., 3] = (a * 255).astype(np.uint8)[:, None]
+    im = Image.alpha_composite(im, Image.fromarray(grad, "RGBA"))
     d = ImageDraw.Draw(im)
     f1 = font(30)
     t1 = "K A Ç   S A N İ Y E N   V A R ?"
-    d.text(((W - d.textlength(t1, font=f1)) / 2, 52), t1, font=f1, fill=RED)
+    d.text(((W - d.textlength(t1, font=f1)) / 2, 62), t1, font=f1, fill=RED + (255,))
     size = 54
     t2 = bolum_etiketi(ep)
     while d.textlength(t2, font=font(size)) > W - 80 and size > 34:
         size -= 2
-    d.text(((W - d.textlength(t2, font=font(size))) / 2, 104), t2, font=font(size), fill=WHITE)
-    fh = font(36)
-    d.text(((W - d.textlength(HANDLE, font=fh)) / 2, 1690), HANDLE, font=fh, fill=(110, 112, 122))
+    d.text(((W - d.textlength(t2, font=font(size))) / 2, 108), t2, font=font(size), fill=WHITE + (255,),
+           stroke_width=3, stroke_fill=(0, 0, 0, 200))
+    fh = font(30)
+    d.text(((W - d.textlength(HANDLE, font=fh)) / 2, 182), HANDLE, font=fh, fill=(200, 202, 210, 220))
     return np.asarray(im, np.float32)
 
 
 def edge_mask():
     m = np.ones((IMG_H, W), np.float32)
-    g = 140
-    m[:g] *= (np.linspace(0, 1, g) ** 1.5)[:, None]
-    m[-260:] *= (np.linspace(1, 0, 260) ** 1.2)[:, None]
     yy, xx = np.mgrid[0:IMG_H, 0:W].astype(np.float32)
     dist = np.sqrt(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - IMG_H / 2) / (IMG_H * 0.62)) ** 2)
-    vig = np.clip(1.15 - dist ** 2 * 0.55, 0.25, 1.0)
+    vig = np.clip(1.12 - dist ** 2 * 0.42, 0.45, 1.0)
     return m[..., None], vig[..., None]
+
+
+def kenar_kirmizi():
+    """Son saniyelerde nabız gibi atan kırmızı kenar (geri sayım gerilimi)."""
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    dx = np.minimum(xx, W - 1 - xx) / 170
+    dy = np.minimum(yy, H - 1 - yy) / 170
+    return (np.clip(1 - np.minimum(dx, dy), 0, 1) ** 2)[..., None]
 
 
 def grains(n=6, seed=9):
@@ -123,7 +142,7 @@ def word_times(text, start, dur):
     return out
 
 
-def chunks(timed, maxw=W - 140, size=62):
+def chunks(timed, maxw=W - 160, size=74):
     d = ImageDraw.Draw(Image.new("RGB", (10, 10)))
     f = font(size)
     res, cur = [], []
@@ -141,12 +160,12 @@ def chunks(timed, maxw=W - 140, size=62):
 _CAP = {}
 
 
-def caption_layer(ch, hi, size=62):
+def caption_layer(ch, hi, size=74):
     key = (id(ch), hi)
     if key in _CAP:
         return _CAP[key]
     f = font(size)
-    lay = Image.new("RGBA", (W, 130), (0, 0, 0, 0))
+    lay = Image.new("RGBA", (W, 150), (0, 0, 0, 0))
     d = ImageDraw.Draw(lay)
     words = [x for x, _, _ in ch]
     sp = d.textlength(" ", font=f)
@@ -154,19 +173,50 @@ def caption_layer(ch, hi, size=62):
     x = (W - (sum(widths) + sp * (len(words) - 1))) / 2
     for i, (wd, wtxt) in enumerate(zip(widths, words)):
         if i == hi:
-            d.rectangle([x - 10, 22, x + wd + 10, 112], fill=RED + (235,))
-        d.text((x + 3, 28), wtxt, font=f, fill=(0, 0, 0, 170))
-        d.text((x, 24), wtxt, font=f, fill=WHITE + (255,))
+            d.rounded_rectangle([x - 12, 22, x + wd + 12, 128], 16, fill=RED + (240,))
+        d.text((x, 26), wtxt, font=f, fill=(255, 255, 255, 255), stroke_width=6, stroke_fill=(0, 0, 0, 255))
         x += wd + sp
     arr = np.asarray(lay, np.float32)
     _CAP[key] = arr
     return arr
 
 
-def paste(frame, lay, y, alpha=1.0):
+def paste(frame, lay, y, alpha=1.0, scale=1.0):
+    """Tam genişlikte katmanı y'ye yapıştırır; scale != 1 ise merkezden büyütüp/küçültür (pop animasyonu)."""
+    if abs(scale - 1.0) > 0.005:
+        h0, w0 = lay.shape[:2]
+        nh, nw = max(2, int(h0 * scale)), max(2, int(w0 * scale))
+        lay = cv2.resize(lay, (nw, nh), interpolation=cv2.INTER_LINEAR)
+        y = int(y + (h0 - nh) / 2)
+        x = int((W - nw) / 2)
+        if x < 0:
+            lay = lay[:, -x:-x + W]
+            x = 0
+        overlay(frame, lay, x, y, alpha)
+        return
     h = lay.shape[0]
     a = lay[..., 3:4] / 255 * alpha
     frame[y:y + h] = frame[y:y + h] * (1 - a) + lay[..., :3] * a
+
+
+def overlay(frame, lay, x, y, alpha=1.0):
+    """RGBA katmanı (x, y) konumuna, ekran dışına taşan kısmı kırparak bindirir."""
+    h, w = lay.shape[:2]
+    x0, y0 = max(0, x), max(0, y)
+    x1, y1 = min(W, x + w), min(H, y + h)
+    if x1 <= x0 or y1 <= y0 or alpha <= 0:
+        return
+    sub = lay[y0 - y:y1 - y, x0 - x:x1 - x]
+    a = sub[..., 3:4] / 255 * alpha
+    frame[y0:y1, x0:x1] = frame[y0:y1, x0:x1] * (1 - a) + sub[..., :3] * a
+
+
+def pop(e, d=0.16, start=0.8):
+    """0..d sn arasında start'tan 1'e hafif taşarak (overshoot) büyüme."""
+    if e >= d:
+        return 1.0
+    k = max(0.0, e / d)
+    return start + (1 - start) * (1 + 2.2 * (k - 1) ** 3 + 1.2 * (k - 1) ** 2)
 
 
 def tag_layer(text):
@@ -242,90 +292,128 @@ def kanca_layer(text, size=78):
 
 
 def zoom_region(region, t):
-    """İlk 0,8 sn: %14 yakından başlayıp normale inen hızlı zoom (kalıp kırma)."""
+    """İlk 0,8 sn: %18 yakından başlayıp normale inen hızlı zoom (kalıp kırma)."""
     if t >= ZOOM_SURE:
         return region
     k = 1 - (1 - t / ZOOM_SURE) ** 3
-    z = 1.14 - 0.14 * k
+    return zoom_by(region, 1.18 - 0.18 * k)
+
+
+def zoom_by(region, z):
+    if z <= 1.002:
+        return region
     h, w = region.shape[:2]
     ch, cw = int(h / z), int(w / z)
     y0, x0 = (h - ch) // 2, (w - cw) // 2
-    crop = Image.fromarray(region[y0:y0 + ch, x0:x0 + cw].clip(0, 255).astype(np.uint8))
-    return np.asarray(crop.resize((w, h), Image.BILINEAR), np.float32)
+    return cv2.resize(region[y0:y0 + ch, x0:x0 + cw], (w, h), interpolation=cv2.INTER_LINEAR)
 
 
 def _sar(d, metin, f, maxw):
     return _kanca_sar(d, metin, f, maxw)
 
 
-def end_card(ep, k):
-    """Seçim varsa A/B kartı ("SEN OLSAN NE YAPARDIN?"), yoksa dizi finali kartı."""
-    im = Image.new("RGB", (W, H), (0, 0, 0))
+def _kutu(metin, harf, renk, cerceve, f2=None, w=W - 160):
+    f2 = f2 or font(54)
+    d0 = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    lines = _sar(d0, metin, f2, w - 230)[:4]
+    bh = 74 * len(lines) + 76
+    im = Image.new("RGBA", (w, bh), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    a = max(0.0, min(1.0, k))
-    c = lambda col: tuple(int(v * a) for v in col)  # noqa: E731
-    secim = ep.get("secim")
-    if secim:
-        f1 = font(70)
-        t1 = "SEN OLSAN NE YAPARDIN?"
-        while d.textlength(t1, font=f1) > W - 80:
-            f1 = font(f1.size - 4)
-        d.text(((W - d.textlength(t1, font=f1)) / 2, 420), t1, font=f1, fill=c(WHITE))
-        y = 600
-        for harf in ("A", "B"):
-            f2 = font(52)
-            lines = _sar(d, secim[harf], f2, W - 330)[:3]
-            bh = 70 * len(lines) + 70
-            renk = RED if harf == "A" else (70, 110, 200)
-            d.rounded_rectangle([90, y, W - 90, y + bh], 30, outline=c(renk), width=6, fill=c((14, 14, 18)))
-            fh = font(96)
-            d.text((130, y + bh / 2 - 62), harf, font=fh, fill=c(renk))
-            yy = y + 35
-            for ln in lines:
-                d.text((260, yy), ln, font=f2, fill=c(WHITE))
-                yy += 70
-            y += bh + 50
-        f3 = font(46)
-        t3 = "Yorumlara A ya da B yaz"
-        d.text(((W - d.textlength(t3, font=f3)) / 2, y + 30), t3, font=f3, fill=c(WHITE))
-        f4 = font(38)
-        t4 = "Sonuç ve doğru cevap bu akşam"
-        d.text(((W - d.textlength(t4, font=f4)) / 2, y + 100), t4, font=f4, fill=c((170, 172, 185)))
-    elif ep.get("dogru"):
-        dg = ep["dogru"]
-        f1 = font(64)
-        t1 = "DOĞRU CEVAP"
-        d.text(((W - d.textlength(t1, font=f1)) / 2, 400), t1, font=f1, fill=c((90, 200, 120)))
-        renk = RED if dg.get("harf") == "A" else (70, 110, 200)
-        f2 = font(52)
-        lines = _sar(d, dg["metin"], f2, W - 330)[:4]
-        bh = 70 * len(lines) + 70
-        y = 520
-        d.rounded_rectangle([90, y, W - 90, y + bh], 30, outline=c((90, 200, 120)), width=7, fill=c((14, 18, 16)))
-        d.text((130, y + bh / 2 - 62), dg.get("harf", ""), font=font(96), fill=c(renk))
-        yy = y + 35
-        for ln in lines:
-            d.text((260, yy), ln, font=f2, fill=c(WHITE))
-            yy += 70
-        y += bh + 50
-        if dg.get("kaynak"):
-            f3 = font(36)
-            t3 = "Kaynak: " + dg["kaynak"]
-            d.text(((W - d.textlength(t3, font=f3)) / 2, y), t3, font=f3, fill=c((170, 172, 185)))
-            y += 70
-        f4 = font(44)
-        t4 = "Bunu sevdiğin birine gönder"
-        d.text(((W - d.textlength(t4, font=f4)) / 2, y + 30), t4, font=f4, fill=c(WHITE))
-    else:
-        t1 = ep.get("son_kart", "KAÇ SANİYEN VAR?")
-        f1 = font(84)
-        d.text(((W - d.textlength(t1, font=f1)) / 2, 760), t1, font=f1, fill=c(RED))
-        f2 = font(46)
-        t2 = ep.get("son_alt", "Yeni hikâye yarın akşam")
-        d.text(((W - d.textlength(t2, font=f2)) / 2, 890), t2, font=f2, fill=c(WHITE))
-    f3 = font(42)
-    d.text(((W - d.textlength(HANDLE, font=f3)) / 2, 1560), HANDLE, font=f3, fill=c((150, 152, 165)))
+    d.rounded_rectangle([0, 0, w - 1, bh - 1], 34, outline=cerceve + (255,), width=7, fill=(12, 12, 16, 235))
+    d.text((44, bh / 2 - 64), harf, font=font(100), fill=renk + (255,))
+    yy = 38
+    for ln in lines:
+        d.text((170, yy), ln, font=f2, fill=WHITE + (255,))
+        yy += 74
     return np.asarray(im, np.float32)
+
+
+def _yazi(t, size, renk, stroke=0):
+    f = font(size)
+    d0 = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    while d0.textlength(t, font=f) > W - 80 and size > 30:
+        size -= 3
+        f = font(size)
+    tw = int(d0.textlength(t, font=f)) + 20
+    im = Image.new("RGBA", (tw, int(size * 1.45)), (0, 0, 0, 0))
+    ImageDraw.Draw(im).text((10, 4), t, font=f, fill=renk + (255,), stroke_width=stroke, stroke_fill=(0, 0, 0, 255))
+    return np.asarray(im, np.float32)
+
+
+_SON = {}
+
+
+def end_parts(ep):
+    """Son kartın parçaları: (katman, y, gecikme, animasyon). Animasyon: pop / sol / sag / alt."""
+    if ep.get("id") in _SON:
+        return _SON[ep.get("id")]
+    P = []
+    secim, dg = ep.get("secim"), ep.get("dogru")
+    if secim:
+        P.append((_yazi("SEN OLSAN NE YAPARDIN?", 72, WHITE, 4), 470, 0.0, "pop"))
+        y = 640
+        for i, harf in enumerate(("A", "B")):
+            renk = RED if harf == "A" else BLUE
+            k = _kutu(secim[harf], harf, renk, renk)
+            P.append((k, y, 0.18 + 0.14 * i, "sol" if harf == "A" else "sag"))
+            y += k.shape[0] + 46
+        P.append((_yazi("Yorumlara A ya da B yaz", 50, WHITE, 3), y + 30, 0.55, "nabiz"))
+        P.append((_yazi("Sonuç ve doğru cevap bu akşam", 38, (190, 192, 205), 2), y + 110, 0.7, "alt"))
+    elif dg:
+        P.append((_yazi("DOĞRU CEVAP", 80, GREEN, 4), 440, 0.0, "pop"))
+        renk = RED if dg.get("harf") == "A" else BLUE
+        k = _kutu(dg["metin"], dg.get("harf", ""), renk, GREEN)
+        P.append((k, 580, 0.2, "pop"))
+        y = 580 + k.shape[0] + 44
+        if dg.get("kaynak"):
+            P.append((_yazi("Kaynak: " + dg["kaynak"], 38, (190, 192, 205), 2), y, 0.45, "alt"))
+            y += 76
+        P.append((_yazi("Bunu sevdiğin birine gönder", 48, WHITE, 3), y + 30, 0.65, "nabiz"))
+    else:
+        P.append((_yazi(ep.get("son_kart", "KAÇ SANİYEN VAR?"), 84, RED, 4), 760, 0.0, "pop"))
+        P.append((_yazi(ep.get("son_alt", "Yeni hikâye yarın akşam"), 46, WHITE, 2), 890, 0.3, "alt"))
+    _SON[ep.get("id")] = P
+    return P
+
+
+def end_card(ep, te, bg):
+    """Son kart: son karenin bulanık/karartılmış hâli üstünde kayarak gelen A/B (ya da DOĞRU CEVAP) kutuları."""
+    frame = bg.copy()
+    for lay, y, gec, anim in end_parts(ep):
+        e = te - gec
+        if e <= 0:
+            continue
+        k = min(1.0, e / 0.32)
+        ease = 1 - (1 - k) ** 3
+        h, w = lay.shape[:2]
+        x = (W - w) // 2
+        if anim == "sol":
+            overlay(frame, lay, int(x - (1 - ease) * (W + 40)), y)
+        elif anim == "sag":
+            overlay(frame, lay, int(x + (1 - ease) * (W + 40)), y)
+        elif anim == "alt":
+            overlay(frame, lay, x, int(y + (1 - ease) * 60), ease)
+        elif anim == "nabiz":
+            sc = pop(e, 0.25, 0.6) * (1 + 0.045 * max(0.0, math.sin((e - 0.25) * 2 * math.pi * 1.1)) * (e > 0.25))
+            _ortala(frame, lay, y, sc, ease)
+        else:
+            _ortala(frame, lay, y, pop(e, 0.26, 0.55), ease)
+    return frame
+
+
+def _ortala(frame, lay, y, sc, alpha=1.0):
+    h0, w0 = lay.shape[:2]
+    if abs(sc - 1) > 0.005:
+        lay = cv2.resize(lay, (max(2, int(w0 * sc)), max(2, int(h0 * sc))), interpolation=cv2.INTER_LINEAR)
+    h, w = lay.shape[:2]
+    overlay(frame, lay, (W - w) // 2, int(y + (h0 - h) / 2), alpha)
+
+
+def end_bg(last):
+    """Son kare -> bulanık, karartılmış arka plan."""
+    im = Image.fromarray(last.clip(0, 255).astype(np.uint8)).resize((W // 4, H // 4), Image.BILINEAR)
+    im = im.filter(ImageFilter.GaussianBlur(6)).resize((W, H), Image.BILINEAR)
+    return np.asarray(im, np.float32) * 0.32
 
 
 _SAYAC = {}
@@ -335,14 +423,14 @@ def sayac_layer(kalan):
     """Sağ üstte kırmızı geri sayım rozeti: ⏱ 00:12 (karar bölümlerinde "sure_sn" alanı varsa)."""
     if kalan in _SAYAC:
         return _SAYAC[kalan]
-    f = font(46)
+    f = font(62)
     t = f"00:{kalan:02d}"
     d0 = ImageDraw.Draw(Image.new("RGB", (10, 10)))
     w = int(d0.textlength(t, font=f)) + 60
-    im = Image.new("RGBA", (w, 84), (0, 0, 0, 0))
+    im = Image.new("RGBA", (w, 104), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    renk = (205, 30, 36, 235) if kalan > 5 else (255, 40, 40, 255)
-    d.rounded_rectangle([0, 0, w - 1, 83], 24, fill=renk)
+    renk = (205, 30, 36, 240) if kalan > 3 else (255, 40, 40, 255)
+    d.rounded_rectangle([0, 0, w - 1, 103], 28, fill=renk, outline=(255, 255, 255, 200), width=3)
     d.text((30, 12), t, font=f, fill=(255, 255, 255, 255))
     _SAYAC[kalan] = np.asarray(im, np.float32)
     return _SAYAC[kalan]
@@ -489,22 +577,30 @@ def render_episode(ep_path, img_dir, out):
     starts, speech_end = plan([d for _, d in parts])
     total = speech_end + END
     audio = os.path.join(work, "audio.wav")
-    S.birlestir(parts, starts, total, audio, work, sting_at=max(1.0, speech_end - 1.4), seed=int(ep.get("seed", 7)) % 100000 + 7)
+    # 21 Kasım (kullanıcı isteği): baştaki ürperti sesi ve sondaki vuruş sesi kaldırıldı; müzik son kartta susar.
+    S.birlestir(parts, starts, total, audio, work, sting_at=None, seed=int(ep.get("seed", 7)) % 100000 + 7,
+                muzik_bitis=speech_end)
     print(f"Süre: {total:.1f} sn", flush=True)
 
     hdr = header(ep)
+    hdr_a = hdr[..., 3:4] / 255
+    hdr_c = hdr[..., :3]
     klay = kanca_layer(kanca_metni(ep))
     kbit = max(2.2, min(KANCA_SURE, starts[0] + parts[0][1]))
-    emask, vig = edge_mask()
+    _, vig = edge_mask()
+    kirmizi = kenar_kirmizi() if ep.get("sure_sn") else None
     gr = grains()
     fog = Fog()
+    karar = bool(ep.get("secim"))
     prepared = []
     for i, (s, st, (_, d)) in enumerate(zip(sc, starts, parts)):
         img = os.path.join(img_dir, f"sahne{i + 1}.png")
-        mot = SceneMotion(img, s.get("prompt", ""), W, IMG_H, seed=i + 1)
+        # ilk sahne ve karar videoları daha "elde kamera" hissi versin
+        shake = 1.6 if i == 0 else (1.15 if karar else 0.9)
+        mot = SceneMotion(img, s.get("prompt", ""), W, IMG_H, seed=i + 1, shake=shake)
         p = (s.get("prompt", "") or "").lower()
-        sis = s.get("sis", 0.35 if any(k in p for k in ("fog", "mist", "haze")) else 0.12)
-        prepared.append({"t": 0.0 if i == 0 else st - 0.3, "mot": mot, "sis": sis, "sicak": s.get("sicak", False),
+        sis = s.get("sis", 0.3 if any(k in p for k in ("fog", "mist", "haze")) else 0.0)
+        prepared.append({"t": 0.0 if i == 0 else st - 0.12, "mot": mot, "sis": sis, "sicak": s.get("sicak", False),
                          "caps": chunks(word_times(s["text"], st, d)),
                          "tag": tag_layer(s["yer"]) if s.get("yer") else None,
                          "tel": Telefon(s["telefon"]) if s.get("telefon") else None, "st": st, "dur": d})
@@ -513,14 +609,15 @@ def render_episode(ep_path, img_dir, out):
                            "-crf", "23", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-shortest",
                            "-movflags", "+faststart", out], stdin=subprocess.PIPE)
     n = int(total * FPS)
+    son, bg = None, None
     for fi in range(n):
         t = fi / FPS
         if t >= speech_end:
-            k = (t - speech_end) / 0.8
-            ff.stdin.write(end_card(ep, k).clip(0, 255).astype(np.uint8).tobytes())
+            if bg is None:
+                bg = end_bg(son if son is not None else np.zeros((H, W, 3), np.float32))
+            ff.stdin.write(end_card(ep, t - speech_end, bg).clip(0, 255).astype(np.uint8).tobytes())
             continue
         idx = max(i for i, p in enumerate(prepared) if p["t"] <= t)
-        frame = hdr.copy()
         region = np.zeros((IMG_H, W, 3), np.float32)
         layers = []
         if idx > 0 and t - prepared[idx]["t"] < FADE:
@@ -536,33 +633,47 @@ def render_episode(ep_path, img_dir, out):
                 fa = fog.alpha(t, p["sis"])
                 img = img * (1 - fa) + np.array([150, 156, 168], np.float32) * fa
             region = region * (1 - a) + img * a
-        flick = 0.97 + 0.03 * math.sin(t * 9.1) * math.sin(t * 3.7)
-        region = region * vig * flick + gr[fi % len(gr)]
-        region = zoom_region(region, t)
-        frame[IMG_Y:IMG_Y + IMG_H] = frame[IMG_Y:IMG_Y + IMG_H] * (1 - emask) + region * emask
+        region = region * vig + gr[fi % len(gr)]
+        e = t - prepared[idx]["t"]
+        if idx == 0:
+            region = zoom_region(region, t)
+        elif e < PUNCH:                                   # sahne girişi: zoom vuruşu + kısa parlama
+            k = 1 - e / PUNCH
+            region = zoom_by(region, 1 + 0.10 * k ** 2)
+            if e < 0.12:
+                region = region + 70 * (1 - e / 0.12)
+        frame = region * (1 - hdr_a) + hdr_c * hdr_a
         cur = prepared[idx]
         if cur["tag"] is not None:
             ta = min(1.0, max(0.0, (t - cur["t"] - 0.2) / 0.4))
-            th, tw = cur["tag"].shape[:2]
-            sub = frame[IMG_Y + 40:IMG_Y + 40 + th, 40:40 + tw]
-            al = cur["tag"][..., 3:4] / 255 * ta
-            frame[IMG_Y + 40:IMG_Y + 40 + th, 40:40 + tw] = sub * (1 - al) + cur["tag"][..., :3] * al
+            overlay(frame, cur["tag"], 40, 260, ta)
         if cur.get("tel") is not None:
             cur["tel"].ciz(frame, cur["t"] + 0.1, cur["dur"] + (cur["st"] - cur["t"]), t)
         for ch in ([] if (klay is not None and t < kbit - 0.3) else cur["caps"]):
             if ch[0][1] - 0.05 <= t <= ch[-1][2] + 0.2:
                 hi = max([i for i, (_, s0, _) in enumerate(ch) if s0 <= t] or [0])
-                paste(frame, caption_layer(ch, hi), CAP_Y)
+                paste(frame, caption_layer(ch, hi), CAP_Y, scale=pop(t - ch[0][1] + 0.05, 0.16, 0.78))
                 break
         if klay is not None and t < kbit:
-            paste(frame, klay, IMG_Y + int(IMG_H * 0.36), min(1.0, (kbit - t) / 0.3))
+            paste(frame, klay, int(IMG_H * 0.40), min(1.0, (kbit - t) / 0.3), scale=pop(t, 0.28, 1.45))
         if ep.get("sure_sn"):
-            kalan = max(0, int(math.ceil(ep["sure_sn"] * (1 - t / max(1.0, speech_end)))))
+            kalan_f = ep["sure_sn"] * (1 - t / max(1.0, speech_end))
+            kalan = max(0, int(math.ceil(kalan_f)))
+            faz = kalan_f - math.floor(kalan_f)                 # tik anında ~1, sonra 0'a iner
+            nabiz = max(0.0, (faz - 0.7) / 0.3) if kalan_f > 0 else 0.0
             lay = sayac_layer(kalan)
+            sc_ = 1 + (0.16 if kalan <= 3 else 0.08) * nabiz
+            if sc_ > 1.005:
+                lay = cv2.resize(lay, (int(lay.shape[1] * sc_), int(lay.shape[0] * sc_)), interpolation=cv2.INTER_LINEAR)
             h, w = lay.shape[:2]
-            x, y = W - w - 40, IMG_Y + 30
-            al = lay[..., 3:4] / 255
-            frame[y:y + h, x:x + w] = frame[y:y + h, x:x + w] * (1 - al) + lay[..., :3] * al
+            overlay(frame, lay, W - w - 44 + int((sc_ - 1) * w / 2), 250 - int((sc_ - 1) * h / 2))
+            # üstte eriyen süre çubuğu
+            bw = int(W * max(0.0, kalan_f) / ep["sure_sn"])
+            frame[0:12, :bw] = frame[0:12, :bw] * 0.1 + np.array(RED, np.float32) * 0.9
+            if kalan <= 3 and kirmizi is not None:              # son saniyeler: kırmızı kenar nabzı
+                ka = kirmizi * (0.25 + 0.45 * nabiz)
+                frame = frame * (1 - ka) + np.array([230, 20, 30], np.float32) * ka
+        son = frame
         ff.stdin.write(frame.clip(0, 255).astype(np.uint8).tobytes())
         if fi % 300 == 0:
             print(f"  kare {fi}/{n}", flush=True)

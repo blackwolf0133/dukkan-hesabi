@@ -101,7 +101,7 @@ def drone(seconds, sr=SR, seed=4, sting_at=None):
     wind = np.convolve(noise, np.ones(k, np.float32) / k, mode="same")
     wind *= (0.5 + 0.5 * np.sin(2 * np.pi * 0.06 * t) ** 2).astype(np.float32)
     out += wind * 0.55
-    for _ in range(max(1, int(seconds / 12))):
+    for _ in range(0):   # 21 Kasım: rastgele "çan" tınıları kaldırıldı (dikkat dağıtıyordu)
         s = rng.uniform(2, max(3, seconds - 4))
         i0 = int(s * sr)
         d = np.arange(int(sr * 3.5)) / sr
@@ -157,7 +157,7 @@ def oku(path):
         return np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
 
 
-def birlestir(parcalar, baslar, toplam, out_path, workdir, sting_at=None, seed=4):
+def birlestir(parcalar, baslar, toplam, out_path, workdir, sting_at=None, seed=4, muzik_bitis=None):
     """Konuşmaları zamanlarına yerleştirir, altına gerilim müziği koyar (konuşurken kısılır)."""
     voice = np.zeros(int(toplam * SR) + SR, dtype=np.float32)
     for (path, _), st in zip(parcalar, baslar):
@@ -165,7 +165,7 @@ def birlestir(parcalar, baslar, toplam, out_path, workdir, sting_at=None, seed=4
         s = int(st * SR)
         voice[s:s + len(a)] += a[: len(voice) - s]
     voice = voice[: int(toplam * SR)]
-    if os.environ.get("ACILIS_SESI", "1") == "1":  # 0. saniye ürperti sesi
+    if os.environ.get("ACILIS_SESI", "0") == "1":  # 0. saniye ürperti sesi (21 Kasım: kullanıcı istemedi, kapalı)
         ac = acilis_sesi()
         voice[: len(ac)] += ac[: len(voice)]
     vw = os.path.join(workdir, "voice_full.wav")
@@ -174,7 +174,8 @@ def birlestir(parcalar, baslar, toplam, out_path, workdir, sting_at=None, seed=4
     yaz(mw, drone(toplam, SR, seed=seed, sting_at=sting_at))
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", vw, "-i", mw, "-filter_complex",
                     f"[1]lowpass=f=4000,volume={MUSIC_VOL},afade=t=in:d=1.5,"
-                    f"afade=t=out:st={max(0.1, toplam - 1.5):.2f}:d=1.4[m];"
+                    f"afade=t=out:st={max(0.1, (muzik_bitis or toplam) - (0.6 if muzik_bitis else 1.5)):.2f}:"
+                    f"d={0.9 if muzik_bitis else 1.4}[m];"
                     "[0]asplit=2[v][sc];"
                     "[m][sc]sidechaincompress=threshold=0.03:ratio=3:attack=80:release=600[md];"
                     "[v][md]amix=inputs=2:duration=first:normalize=0", "-ar", str(SR), out_path], check=True)

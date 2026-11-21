@@ -70,10 +70,11 @@ def _effects(prompt):
 
 
 class SceneMotion:
-    def __init__(self, path, prompt, out_w, out_h, seed=0, strength=1.0):
+    def __init__(self, path, prompt, out_w, out_h, seed=0, strength=1.0, shake=0.0):
         self.W, self.H = out_w, out_h
         self.fx = _effects(prompt)
         self.k = strength
+        self.shake = shake
         self.rng = np.random.default_rng(seed)
         im = Image.open(path).convert("RGB")
         # zoom ve kayma payı için çıktıdan %18 büyük hazırla
@@ -95,6 +96,8 @@ class SceneMotion:
         # kamera yönü sahneye göre değişsin
         self.dir = self.rng.choice([-1, 1])
         self.vy = self.rng.uniform(-0.4, 0.4)
+        self.zin = bool(self.rng.random() < 0.7)            # çoğu sahne yakınlaşır, bazıları uzaklaşır
+        self.ph = self.rng.uniform(0, 6.3, 4)
         yy, xx = np.mgrid[0:out_h, 0:out_w].astype(np.float32)
         self.yy, self.xx = yy, xx
         self._parts = self._init_particles()
@@ -102,16 +105,23 @@ class SceneMotion:
     # ---------------- kamera + parallax + rüzgâr ----------------
     def _warp(self, t, prog):
         W, H = self.W, self.H
-        z = 1.0 + 0.10 * self.k * _ease(prog)                 # yavaş yakınlaşma
-        cx = self.sw / 2 + self.dir * 0.035 * self.sw * self.k * (prog - 0.5)
-        cy = self.sh / 2 + self.vy * 0.03 * self.sh * self.k * (prog - 0.5)
+        e = _ease(prog)
+        z = 1.0 + 0.16 * self.k * (e if self.zin else 1 - e)    # belirgin yakınlaşma / uzaklaşma
+        cx = self.sw / 2 + self.dir * 0.05 * self.sw * self.k * (prog - 0.5)
+        cy = self.sh / 2 + self.vy * 0.04 * self.sh * self.k * (prog - 0.5)
         base_scale = min(self.sw / W, self.sh / H) / 1.17 / z
+        if self.shake:                                           # elde kamera: düşük frekanslı titreme
+            ph = self.ph
+            sx = math.sin(t * 1.9 + ph[0]) + 0.55 * math.sin(t * 4.3 + ph[1]) + 0.25 * math.sin(t * 9.1 + ph[2])
+            sy = math.sin(t * 1.6 + ph[3]) + 0.5 * math.sin(t * 3.7 + ph[0]) + 0.25 * math.sin(t * 8.3 + ph[1])
+            cx += sx * 5.5 * self.shake * base_scale
+            cy += sy * 5.0 * self.shake * base_scale
         mx = cx + (self.xx - W / 2) * base_scale
         my = cy + (self.yy - H / 2) * base_scale
         mx, my = mx.astype(np.float32), my.astype(np.float32)
         dmap = cv2.remap(self.depth, mx, my, cv2.INTER_LINEAR)
         # parallax: yakın bölgeler kameranın tersine biraz daha fazla kayar
-        px = self.dir * 26 * self.k * (prog - 0.5) * (dmap - 0.45)
+        px = self.dir * 40 * self.k * (prog - 0.5) * (dmap - 0.45)
         py = 10 * self.k * math.sin(prog * math.pi) * (dmap - 0.45)
         mx = (mx + px).astype(np.float32)
         my = (my + py).astype(np.float32)
