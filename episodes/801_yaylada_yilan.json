@@ -1,0 +1,56 @@
+{
+  "id": "801",
+  "slug": "yaylada_yilan",
+  "title": "Yaylada Yılan",
+  "dizi_adi": "Yaylada Yılan",
+  "gece": 1,
+  "seed": 78011,
+  "sure_sn": 30,
+  "kanca_yazi": "Otuz saniyen var.",
+  "scenes": [
+    {
+      "text": "Arkadaşını yılan soktu. Otuz saniyen var.",
+      "prompt": "First-person view on a rocky mountain trail looking down at a friend's hiking boot, a snake slithering away between rocks"
+    },
+    {
+      "text": "Yaylada yürüyüş yapıyordunuz. Yılan taşların arasından çıktı, bileğine dokunup kayboldu.",
+      "prompt": "A green highland meadow with a stony path, two hikers seen from behind, afternoon sun"
+    },
+    {
+      "text": "Arkadaşın yere oturdu. Bileği zonkluyor, korkudan titriyor.",
+      "prompt": "A hiker seen from behind sitting on a rock holding the lower leg, a backpack beside, tense mood, no wound visible"
+    },
+    {
+      "text": "Telefon çekiyor ama en yakın hastane bir saat uzakta.",
+      "prompt": "A hand holding a phone against a wide mountain landscape with a distant winding road, no screen text"
+    },
+    {
+      "text": "Gruptan biri çakısını çıkardı. Filmlerdeki gibi: yarayı kes, zehri em.",
+      "prompt": "Close view of a hand opening a folded pocket knife over a backpack, dramatic light"
+    },
+    {
+      "text": "Bir diğeri bağırıyor: dokunmayın, kıpırdatmayın, yardım çağırın.",
+      "prompt": "A hiker seen from behind raising a hand to stop someone, mountain trail, tense"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Yarayı kesip zehri mi emerdin, yoksa kımıldatmadan yüz on ikiyi mi arardın?",
+      "prompt": "Wide shot of hikers gathered around a seated friend on a mountain trail, a pocket knife and a phone in different hands, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Yarayı kes, zehri em",
+    "B": "Kımıldatma, hemen ambulans çağır"
+  },
+  "caption": "Yaylada arkadaşını yılan soktu, hastane bir saat uzakta. Sen ne yapardın? 🐍⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://medlineplus.gov/ency/article/000031.htm",
+    "https://www.cdc.gov/niosh/topics/snakes/symptoms.html"
+  ]
+}

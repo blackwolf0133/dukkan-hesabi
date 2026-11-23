@@ -1,0 +1,65 @@
+{
+  "id": "702B",
+  "slug": "merdivene_kostun",
+  "title": "Merdivene Koştun",
+  "dizi_adi": "Sallanan Bina",
+  "gece": 2,
+  "dal": "B",
+  "seed": 77022,
+  "scenes": [
+    {
+      "text": "Merdivenlere koşmayı seçtin.",
+      "prompt": "First-person view running down an apartment hallway toward the front door, shaking motion blur"
+    },
+    {
+      "text": "Kapıya atıldın. Zemin ayağının altında kayıyordu, iki kez tökezledin.",
+      "prompt": "Low view of feet stumbling on a hallway floor, a rug sliding, motion blur, no injury"
+    },
+    {
+      "text": "Merdivenler hâlâ sallanıyordu. Korkuluğa zor tutundun.",
+      "prompt": "First-person view of a stairwell with a hand gripping the railing, the stairs blurred by shaking, dim light"
+    },
+    {
+      "text": "Sarsıntı sen ikinci kata inerken durdu. Bu sefer şanslıydın.",
+      "prompt": "A quiet stairwell with soft light, a person seen from behind sitting on a step, relieved"
+    },
+    {
+      "text": "Gerçekte uzmanlara göre sarsıntı sırasında koşmak en tehlikeli yol.",
+      "prompt": "An empty stairwell seen from above in calm light, serious mood"
+    },
+    {
+      "text": "AFAD ve ABD acil durum kurumlarına göre sarsıntı sırasında içerideysen içeride kal, dışarı koşma.",
+      "prompt": "Educational scene of a bright classroom-like room with a sturdy table, calm, no text"
+    },
+    {
+      "text": "Düşen eşyalar ve sallanan merdivenler asıl tehlike. Kapı eşiği de evin geri kalanından daha sağlam değil.",
+      "prompt": "An apartment doorway and a hallway shelf in soft light, calm educational mood, no text"
+    },
+    {
+      "text": "Çök, sağlam bir masanın altına kapan, ayağına tutun. Masa yoksa iç duvar dibinde çök, başını ve enseni koru.",
+      "prompt": "Educational scene of a person seen from behind kneeling under a table holding its leg, one arm over the head, bright room, no text"
+    },
+    {
+      "text": "Sarsıntı bitince sakince çık. Bunu evde birlikte yaşadığın birine gönder. O on saniyede ne yapacağınızı şimdiden bilin.",
+      "prompt": "A family living room seen from above with a sturdy table and warm light, empty chairs, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Çök, kapan, tutun; sarsıntıda dışarı koşma",
+    "kaynak": "AFAD, FEMA (ready.gov), CDC"
+  },
+  "caption": "Çoğunluk merdivene koştu. Ama sarsıntıda koşmak doğru mu? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.ready.gov/earthquakes",
+    "https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html",
+    "https://www.birgun.net/haber/afad-ilk-alti-saat-hayati-onemde-dedi-cok-kapan-tutun-hareketlerini-hatirlatti-410997"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "902A",
+  "slug": "camlari_actin",
+  "title": "Camları Açtın",
+  "dizi_adi": "Gaz Kokusu",
+  "gece": 2,
+  "dal": "A",
+  "seed": 79021,
+  "scenes": [
+    {
+      "text": "Işığa dokunmadan camları açıp çıkmayı seçtin.",
+      "prompt": "A hand pulling back from a light switch in a dark apartment, moonlight"
+    },
+    {
+      "text": "Karanlıkta duvara tutunarak mutfağa gittin, pencereyi ardına kadar açtın.",
+      "prompt": "A kitchen window opened wide at night, curtains moving in cool air, moonlight"
+    },
+    {
+      "text": "Ocağın arkasındaki vanayı kapattın, kapıyı açık bırakıp dışarı çıktın.",
+      "prompt": "Close view of a hand turning a small gas valve on a pipe, dim moonlight"
+    },
+    {
+      "text": "Apartmanın önünden yüz seksen yediyi aradın. Ekip geldi, gevşek bir bağlantı buldu.",
+      "prompt": "A gas emergency van parked in front of an apartment building at night, a person seen from behind waiting outside, no text"
+    },
+    {
+      "text": "Doğru seçim. Uzmanların söylediği tam olarak buydu.",
+      "prompt": "A calm apartment street at night with soft streetlights, peaceful"
+    },
+    {
+      "text": "Türkiye Gaz Dağıtıcıları Birliği'ne göre gaz kokusu varsa elektrik düğmelerine dokunma. Açma, açıksa da kapatma.",
+      "prompt": "Educational scene of a wall light switch in a bright clean room, calm, no text"
+    },
+    {
+      "text": "Kapı ve pencereleri aç, sayacın ve cihazların vanasını kapat. Çakmak yakma, asansöre binme.",
+      "prompt": "Educational scene of an open window and a closed gas valve in a bright kitchen, no text"
+    },
+    {
+      "text": "İçeride telefon kullanma. Gaz olmayan güvenli bir yere çık, oradan yüz seksen yediyi ara.",
+      "prompt": "A person seen from behind outside an apartment building holding a phone, daylight, calm, no text"
+    },
+    {
+      "text": "Bunu evde tek yaşayan birine gönder. O yirmi saniye bir gün ona lazım olabilir.",
+      "prompt": "A cozy apartment window glowing at night from outside, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Düğmelere dokunma, havalandır, dışarıdan 187'yi ara",
+    "kaynak": "GAZBİR, İGDAŞ"
+  },
+  "caption": "Çoğunluk ışığa dokunmadı. Peki uzmanlar ne diyor? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://gazbir.org.tr/en/187-natural-gas-emergency/175",
+    "https://www.memurlar.net/haber/802222/hayati-uyari-curuk-sarimsak-kokusu-alirsaniz-187-yi-arayin.html"
+  ]
+}

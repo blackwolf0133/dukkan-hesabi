@@ -1,0 +1,64 @@
+{
+  "id": "802B",
+  "slug": "yardim_cagirdin",
+  "title": "Yardım Çağırdın",
+  "dizi_adi": "Yaylada Yılan",
+  "gece": 2,
+  "dal": "B",
+  "seed": 78022,
+  "scenes": [
+    {
+      "text": "Kımıldatmadan yüz on ikiyi aramayı seçtin.",
+      "prompt": "A hand holding a phone to an ear on a mountain trail, a seated hiker blurred nearby"
+    },
+    {
+      "text": "Çakıyı kapattırdın, arkadaşını düz bir taşın üstüne oturttun.",
+      "prompt": "A hand closing a pocket knife, a hiker seen from behind sitting on a flat rock"
+    },
+    {
+      "text": "Bacağını kıpırdatmamasını, yavaş nefes almasını söyledin.",
+      "prompt": "A hiker seen from behind sitting still with a jacket under the leg, a friend's hand on the shoulder, calm"
+    },
+    {
+      "text": "Ambulansla yolda buluştunuz. Hastanede tedavisi yapıldı. Doğru seçim.",
+      "prompt": "An ambulance waiting at a mountain road at dusk, two hikers seen from behind walking toward it"
+    },
+    {
+      "text": "Uzmanların söylediği tam olarak buydu.",
+      "prompt": "A calm green highland at sunset, peaceful mood"
+    },
+    {
+      "text": "ABD Ulusal Tıp Kütüphanesi ve CDC'ye göre yarayı kesme, zehri emme, turnike ya da buz uygulama.",
+      "prompt": "Educational first aid scene with a closed pocket knife, an ice pack and a strap laid far apart on a table, bright room, no text"
+    },
+    {
+      "text": "Kişiyi sakin tut. Isırılan kolu ya da bacağı kıpırdatmadan, gevşekçe sabitle.",
+      "prompt": "Educational first aid scene with a training mannequin's leg resting on a folded jacket, loosely supported, bright room, no text"
+    },
+    {
+      "text": "Yüzük gibi sıkan şeyleri çıkar, çünkü şişebilir. Hemen yüz on ikiyi ara. Asıl tedavi hastanede.",
+      "prompt": "A hand removing a ring from a finger, a phone nearby, soft light, no text"
+    },
+    {
+      "text": "Bunu doğada birlikte yürüdüğün birine gönder. O otuz saniye bir gün ona lazım olabilir.",
+      "prompt": "Two hikers seen from behind walking a highland trail at golden hour, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kesme, emme; sabitle, hemen 112'yi ara",
+    "kaynak": "ABD Ulusal Tıp Kütüphanesi, CDC"
+  },
+  "caption": "Çoğunluk yardım çağırdı. Peki uzmanlar ne diyor? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://medlineplus.gov/ency/article/000031.htm",
+    "https://www.cdc.gov/niosh/topics/snakes/symptoms.html"
+  ]
+}

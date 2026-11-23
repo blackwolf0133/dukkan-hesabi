@@ -1,0 +1,64 @@
+{
+  "id": "802A",
+  "slug": "zehri_emdin",
+  "title": "Zehri Emdin",
+  "dizi_adi": "Yaylada Yılan",
+  "gece": 2,
+  "dal": "A",
+  "seed": 78021,
+  "scenes": [
+    {
+      "text": "Yarayı kesip zehri emmeyi seçtin.",
+      "prompt": "Close view of a pocket knife held in a hand on a mountain trail, tense light"
+    },
+    {
+      "text": "Çakıyı yaklaştırınca arkadaşın bacağını çekti, panikle bağırdı.",
+      "prompt": "A hiker seen from behind pulling the leg away and raising a hand, mountain trail, tense"
+    },
+    {
+      "text": "Kalbi hızlandı, herkes onu tutmaya çalışırken bacağını oynatıp durdu.",
+      "prompt": "Hikers seen from behind crowding around a seated friend, motion blur, anxious mood"
+    },
+    {
+      "text": "Sonunda biri yüz on ikiyi aradı, ambulans sizi yolda karşıladı. Bu sefer şanslıydın.",
+      "prompt": "An ambulance with flashing lights on a winding mountain road at dusk, no text"
+    },
+    {
+      "text": "Gerçekte kesmek zehri çıkarmaz, emmek de işe yaramaz.",
+      "prompt": "A folded pocket knife lying closed on a rock, soft light, serious mood"
+    },
+    {
+      "text": "ABD Ulusal Tıp Kütüphanesi ve CDC'ye göre yarayı kesme, zehri emme, turnike ya da buz uygulama.",
+      "prompt": "Educational first aid scene with a closed pocket knife, an ice pack and a strap laid far apart on a table, bright room, no text"
+    },
+    {
+      "text": "Kişiyi sakin tut. Isırılan kolu ya da bacağı kıpırdatmadan, gevşekçe sabitle.",
+      "prompt": "Educational first aid scene with a training mannequin's leg resting on a folded jacket, loosely supported, bright room, no text"
+    },
+    {
+      "text": "Yüzük gibi sıkan şeyleri çıkar, çünkü şişebilir. Hemen yüz on ikiyi ara. Asıl tedavi hastanede.",
+      "prompt": "A hand removing a ring from a finger, a phone nearby, soft light, no text"
+    },
+    {
+      "text": "Bunu doğada birlikte yürüdüğün birine gönder. O otuz saniye bir gün ona lazım olabilir.",
+      "prompt": "Two hikers seen from behind walking a highland trail at golden hour, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kesme, emme; sabitle, hemen 112'yi ara",
+    "kaynak": "ABD Ulusal Tıp Kütüphanesi, CDC"
+  },
+  "caption": "Çoğunluk zehri emmeyi seçti. Ama bu gerçekten işe yarar mı? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://medlineplus.gov/ency/article/000031.htm",
+    "https://www.cdc.gov/niosh/topics/snakes/symptoms.html"
+  ]
+}

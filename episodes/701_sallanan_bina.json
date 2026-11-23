@@ -1,0 +1,57 @@
+{
+  "id": "701",
+  "slug": "sallanan_bina",
+  "title": "Sallanan Bina",
+  "dizi_adi": "Sallanan Bina",
+  "gece": 1,
+  "seed": 77011,
+  "sure_sn": 10,
+  "kanca_yazi": "On saniyen var.",
+  "scenes": [
+    {
+      "text": "Bina sallanıyor. On saniyen var.",
+      "prompt": "First-person view of a cozy apartment living room at night, a ceiling lamp swinging sideways, slight motion blur, tense"
+    },
+    {
+      "text": "Dördüncü kattaki evinde, akşam yemeğinden sonra salonda çay içiyordun.",
+      "prompt": "A warm apartment living room on an upper floor at evening, a sofa and a wooden dining table, city lights through the window, calm"
+    },
+    {
+      "text": "Önce bir uğultu geldi. Sonra avize sağa sola sallanmaya başladı.",
+      "prompt": "Close view of a ceiling chandelier swinging to one side, warm light trails, dim room"
+    },
+    {
+      "text": "Bardaklar şıngırdıyor, dolabın kapakları açılıp kapanıyor.",
+      "prompt": "Glasses trembling on a kitchen shelf and cabinet doors swinging open, motion blur, no damage"
+    },
+    {
+      "text": "Kapı on adım ötede. Hızlı koşup merdivenlerden inersen belki dışarı çıkarsın.",
+      "prompt": "First-person view down a short apartment hallway toward the front door, the floor slightly tilted by shaking, dim light"
+    },
+    {
+      "text": "Önünde de sağlam bir masa var. Altına girip tutunabilirsin.",
+      "prompt": "Low first-person view of a sturdy wooden dining table with space underneath, a hand reaching toward its leg"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Çöküp masaya mı tutunurdun, yoksa merdivenlere mi koşardın?",
+      "prompt": "Wide shot of the living room with the sturdy table on one side and the open hallway to the door on the other, swinging lamp, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Çök, masanın altına gir, tutun",
+    "B": "Merdivenlere koş, dışarı çık"
+  },
+  "caption": "Dördüncü kattasın, bina sallanıyor. Kapı on adım ötede. Sen ne yapardın? 🏢⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.ready.gov/earthquakes",
+    "https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html",
+    "https://www.birgun.net/haber/afad-ilk-alti-saat-hayati-onemde-dedi-cok-kapan-tutun-hareketlerini-hatirlatti-410997"
+  ]
+}

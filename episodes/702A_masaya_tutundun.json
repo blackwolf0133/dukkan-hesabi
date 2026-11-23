@@ -1,0 +1,65 @@
+{
+  "id": "702A",
+  "slug": "masaya_tutundun",
+  "title": "Masaya Tutundun",
+  "dizi_adi": "Sallanan Bina",
+  "gece": 2,
+  "dal": "A",
+  "seed": 77021,
+  "scenes": [
+    {
+      "text": "Çöküp masaya tutunmayı seçtin.",
+      "prompt": "Low first-person view under a wooden dining table, a hand gripping the table leg, a swinging lamp beyond"
+    },
+    {
+      "text": "Dizlerinin üstüne çöktün, masanın altına girdin, bir kolunla başını korudun.",
+      "prompt": "A person seen from behind kneeling under a sturdy table, one arm over the head and neck, warm dim light"
+    },
+    {
+      "text": "Öbür elinle masanın ayağını sıkıca tuttun. Masa kaydıkça sen de onunla kaydın.",
+      "prompt": "Close view of a hand firmly holding a wooden table leg that slides slightly on the floor, motion blur"
+    },
+    {
+      "text": "Sarsıntı durdu. Yavaşça çıktın, sakince çevrene baktın.",
+      "prompt": "A calm living room after shaking, the lamp still, a person seen from behind standing up slowly, soft light"
+    },
+    {
+      "text": "Doğru seçim. Uzmanların söylediği tam olarak buydu.",
+      "prompt": "Warm evening light through the apartment window over a tidy table, peaceful mood"
+    },
+    {
+      "text": "AFAD ve ABD acil durum kurumlarına göre sarsıntı sırasında içerideysen içeride kal, dışarı koşma.",
+      "prompt": "Educational scene of a bright classroom-like room with a sturdy table, calm, no text"
+    },
+    {
+      "text": "Düşen eşyalar ve sallanan merdivenler asıl tehlike. Kapı eşiği de evin geri kalanından daha sağlam değil.",
+      "prompt": "An apartment doorway and a hallway shelf in soft light, calm educational mood, no text"
+    },
+    {
+      "text": "Çök, sağlam bir masanın altına kapan, ayağına tutun. Masa yoksa iç duvar dibinde çök, başını ve enseni koru.",
+      "prompt": "Educational scene of a person seen from behind kneeling under a table holding its leg, one arm over the head, bright room, no text"
+    },
+    {
+      "text": "Sarsıntı bitince sakince çık. Bunu evde birlikte yaşadığın birine gönder. O on saniyede ne yapacağınızı şimdiden bilin.",
+      "prompt": "A family living room seen from above with a sturdy table and warm light, empty chairs, hopeful"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Çök, kapan, tutun; sarsıntıda dışarı koşma",
+    "kaynak": "AFAD, FEMA (ready.gov), CDC"
+  },
+  "caption": "Çoğunluk masaya tutundu. Peki uzmanlar ne diyor? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.ready.gov/earthquakes",
+    "https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html",
+    "https://www.birgun.net/haber/afad-ilk-alti-saat-hayati-onemde-dedi-cok-kapan-tutun-hareketlerini-hatirlatti-410997"
+  ]
+}

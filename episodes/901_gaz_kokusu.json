@@ -1,0 +1,56 @@
+{
+  "id": "901",
+  "slug": "gaz_kokusu",
+  "title": "Gaz Kokusu",
+  "dizi_adi": "Gaz Kokusu",
+  "gece": 1,
+  "seed": 79011,
+  "sure_sn": 20,
+  "kanca_yazi": "Yirmi saniyen var.",
+  "scenes": [
+    {
+      "text": "Evde gaz kokusu var. Yirmi saniyen var.",
+      "prompt": "First-person view standing at an open apartment front door looking into a dark home at night, faint moonlight"
+    },
+    {
+      "text": "Gece yarısı eve döndün. Kapıyı açar açmaz keskin bir koku burnuna çarptı.",
+      "prompt": "A hand holding keys at an open front door, a dark apartment hallway inside, late night"
+    },
+    {
+      "text": "Ev karanlık. Mutfaktan hafif bir tıslama geliyor.",
+      "prompt": "A dark kitchen seen from the doorway, a gas stove faintly visible in moonlight, eerie calm"
+    },
+    {
+      "text": "Elin alışkanlıkla ışık düğmesine gitti. Kaçağı görmek için ışık lazım.",
+      "prompt": "Close view of a hand reaching toward a wall light switch in the dark, fingers almost touching"
+    },
+    {
+      "text": "Ama kafanda bir ses diyor ki: hiçbir şeye dokunma.",
+      "prompt": "The hand frozen just before the light switch, dramatic moonlight, tense"
+    },
+    {
+      "text": "Pencereler kapalı, vana mutfakta, kapı hemen arkanda.",
+      "prompt": "A dark kitchen with closed windows and a small gas valve on a pipe behind the stove, moonlight"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Işığa dokunmadan camları açıp çıkar mıydın, yoksa ışığı yakıp kaçağı mı arardın?",
+      "prompt": "Wide shot of a dark apartment at night with the front door open behind and the kitchen ahead, a light switch on the wall, cinematic"
+    }
+  ],
+  "secim": {
+    "A": "Işığa dokunma, camları aç, çık",
+    "B": "Işığı yak, kaçağı bul"
+  },
+  "caption": "Gece eve döndün, içerisi gaz kokuyor ve karanlık. Sen ne yapardın? 🔥⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://gazbir.org.tr/en/187-natural-gas-emergency/175",
+    "https://www.memurlar.net/haber/802222/hayati-uyari-curuk-sarimsak-kokusu-alirsaniz-187-yi-arayin.html"
+  ]
+}
