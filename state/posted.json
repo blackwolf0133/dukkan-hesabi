@@ -117,12 +117,22 @@
       "media_id": "18184476913449261",
       "permalink": "https://www.instagram.com/reel/DgLKlTFO9LP/",
       "story_id": "17883807006543216"
+    },
+    {
+      "id": "502A",
+      "title": "Simidi Attın",
+      "date": "2026-11-26",
+      "slot": "11:50",
+      "media_id": "18503894728098856",
+      "permalink": "https://www.instagram.com/reel/DgMwBZSyL6g/",
+      "story_id": "18372983821246712"
     }
   ],
   "atlanan": [
     "102A",
     "202A",
     "302B",
-    "402B"
+    "402B",
+    "502B"
   ]
 }
