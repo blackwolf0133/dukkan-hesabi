@@ -1,0 +1,65 @@
+{
+  "id": "1002B",
+  "slug": "koye_yurudun",
+  "title": "Köye Yürüdün",
+  "dizi_adi": "Karda Kalan Araba",
+  "gece": 2,
+  "dal": "B",
+  "seed": 81022,
+  "scenes": [
+    {
+      "text": "Köye yürümeyi seçtin.",
+      "prompt": "A person seen from behind stepping away from a stuck car into deep snow at night, blizzard"
+    },
+    {
+      "text": "Yüz metre sonra rüzgâr önüne kar savurdu. Köyün ışıkları kayboldu.",
+      "prompt": "First-person view walking into a white-out blizzard at night, nothing visible but swirling snow"
+    },
+    {
+      "text": "Arabanın nerede kaldığını da göremiyordun artık. Her yön aynıydı.",
+      "prompt": "A lone figure seen from far behind standing in an endless snowy white-out, no landmarks, cold blue light"
+    },
+    {
+      "text": "Neyse ki bir traktörün farları seni buldu. Bu sefer şanslıydın.",
+      "prompt": "Tractor headlights cutting through falling snow toward a figure seen from behind, warm light, night"
+    },
+    {
+      "text": "Gerçekte uzmanlar tipide arabayı bırakıp yürümeyi en tehlikeli yol sayıyor.",
+      "prompt": "An abandoned car slowly being covered with snow on a mountain road, blizzard, moody night light"
+    },
+    {
+      "text": "ABD Ulusal Hava Servisi'ne göre kar fırtınasında en güvenli yer araban. Tipide dışarı çıkan biri yönünü çabucak kaybeder.",
+      "prompt": "A car stopped on a snowy mountain road during a blizzard, warm interior light glowing through the frosted windows, wide cinematic shot"
+    },
+    {
+      "text": "Yerini ve yardımın ne kadar uzakta olduğunu kesin bilmiyorsan arabadan ayrılma.",
+      "prompt": "Heavy snow blowing across an empty white field at night, distant blurry lights barely visible, no path, cold blue light"
+    },
+    {
+      "text": "Motoru saatte yaklaşık on dakika çalıştır. Egzoz borusunu kardan temizle, yoksa zehirli gaz içeri dolar.",
+      "prompt": "Close view of gloved hands clearing snow away from a car exhaust pipe at night, snowflakes falling, red tail light glow"
+    },
+    {
+      "text": "Bunu kışın yola çıkan birine gönder. O gece bir gün ona lazım olabilir.",
+      "prompt": "A car driving safely on a cleared snowy road at sunrise, snow-covered pine trees, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Arabada kal, egzozu temizle, motoru aralıklı çalıştır",
+    "kaynak": "ABD Ulusal Hava Servisi (NOAA), Maine Acil Durum Ajansı"
+  },
+  "caption": "Çoğunluk köye yürüdü. Ama tipide arabayı bırakmak doğru mu? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.weather.gov/safety/winter-during",
+    "https://www.maine.gov/mema/hazards/natural-hazards/severe-winter-storms/stranded-with-car",
+    "https://www.michigan.gov/msp/divisions/ohsp/ohsp-traffic-safety-programs/winter-driving/know-how-to-handle-winter-driving-emergencies"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "1201",
+  "slug": "asansorde_kaldin",
+  "title": "Asansörde Kaldın",
+  "dizi_adi": "Asansörde Kaldın",
+  "gece": 1,
+  "seed": 83011,
+  "sure_sn": 20,
+  "kanca_yazi": "Yirmi saniyen var.",
+  "scenes": [
+    {
+      "text": "Asansörde mahsur kaldın. Yirmi saniyen var.",
+      "prompt": "First-person view inside an elevator car with flickering lights and closed metal doors, tense mood"
+    },
+    {
+      "text": "Akşam, boşalmış bir iş hanı. Asansör sarsıldı ve iki kat arasında durdu.",
+      "prompt": "An old office building at night seen from outside, one elevator shaft window dimly lit, quiet street"
+    },
+    {
+      "text": "Işık bir an söndü, sonra loş bir lamba yandı.",
+      "prompt": "Inside an elevator car with a single dim emergency light, metal walls, shadows"
+    },
+    {
+      "text": "Kapıyı biraz araladın. Yukarıda üst katın eşiği görünüyor.",
+      "prompt": "Hands prying elevator doors slightly apart, revealing a concrete wall and the edge of a floor above, dim light"
+    },
+    {
+      "text": "Tırmanmak mümkün gibi. Duvarda ise bir alarm düğmesi var.",
+      "prompt": "An elevator control panel with a round alarm button glowing softly, no text, metal walls"
+    },
+    {
+      "text": "Binada kimse kalmamış olabilir. Filmlerdeki gibi kendin mi kurtulursun?",
+      "prompt": "A dramatic movie-style image of a figure seen from behind climbing through a gap between elevator doors, cinematic"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Kapıyı zorlayıp tırmanır mıydın, yoksa alarma basıp bekler miydin?",
+      "prompt": "Wide shot of an elevator car stuck between two floors inside the shaft, dim light, cables above"
+    }
+  ],
+  "secim": {
+    "A": "Kapıyı zorla, aradan tırman",
+    "B": "Alarma bas, sakin bekle"
+  },
+  "caption": "Asansör iki kat arasında durdu, bina boş. Kapıyı zorlayıp tırmanmak mı, alarma basıp beklemek mi? 🛗⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://nupd.northeastern.edu/safety/general-safety-tips/emergency-guidebook/elevator-failure/",
+    "https://emergency.cornell.edu/elevator-emergencies"
+  ]
+}

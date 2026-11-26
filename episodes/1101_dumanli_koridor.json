@@ -1,0 +1,56 @@
+{
+  "id": "1101",
+  "slug": "dumanli_koridor",
+  "title": "Dumanlı Koridor",
+  "dizi_adi": "Dumanlı Koridor",
+  "gece": 1,
+  "seed": 82011,
+  "sure_sn": 30,
+  "kanca_yazi": "Otuz saniyen var.",
+  "scenes": [
+    {
+      "text": "Evi duman sardı. Otuz saniyen var.",
+      "prompt": "First-person view from a bed at night looking at a bedroom doorway with gray smoke creeping in under the door, red glow"
+    },
+    {
+      "text": "Gece, duman alarmının sesiyle uyandın.",
+      "prompt": "A ceiling smoke alarm with a blinking red light in a dark bedroom, thin smoke drifting"
+    },
+    {
+      "text": "Kapını yokladın, serindi. Açtın. Koridor gri dumanla dolu.",
+      "prompt": "First-person view opening a bedroom door into a hallway filled with thick gray smoke at night, a hand on the doorknob"
+    },
+    {
+      "text": "Dış kapı koridorun öbür ucunda. Gözlerin yanıyor.",
+      "prompt": "A long apartment hallway filled with smoke, the front door barely visible at the far end, orange glow"
+    },
+    {
+      "text": "Bir yol var: derin nefes al, tut ve var gücünle koş.",
+      "prompt": "A dramatic movie-style image of a figure seen from behind sprinting upright through a smoky hallway, cinematic"
+    },
+    {
+      "text": "Öbür yol: yere eğil, dizlerinin üstünde ilerle. Ama bu daha yavaş.",
+      "prompt": "Low angle view of a smoky hallway floor with hands and knees moving forward, clearer air near the floor"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Nefesini tutup koşar mıydın, yoksa eğilip sürünerek mi çıkardın?",
+      "prompt": "Wide shot of a smoke-filled apartment hallway at night with a front door at the end, cinematic orange and gray light"
+    }
+  ],
+  "secim": {
+    "A": "Nefesini tut, ayakta koş",
+    "B": "Yere eğil, sürünerek çık"
+  },
+  "caption": "Gece uyandın, koridor dumanla dolu. Nefesini tutup koşmak mı, eğilip sürünmek mi? 🔥⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://usfa.fema.gov/stories/the-dangers-of-smoke",
+    "https://secure.in.gov/dhs/get-prepared/fire-safety/fire-escape"
+  ]
+}

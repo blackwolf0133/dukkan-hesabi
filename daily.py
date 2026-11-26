@@ -50,7 +50,10 @@ def queue():
     st = load_state()
     done = {p["id"] for p in st["posted"]} | set(st.get("atlanan", []))
     eps = []
-    for path in sorted(glob.glob(os.path.join(ROOT, "episodes", "[0-9]*.json"))):
+    def _sira(p):  # 1001 (10. senaryo) 901'den sonra gelsin: sayısal sıralama
+        b = os.path.basename(p)
+        return (int(re.match(r"\d+", b).group(0)), b)
+    for path in sorted(glob.glob(os.path.join(ROOT, "episodes", "[0-9]*.json")), key=_sira):
         ep = json.load(open(path, encoding="utf-8"))
         if ep["id"] not in done and not ep.get("skip"):
             eps.append((os.path.relpath(path, ROOT), ep))

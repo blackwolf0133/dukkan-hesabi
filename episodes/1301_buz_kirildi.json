@@ -1,0 +1,57 @@
+{
+  "id": "1301",
+  "slug": "buz_kirildi",
+  "title": "Buz Kırıldı",
+  "dizi_adi": "Buz Kırıldı",
+  "gece": 1,
+  "seed": 84011,
+  "sure_sn": 60,
+  "kanca_yazi": "Altmış saniyen var.",
+  "scenes": [
+    {
+      "text": "Buz kırıldı, suya düştün. Altmış saniyen var.",
+      "prompt": "First-person view from inside a hole in a frozen pond, broken ice around, gloved hands gripping the ice edge, winter light"
+    },
+    {
+      "text": "Kış, donmuş bir gölet. Kısa yoldan karşıya geçmek istedin.",
+      "prompt": "A snowy frozen pond surrounded by bare trees, a single line of footprints heading across the ice, gray winter sky"
+    },
+    {
+      "text": "Su buz gibi. Nefesin kesildi, kalbin deli gibi çarpıyor.",
+      "prompt": "Dark icy water with breath vapor rising above a hole in the ice, dramatic cold blue light"
+    },
+    {
+      "text": "Geldiğin yöne döndün. Kollarını buza dayadın, ayaklarınla çırptın.",
+      "prompt": "A person seen from behind in a winter coat with arms on the ice edge, kicking in the water, splashing"
+    },
+    {
+      "text": "Gövden yavaş yavaş buzun üstüne kaydı. Ama buz altında çatırdıyor.",
+      "prompt": "Close view of thin cracks spreading across ice near a hole, a gloved hand pressed on the surface"
+    },
+    {
+      "text": "Kıyı yirmi metre ötede. Bir an önce oraya varmak istiyorsun.",
+      "prompt": "First-person view lying on ice looking toward a snowy shore with trees, about twenty meters away"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Yatıp yuvarlanarak mı uzaklaşırdın, yoksa kalkıp kıyıya mı koşardın?",
+      "prompt": "Wide shot of a frozen pond with a dark hole in the ice and a figure lying beside it seen from far away, winter light"
+    }
+  ],
+  "secim": {
+    "A": "Yat, yuvarlanarak uzaklaş",
+    "B": "Ayağa kalk, kıyıya koş"
+  },
+  "caption": "Buz kırıldı, kendini buzun üstüne çektin. Yuvarlanarak uzaklaşmak mı, kalkıp kıyıya koşmak mı? 🧊⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://dnr.state.mn.us/safety/ice/survival.html",
+    "https://dnr.wisconsin.gov/Education/OutdoorSkills/iceSafety",
+    "https://gf.nd.gov/ice-safety"
+  ]
+}

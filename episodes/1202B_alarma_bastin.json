@@ -1,0 +1,60 @@
+{
+  "id": "1202B",
+  "slug": "alarma_bastin",
+  "title": "Alarma Bastın",
+  "dizi_adi": "Asansörde Kaldın",
+  "gece": 2,
+  "dal": "B",
+  "seed": 83022,
+  "scenes": [
+    {
+      "text": "Alarma basıp beklemeyi seçtin. Doğru seçim.",
+      "prompt": "A finger pressing a glowing alarm button inside a dim elevator, no text"
+    },
+    {
+      "text": "Zil binada yankılandı. Gece bekçisi sesini duydu.",
+      "prompt": "A dark building lobby at night with a security guard seen from behind turning toward the elevator doors"
+    },
+    {
+      "text": "Yere oturdun, derin nefes aldın. Dakikalar uzun geçti ama sakin kaldın.",
+      "prompt": "A person seen from behind sitting on the floor of an elevator car under dim emergency light"
+    },
+    {
+      "text": "Yarım saat sonra teknik ekip asansörü kata indirdi ve kapıyı açtı.",
+      "prompt": "Elevator doors opening level with a floor, a technician seen from behind holding a flashlight, relief"
+    },
+    {
+      "text": "Acil durum rehberlerine göre asansörde kalınca kapıyı zorlama, dışarı tırmanmaya çalışma. Asansör haber vermeden yeniden çalışabilir.",
+      "prompt": "A modern elevator shaft seen from inside with steel cables and guide rails, clean technical lighting, documentary feel"
+    },
+    {
+      "text": "Alarm ya da yardım düğmesine bas, varsa acil telefonu kullan.",
+      "prompt": "Close view of a finger pressing a glowing round alarm button on an elevator panel, no text, soft light"
+    },
+    {
+      "text": "Korkma, kabinde ve asansör boşluğunda yeterince hava dolaşır. Sakin kal, ekibin seni çıkarmasını bekle.",
+      "prompt": "A person seen from behind sitting calmly on the floor of an elevator car, dim light, waiting"
+    },
+    {
+      "text": "Bunu her gün asansöre binen birine gönder. O yirmi saniye bir gün ona lazım olabilir.",
+      "prompt": "Elevator doors opening onto a bright building lobby in the morning, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kapıyı zorlama; alarma bas, ekibi bekle",
+    "kaynak": "Northeastern ve Cornell Üniv. acil durum rehberleri"
+  },
+  "caption": "Çoğunluk alarma basıp bekledi ve haklıydı. Peki tırmanmak neden tehlikeli? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://nupd.northeastern.edu/safety/general-safety-tips/emergency-guidebook/elevator-failure/",
+    "https://emergency.cornell.edu/elevator-emergencies"
+  ]
+}

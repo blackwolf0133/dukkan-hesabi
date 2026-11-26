@@ -1,0 +1,64 @@
+{
+  "id": "1202A",
+  "slug": "tirmandin",
+  "title": "Tırmandın",
+  "dizi_adi": "Asansörde Kaldın",
+  "gece": 2,
+  "dal": "A",
+  "seed": 83021,
+  "scenes": [
+    {
+      "text": "Kapıyı zorlayıp tırmanmayı seçtin.",
+      "prompt": "Hands pulling elevator doors apart in dim light, a gap showing the edge of a floor above"
+    },
+    {
+      "text": "Eşiğe uzandın, kollarınla kendini yukarı çekmeye başladın.",
+      "prompt": "A figure seen from behind reaching up toward the edge of a floor through a gap in elevator doors"
+    },
+    {
+      "text": "Tam o an asansör sarsıldı ve kıpırdadı. Hemen geri çekildin.",
+      "prompt": "Inside an elevator car with the doors slightly open, motion blur suggesting sudden movement, a hand pulling back"
+    },
+    {
+      "text": "Sonra alarma bastın, yarım saat sonra ekip seni çıkardı. Bu sefer şanslıydın.",
+      "prompt": "Elevator doors opened by a technician seen from behind, flashlight beam, the passenger seen from behind stepping out"
+    },
+    {
+      "text": "Gerçekte uzmanlar mahsur kalınca dışarı tırmanmayı en tehlikeli yol sayıyor.",
+      "prompt": "An empty elevator shaft with the car between floors, dramatic low light"
+    },
+    {
+      "text": "Acil durum rehberlerine göre asansörde kalınca kapıyı zorlama, dışarı tırmanmaya çalışma. Asansör haber vermeden yeniden çalışabilir.",
+      "prompt": "A modern elevator shaft seen from inside with steel cables and guide rails, clean technical lighting, documentary feel"
+    },
+    {
+      "text": "Alarm ya da yardım düğmesine bas, varsa acil telefonu kullan.",
+      "prompt": "Close view of a finger pressing a glowing round alarm button on an elevator panel, no text, soft light"
+    },
+    {
+      "text": "Korkma, kabinde ve asansör boşluğunda yeterince hava dolaşır. Sakin kal, ekibin seni çıkarmasını bekle.",
+      "prompt": "A person seen from behind sitting calmly on the floor of an elevator car, dim light, waiting"
+    },
+    {
+      "text": "Bunu her gün asansöre binen birine gönder. O yirmi saniye bir gün ona lazım olabilir.",
+      "prompt": "Elevator doors opening onto a bright building lobby in the morning, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Kapıyı zorlama; alarma bas, ekibi bekle",
+    "kaynak": "Northeastern ve Cornell Üniv. acil durum rehberleri"
+  },
+  "caption": "Çoğunluk kapıyı zorlayıp tırmandı. Ama asansörde bu doğru mu? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://nupd.northeastern.edu/safety/general-safety-tips/emergency-guidebook/elevator-failure/",
+    "https://emergency.cornell.edu/elevator-emergencies"
+  ]
+}

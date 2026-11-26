@@ -1,0 +1,64 @@
+{
+  "id": "1102A",
+  "slug": "kostun",
+  "title": "Koştun",
+  "dizi_adi": "Dumanlı Koridor",
+  "gece": 2,
+  "dal": "A",
+  "seed": 82021,
+  "scenes": [
+    {
+      "text": "Nefesini tutup koşmayı seçtin.",
+      "prompt": "A figure seen from behind running upright into a smoky hallway at night"
+    },
+    {
+      "text": "Üç adım sonra nefesin bitti. İstemeden dumanı içine çektin.",
+      "prompt": "First-person view inside thick gray smoke, almost nothing visible, blurred orange glow"
+    },
+    {
+      "text": "Gözlerin kapandı, duvara tutuna tutuna ilerledin.",
+      "prompt": "A hand sliding along a hallway wall inside thick smoke, faint light ahead"
+    },
+    {
+      "text": "Neyse ki kapıyı buldun ve dışarı çıktın. Bu sefer şanslıydın.",
+      "prompt": "A front door opening outward into cool night air, smoke pouring out, figure stepping out seen from behind"
+    },
+    {
+      "text": "Gerçekte uzmanlar dumanın içinde ayakta koşmayı en tehlikeli yol sayıyor.",
+      "prompt": "An empty smoke-filled hallway with smoke thick at head height, moody light"
+    },
+    {
+      "text": "ABD İtfaiye İdaresi'ne göre dumanda yere eğil ve dumanın altından en yakın çıkışa git.",
+      "prompt": "A firefighter training room with a person crawling low under a layer of gray theatrical smoke toward a bright exit, documentary feel, faces not visible"
+    },
+    {
+      "text": "Duman yukarıda toplanır. Yere yakın hava daha temizdir. Ayakta koşan, dumanın tam içine dalar.",
+      "prompt": "Side cutaway view of a home hallway with thick gray smoke filling the upper half and clear air near the floor, simple clean lighting"
+    },
+    {
+      "text": "Kapıyı açmadan önce yokla. Serinse aç, çıkınca arkandan kapat.",
+      "prompt": "Close view of a hand touching a closed wooden bedroom door at night, faint gray haze, tense lighting"
+    },
+    {
+      "text": "Dışarı çıkınca geri dönme, yüz on ikiyi ara. Bunu evde duman alarmı olmayan birine gönder.",
+      "prompt": "A family seen from behind standing safely on a sidewalk at night wrapped in blankets, fire truck lights in the distance"
+    }
+  ],
+  "dogru": {
+    "harf": "B",
+    "metin": "Yere eğil, dumanın altından çıkışa sürün",
+    "kaynak": "ABD İtfaiye İdaresi (USFA), Indiana İç Güvenlik"
+  },
+  "caption": "Çoğunluk nefesini tutup koştu. Ama dumanda bu doğru mu? Cevap videonun sonunda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://usfa.fema.gov/stories/the-dangers-of-smoke",
+    "https://secure.in.gov/dhs/get-prepared/fire-safety/fire-escape"
+  ]
+}

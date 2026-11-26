@@ -1,0 +1,61 @@
+{
+  "id": "1302A",
+  "slug": "yuvarlandin",
+  "title": "Yuvarlandın",
+  "dizi_adi": "Buz Kırıldı",
+  "gece": 2,
+  "dal": "A",
+  "seed": 84021,
+  "scenes": [
+    {
+      "text": "Yere yatıp yuvarlanmayı seçtin. Doğru seçim.",
+      "prompt": "A person in a winter coat seen from above lying flat on the ice beside a hole, beginning to roll away"
+    },
+    {
+      "text": "Ağırlığın buzun üstüne yayıldı. Çatırtı sustu.",
+      "prompt": "Close view of ice surface with cracks that stopped spreading, calm winter light"
+    },
+    {
+      "text": "Delikten epey uzaklaşınca dizlerinin üstünde kıyıya ilerledin.",
+      "prompt": "A figure seen from behind crawling across snowy ice toward a tree-lined shore"
+    },
+    {
+      "text": "Kıyıda hemen ıslak giysilerini çıkarıp sıcak bir yere geçtin.",
+      "prompt": "A small cabin with warm glowing windows by a frozen pond, a figure seen from behind walking toward it wrapped in a blanket"
+    },
+    {
+      "text": "Minnesota ve Wisconsin doğal kaynak müdürlüklerine göre önce geldiğin yöne dön. Orada buz seni zaten taşımıştı.",
+      "prompt": "A frozen pond seen from above with a dark hole in the ice and a line of footprints leading back to shore, winter daylight"
+    },
+    {
+      "text": "Kollarını sağlam buza koy, ayaklarınla çırp ve gövdeni buzun üstüne kaydır.",
+      "prompt": "Arms resting flat on the edge of broken ice, legs kicking in dark water behind, seen from behind, cold winter light"
+    },
+    {
+      "text": "Çıkınca ayağa kalkma. Yere yat ve delikten yuvarlanarak uzaklaş. Ağırlığın yayılsın.",
+      "prompt": "A person in a winter coat seen from above lying flat and rolling across snowy ice away from a dark hole, bright winter light"
+    },
+    {
+      "text": "Bunu kışın göl kenarına giden birine gönder. O altmış saniye bir gün ona lazım olabilir.",
+      "prompt": "A frozen lake shore at sunset with snowy trees, calm scene, warm hopeful light"
+    }
+  ],
+  "dogru": {
+    "harf": "A",
+    "metin": "Ayağa kalkma; yere yat, yuvarlanarak uzaklaş",
+    "kaynak": "Minnesota ve Wisconsin Doğal Kaynaklar Müd."
+  },
+  "caption": "Çoğunluk yuvarlanarak uzaklaştı ve haklıydı. Peki kalkıp koşmak neden tehlikeli? Cevap videoda. ⏱️",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://dnr.state.mn.us/safety/ice/survival.html",
+    "https://dnr.wisconsin.gov/Education/OutdoorSkills/iceSafety",
+    "https://gf.nd.gov/ice-safety"
+  ]
+}

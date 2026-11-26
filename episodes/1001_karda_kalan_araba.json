@@ -1,0 +1,57 @@
+{
+  "id": "1001",
+  "slug": "karda_kalan_araba",
+  "title": "Karda Kalan Araba",
+  "dizi_adi": "Karda Kalan Araba",
+  "gece": 1,
+  "seed": 81011,
+  "sure_sn": 60,
+  "kanca_yazi": "Altmış saniyen var.",
+  "scenes": [
+    {
+      "text": "Kar fırtınasında yolda kaldın. Altmış saniyen var.",
+      "prompt": "First-person view from the driver's seat of a car at night, heavy snow blizzard hitting the windshield, wipers struggling, headlights lighting swirling snow"
+    },
+    {
+      "text": "Gece, ıssız bir dağ yolu. Araban kar yığınına saplandı.",
+      "prompt": "A small car stuck in a deep snowdrift on a lonely mountain road at night, blizzard, wide cinematic shot"
+    },
+    {
+      "text": "Motor çalışıyor ama tekerler boşa dönüyor. Telefon da çekmiyor.",
+      "prompt": "Close view of a car rear wheel spinning in deep snow, snow spraying, red tail light glow"
+    },
+    {
+      "text": "Uzakta, belki iki kilometre ötede, bir köyün ışıkları yanıyor.",
+      "prompt": "View through a frosted car side window of tiny warm village lights far away across a snowy valley at night"
+    },
+    {
+      "text": "Kar kalınlaşıyor. Arabanın içi her dakika biraz daha soğuyor.",
+      "prompt": "Inside a car at night, frost spreading on the windows, snow piling on the windshield, gloved hands on the steering wheel, no face visible"
+    },
+    {
+      "text": "Bir ses diyor ki: yürü, yarım saatte oradasın. Öbür ses: arabadan ayrılma.",
+      "prompt": "A car door slightly open with deep snow outside and a blizzard, footprints not yet made, dramatic moonlight"
+    },
+    {
+      "text": "Sen olsan ne yapardın? Arabada mı kalırdın, yoksa köye mi yürürdün?",
+      "prompt": "Wide shot of a lone car half buried in snow on a mountain road at night, faint village lights in the far distance, blizzard"
+    }
+  ],
+  "secim": {
+    "A": "Arabada kal, egzozu temizle",
+    "B": "Arabayı bırak, köye yürü"
+  },
+  "caption": "Kar fırtınasında yolda kaldın, uzakta köyün ışıkları yanıyor. Arabada kalmak mı, köye yürümek mi? ❄️🚗",
+  "hashtags": [
+    "#hayattakal",
+    "#acildurum",
+    "#bunubiliyormuydun",
+    "#senolsan",
+    "#kaçsaniyenvar"
+  ],
+  "kaynaklar": [
+    "https://www.weather.gov/safety/winter-during",
+    "https://www.maine.gov/mema/hazards/natural-hazards/severe-winter-storms/stranded-with-car",
+    "https://www.michigan.gov/msp/divisions/ohsp/ohsp-traffic-safety-programs/winter-driving/know-how-to-handle-winter-driving-emergencies"
+  ]
+}
