@@ -135,6 +135,15 @@
       "media_id": "17961467943268353",
       "permalink": "https://www.instagram.com/reel/DgNvTi5RApf/",
       "story_id": "17993330265074958"
+    },
+    {
+      "id": "602A",
+      "title": "Su Verdin",
+      "date": "2026-11-27",
+      "slot": "11:50",
+      "media_id": "18151541881571589",
+      "permalink": "https://www.instagram.com/reel/DgPS6kUv_WQ/",
+      "story_id": "18117093542157901"
     }
   ],
   "atlanan": [
@@ -142,6 +151,7 @@
     "202A",
     "302B",
     "402B",
-    "502B"
+    "502B",
+    "602B"
   ]
 }
