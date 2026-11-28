@@ -153,6 +153,15 @@
       "media_id": "17977782471070916",
       "permalink": "https://www.instagram.com/reel/DgQUHLaorih/",
       "story_id": "17945462616385974"
+    },
+    {
+      "id": "702A",
+      "title": "Masaya Tutundun",
+      "date": "2026-11-28",
+      "slot": "11:50",
+      "media_id": "18243801931316434",
+      "permalink": "https://www.instagram.com/reel/DgR3qnJvzJH/",
+      "story_id": "18171986569474683"
     }
   ],
   "atlanan": [
@@ -161,6 +170,7 @@
     "302B",
     "402B",
     "502B",
-    "602B"
+    "602B",
+    "702B"
   ]
 }
